@@ -1,0 +1,1661 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24643,
+          33.94385
+        ]
+      },
+      "properties": {
+        "Name": "Alma Reaves Woods - Watts Branch Library",
+        "Council District": 15,
+        "Address": "10205 Compton Avenue Los",
+        "City and Zip": "Los Angeles, CA 90002",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 3,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32274,
+          33.99486
+        ]
+      },
+      "properties": {
+        "Name": "Angeles Mesa Branch Library",
+        "Council District": 8,
+        "Address": "2700 W. 52nd Street Los",
+        "City and Zip": "Los Angeles, CA 90043",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18632,
+          34.11387
+        ]
+      },
+      "properties": {
+        "Name": "Arroyo Seco Regional Branch Library",
+        "Council District": 1,
+        "Address": "6145 N. Figueroa Street",
+        "City and Zip": "Angeles, CA 90042",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "2",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 3,
+        "No. of Toilets": 5,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27479,
+          33.97452
+        ]
+      },
+      "properties": {
+        "Name": "Ascot Branch Library",
+        "Council District": 9,
+        "Address": "120 W. Florence Avenue Los",
+        "City and Zip": "Los Angeles, CA 90003",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25905,
+          34.11999
+        ]
+      },
+      "properties": {
+        "Name": "Atwater Village Branch Library",
+        "Council District": 13,
+        "Address": "3379 Glendale Boulevard",
+        "City and Zip": "Angeles, CA 90039",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35253,
+          34.02849
+        ]
+      },
+      "properties": {
+        "Name": "Baldwin Hills Branch Library",
+        "Council District": 10,
+        "Address": "2906 S. La Brea Avenue",
+        "City and Zip": "Angeles, CA 90016",
+        "Hydration Station Status": "Operational issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35253,
+          34.02849
+        ]
+      },
+      "properties": {
+        "Name": "Benjamin Franklin Branch Library",
+        "Council District": 14,
+        "Address": "2906 S. La Brea Avenue Los",
+        "City and Zip": "Los Angeles, CA 90016",
+        "Hydration Station Status": "Branch is currently closed.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28903,
+          34.09101
+        ]
+      },
+      "properties": {
+        "Name": "Cahuenga Branch Library",
+        "Council District": 13,
+        "Address": "4591 Santa Monica Blvd.",
+        "City and Zip": "Los Angeles, CA 90029",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 4,
+        "No. of Sinks": 4,
+        "No. of Toilets": 4,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.590635,
+          34.201085
+        ]
+      },
+      "properties": {
+        "Name": "Canoga Park Branch Library",
+        "Council District": 3,
+        "Address": "20939 Sherman Way",
+        "City and Zip": "Canoga Park, CA 91303",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25491,
+          34.05063
+        ]
+      },
+      "properties": {
+        "Name": "Central Library",
+        "Council District": 14,
+        "Address": "630 W. 5th Street Los",
+        "City and Zip": "Los Angeles, CA 90071",
+        "Hydration Station Status": "N/a",
+        "No. of Hydration Stations": "20*",
+        "No. of Water Fountains": 24,
+        "No. of Restrooms": 22,
+        "No. of Sinks": 78,
+        "No. of Toilets": 71,
+        "No. of Urinals": 15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.59254,
+          34.25708
+        ]
+      },
+      "properties": {
+        "Name": "Chatsworth Branch Library",
+        "Council District": 12,
+        "Address": "21052 Devonshire Street",
+        "City and Zip": "Chatsworth, CA 91311",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 5,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.241028,
+          34.059751
+        ]
+      },
+      "properties": {
+        "Name": "Chinatown Branch Library",
+        "Council District": 1,
+        "Address": "639 N. Hill Street",
+        "City and Zip": "Angeles, CA 90012",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 5,
+        "No. of Urinals": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.22734,
+          34.09459
+        ]
+      },
+      "properties": {
+        "Name": "Cypress Park Branch Library",
+        "Council District": 1,
+        "Address": "1150 Cypress Avenue Los",
+        "City and Zip": "Los Angeles, CA 90065",
+        "Hydration Station Status": "Branch is currently closed.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46862,
+          34.05281
+        ]
+      },
+      "properties": {
+        "Name": "Donald Bruce Kaufman - Brentwood Branch Library",
+        "Council District": 11,
+        "Address": "11820 San Vicente Blvd. Los",
+        "City and Zip": "Los Angeles, CA 90049",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "2",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 3,
+        "No. of Sinks": 3,
+        "No. of Toilets": 3,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2133,
+          34.13766
+        ]
+      },
+      "properties": {
+        "Name": "Eagle Rock Branch Library",
+        "Council District": 14,
+        "Address": "5027 Caspar Avenue Los",
+        "City and Zip": "Los Angeles, CA 90041",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25708,
+          34.06723
+        ]
+      },
+      "properties": {
+        "Name": "Echo Park Branch Library",
+        "Council District": 1,
+        "Address": "1410 W. Temple Street",
+        "City and Zip": "Los Angeles, CA 90026",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26226,
+          34.07798
+        ]
+      },
+      "properties": {
+        "Name": "Edendale Branch Library",
+        "Council District": 13,
+        "Address": "2011 W. Sunset Boulevard",
+        "City and Zip": "Los Angeles, CA 90026",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.16829,
+          34.08939
+        ]
+      },
+      "properties": {
+        "Name": "El Sereno Branch Library",
+        "Council District": 14,
+        "Address": "5226 S. Huntington Drive Los",
+        "City and Zip": "Los Angeles, CA 90032",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53,
+          34.16655
+        ]
+      },
+      "properties": {
+        "Name": "Encino - Tarzana Branch Library",
+        "Council District": 3,
+        "Address": "18231 Ventura Boulevard",
+        "City and Zip": "Tarzana, CA 91356",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30872,
+          34.01446
+        ]
+      },
+      "properties": {
+        "Name": "Exposition Park - Dr. Mary McLeod Bethune Regional Branch Library",
+        "Council District": 8,
+        "Address": "3900 S. Western Ave",
+        "City and Zip": "Angeles, CA 90062",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35333,
+          34.0717
+        ]
+      },
+      "properties": {
+        "Name": "Fairfax Branch Library",
+        "Council District": 4,
+        "Address": "161 S. Gardner Street Los",
+        "City and Zip": "Los Angeles, CA 90036",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28369,
+          34.0633
+        ]
+      },
+      "properties": {
+        "Name": "Felipe de Neve Branch Library",
+        "Council District": 10,
+        "Address": "2820 W. 6th Street Los",
+        "City and Zip": "Los Angeles, CA 90057",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3283,
+          34.10044
+        ]
+      },
+      "properties": {
+        "Name": "Frances Howard Goldwyn - Hollywood Regional Branch Library",
+        "Council District": 13,
+        "Address": "1623 Ivar Avenue",
+        "City and Zip": "Angeles, CA 90028",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49777,
+          34.26437
+        ]
+      },
+      "properties": {
+        "Name": "Granada Hills Branch Library",
+        "Council District": 12,
+        "Address": "10640 Petit Avenue",
+        "City and Zip": "Granada Hills, CA 91344",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30736,
+          33.80667
+        ]
+      },
+      "properties": {
+        "Name": "Harbor City - Harbor Gateway Branch Library",
+        "Council District": 15,
+        "Address": "24000 S. Western",
+        "City and Zip": "Harbor City, CA 90710",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "2",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 3,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31805,
+          33.97475
+        ]
+      },
+      "properties": {
+        "Name": "Hyde Park Miriam Matthews Branch Library",
+        "Council District": 8,
+        "Address": "2205 W. Florence Avenue Los",
+        "City and Zip": "Los Angeles, CA 90043",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31924,
+          34.02569
+        ]
+      },
+      "properties": {
+        "Name": "Jefferson - Vassie D. Wright Memorial Branch Library",
+        "Council District": 10,
+        "Address": "2211 W. Jefferson Boulevard",
+        "City and Zip": "Los Angeles, CA 90018",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33372,
+          34.08362
+        ]
+      },
+      "properties": {
+        "Name": "John C. Fremont Branch Library",
+        "Council District": 4,
+        "Address": "6121 Melrose Avenue Los",
+        "City and Zip": "Los Angeles, CA 90038",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29218,
+          33.98153
+        ]
+      },
+      "properties": {
+        "Name": "John Muir Branch Library",
+        "Council District": 8,
+        "Address": "1005 W. 64th Street Los",
+        "City and Zip": "Los Angeles, CA 90044",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27419,
+          34.00167
+        ]
+      },
+      "properties": {
+        "Name": "Junipero Serra Branch Library",
+        "Council District": 9,
+        "Address": "4607 S. Main Street Los",
+        "City and Zip": "Los Angeles, CA 90038",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.285706,
+          33.938108
+        ]
+      },
+      "properties": {
+        "Name": "Lake View Terrace Branch Library",
+        "Council District": 7,
+        "Address": "12002 Osborne Street",
+        "City and Zip": "Los Angeles, CA 90044",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21428,
+          34.07625
+        ]
+      },
+      "properties": {
+        "Name": "Lincoln Heights Branch Library",
+        "Council District": 1,
+        "Address": "2530 Workman Street",
+        "City and Zip": "Los Angeles, CA 90031",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24366,
+          34.05021
+        ]
+      },
+      "properties": {
+        "Name": "Little Tokyo Branch Library",
+        "Council District": 14,
+        "Address": "203 S. Los Angeles Street",
+        "City and Zip": "Los Angeles, CA 90012",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28723,
+          34.10525
+        ]
+      },
+      "properties": {
+        "Name": "Los Feliz Branch Library",
+        "Council District": 4,
+        "Address": "1874 Hillhurst Avenue Los",
+        "City and Zip": "Los Angeles, CA 90027",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 4,
+        "No. of Sinks": 4,
+        "No. of Toilets": 4,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.19785,
+          34.05059
+        ]
+      },
+      "properties": {
+        "Name": "Malabar Branch Library",
+        "Council District": 14,
+        "Address": "2801 Wabash Avenue",
+        "City and Zip": "Los Angeles, CA 90033",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42897,
+          34.00591
+        ]
+      },
+      "properties": {
+        "Name": "Mar Vista Branch Library",
+        "Council District": 11,
+        "Address": "12006 Venice Boulevard Los",
+        "City and Zip": "Los Angeles, CA 90066",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "2",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28292,
+          33.94867
+        ]
+      },
+      "properties": {
+        "Name": "Mark Twain Branch Library",
+        "Council District": 8,
+        "Address": "9621 S. Figueroa Street Los",
+        "City and Zip": "Los Angeles, CA 90003",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 4,
+        "No. of Urinals": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33186,
+          34.05658
+        ]
+      },
+      "properties": {
+        "Name": "Memorial Branch Library",
+        "Council District": 4,
+        "Address": "4625 W. Olympic Blvsd.",
+        "City and Zip": "Los Angeles, CA 90019",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48623,
+          34.23547
+        ]
+      },
+      "properties": {
+        "Name": "Mid-Valley Regional Branch Library",
+        "Council District": 12,
+        "Address": "16244 Nordhoff Street",
+        "City and Zip": "North Hills, CA 91343",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37921,
+          34.16526
+        ]
+      },
+      "properties": {
+        "Name": "North Hollywood Amelia Earhart Regional Branch\nLibrary",
+        "Council District": 2,
+        "Address": "5211 Tujunga Avenue",
+        "City and Zip": "North Hollywood, CA 91601",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 5,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53402,
+          34.23517
+        ]
+      },
+      "properties": {
+        "Name": "Northridge Branch Library",
+        "Council District": 12,
+        "Address": "9051 Darby Avenue",
+        "City and Zip": "Northridge, CA 91325",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 3,
+        "No. of Toilets": 4,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42918,
+          34.26121
+        ]
+      },
+      "properties": {
+        "Name": "Pacoima Branch Library",
+        "Council District": 7,
+        "Address": "13605 Van Nuys Boulevard",
+        "City and Zip": "Pacoima CA 91331",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52499,
+          34.04437
+        ]
+      },
+      "properties": {
+        "Name": "Palisades Branch Library",
+        "Council District": 11,
+        "Address": "861 Alma Real Drive",
+        "City and Zip": "Pacific Palisades, CA 90272",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 4,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41816,
+          34.03349
+        ]
+      },
+      "properties": {
+        "Name": "Palms - Rancho Park Branch Library",
+        "Council District": 5,
+        "Address": "2920 Overland Avenue",
+        "City and Zip": "Los Angeles, CA 90064",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 4,
+        "No. of Urinals": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44632,
+          34.22175
+        ]
+      },
+      "properties": {
+        "Name": "Panorama City Branch Library",
+        "Council District": 6,
+        "Address": "14345 Roscoe Boulevard",
+        "City and Zip": "Panorama City, CA 91402",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2802,
+          34.05081
+        ]
+      },
+      "properties": {
+        "Name": "Pico Union Branch Library",
+        "Council District": 1,
+        "Address": "1030 S. Alvarado Street Los",
+        "City and Zip": "Los Angeles, CA 90006",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30763,
+          34.06001
+        ]
+      },
+      "properties": {
+        "Name": "Pio Pico - Koreatown Branch Library",
+        "Council District": 10,
+        "Address": "694 S. Oxford Avenue",
+        "City and Zip": "Los Angeles, CA 90005",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 6,
+        "No. of Urinals": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.64121,
+          34.1863
+        ]
+      },
+      "properties": {
+        "Name": "Platt Branch Library",
+        "Council District": 3,
+        "Address": "23600 Victory Boulevard",
+        "City and Zip": "Woodland Hills, CA 91367",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.42589,
+          33.97027
+        ]
+      },
+      "properties": {
+        "Name": "Playa Vista Branch Library",
+        "Council District": 11,
+        "Address": "6400 Playa Vista Dr. Los",
+        "City and Zip": "Los Angeles, CA 90094",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.56004,
+          34.27776
+        ]
+      },
+      "properties": {
+        "Name": "Porter Ranch Branch Library",
+        "Council District": 12,
+        "Address": "11371 Tampa Avenue",
+        "City and Zip": "Porter Ranch, CA 91326",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.19811,
+          34.02753
+        ]
+      },
+      "properties": {
+        "Name": "Robert Louis Stevenson Branch Library",
+        "Council District": 14,
+        "Address": "803 Spence Street Los",
+        "City and Zip": "Los Angeles, CA 90023",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3858,
+          34.04835
+        ]
+      },
+      "properties": {
+        "Name": "Robertson Branch Library",
+        "Council District": 5,
+        "Address": "1719 S. Robertson Blvd. Los",
+        "City and Zip": "Los Angeles, CA 90035",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29249,
+          33.73549
+        ]
+      },
+      "properties": {
+        "Name": "San Pedro Regional Branch Library",
+        "Council District": 15,
+        "Address": "931 S. Gaffey Street",
+        "City and Zip": "San Pedro, CA 90731",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 4,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44369,
+          34.15114
+        ]
+      },
+      "properties": {
+        "Name": "Sherman Oaks Martin Pollard Branch Library",
+        "Council District": 4,
+        "Address": "14245 Moorpark Street",
+        "City and Zip": "Sherman Oaks, CA 91423",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25941,
+          34.10049
+        ]
+      },
+      "properties": {
+        "Name": "Silver Lake Branch Library",
+        "Council District": 13,
+        "Address": "2411 Glendale Blvd Los",
+        "City and Zip": "Los Angeles, CA 90039",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40581,
+          34.1505
+        ]
+      },
+      "properties": {
+        "Name": "Studio City Branch Library",
+        "Council District": 2,
+        "Address": "12511 Moorpark Street",
+        "City and Zip": "Studio City, CA 91604",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37062,
+          34.21482
+        ]
+      },
+      "properties": {
+        "Name": "Sun Valley Branch Library",
+        "Council District": 6,
+        "Address": "7935 Vineland Avenue",
+        "City and Zip": "Sun Valley, CA 91352",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30124,
+          34.25795
+        ]
+      },
+      "properties": {
+        "Name": "Sunland Tujunga Branch Library",
+        "Council District": 7,
+        "Address": "7771 Foothill Boulevard",
+        "City and Zip": "Tujunga, CA 91042",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45034,
+          34.30736
+        ]
+      },
+      "properties": {
+        "Name": "Sylmar Branch Library",
+        "Council District": 7,
+        "Address": "14561 Polk Street",
+        "City and Zip": "Sylmar, CA 91342",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40117,
+          34.19411
+        ]
+      },
+      "properties": {
+        "Name": "Valley Plaza Branch Library",
+        "Council District": 2,
+        "Address": "12311 Vanowen Street",
+        "City and Zip": "North Hollywood, CA 91605",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44641,
+          34.183771
+        ]
+      },
+      "properties": {
+        "Name": "Van Nuys Branch Library",
+        "Council District": 6,
+        "Address": "6250 Sylmar Ave Van",
+        "City and Zip": "Van Nuys, CA 91401",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 3,
+        "No. of Toilets": 4,
+        "No. of Urinals": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29596,
+          33.99972
+        ]
+      },
+      "properties": {
+        "Name": "Vermont Square Branch Library",
+        "Council District": 9,
+        "Address": "1201 W. 48th. Street Los",
+        "City and Zip": "Los Angeles, CA 90037",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 4,
+        "No. of Sinks": 4,
+        "No. of Toilets": 4,
+        "No. of Urinals": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25631,
+          34.0026
+        ]
+      },
+      "properties": {
+        "Name": "Vernon - Leon H. Washington Jr. Memorial Branch\nLibrary",
+        "Council District": 9,
+        "Address": "4504 S. Central Avenue Los",
+        "City and Zip": "Los Angeles, CA 90011",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32913,
+          34.04004
+        ]
+      },
+      "properties": {
+        "Name": "Washington Irving Branch Library",
+        "Council District": 10,
+        "Address": "4117 W. Washington Blvd. Los",
+        "City and Zip": "Los Angeles, CA 90018",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45045,
+          34.04575
+        ]
+      },
+      "properties": {
+        "Name": "West Los Angeles Regional Branch Library",
+        "Council District": 11,
+        "Address": "11360 Santa Monica Blvd. Los",
+        "City and Zip": "Los Angeles, CA 90025",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.54785,
+          34.19369
+        ]
+      },
+      "properties": {
+        "Name": "West Valley Regional Branch Library",
+        "Council District": 3,
+        "Address": "19036 Vanowen Street",
+        "City and Zip": "Reseda, CA 91335",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 5,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.54785,
+          34.19369
+        ]
+      },
+      "properties": {
+        "Name": "West Valley Regional Branch Library",
+        "Council District": 3,
+        "Address": "19036 Vanowen Street",
+        "City and Zip": "Reseda, CA 91335",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 2,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 5,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44187,
+          34.05786
+        ]
+      },
+      "properties": {
+        "Name": "Westwood Branch Library",
+        "Council District": 5,
+        "Address": "1246 Glendon Avenue Los",
+        "City and Zip": "Los Angeles, CA 90024",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 4,
+        "No. of Sinks": 6,
+        "No. of Toilets": 5,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44187,
+          34.05786
+        ]
+      },
+      "properties": {
+        "Name": "Westwood Branch Library",
+        "Council District": 5,
+        "Address": "1246 Glendon Avenue",
+        "City and Zip": "Los Angeles, CA 90024",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 4,
+        "No. of Sinks": 6,
+        "No. of Toilets": 5,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26291,
+          33.78902
+        ]
+      },
+      "properties": {
+        "Name": "Wilmington Branch Library",
+        "Council District": 15,
+        "Address": "1300 N. Avalon Boulevard",
+        "City and Zip": "Wilmington, CA 90744",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 0,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 3,
+        "No. of Urinals": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31152,
+          34.07435
+        ]
+      },
+      "properties": {
+        "Name": "Wilshire Branch Library",
+        "Council District": 4,
+        "Address": "149 N. Saint Andrews PI Los",
+        "City and Zip": "Los Angeles, CA 90004",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 2,
+        "No. of Toilets": 2,
+        "No. of Urinals": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61062,
+          34.16841
+        ]
+      },
+      "properties": {
+        "Name": "Woodland Hills Branch Library",
+        "Council District": 3,
+        "Address": "22200 Ventura Boulevard",
+        "City and Zip": "Woodland Hills, CA 91364",
+        "Hydration Station Status": "Operational No issues.",
+        "No. of Hydration Stations": "1",
+        "No. of Water Fountains": 1,
+        "No. of Restrooms": 2,
+        "No. of Sinks": 4,
+        "No. of Toilets": 4,
+        "No. of Urinals": 2
+      }
+    }
+  ]
+}
