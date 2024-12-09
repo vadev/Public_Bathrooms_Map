@@ -224,7 +224,7 @@ const Home = () => {
                 color: "#ffffff",
               }}
             >
-              <strong className="">Hydration</strong>
+              <strong className="">Los Angeles Public Library Public Hydration Stations</strong>
             </div>
             <div className={`geocoder mr-4 ml-1 xs:text-sm sm:text-base md:text-lg`} id="geocoder"></div>
           </div>
