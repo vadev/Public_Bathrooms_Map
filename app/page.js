@@ -350,7 +350,7 @@ const Home = () => {
         <div ref={divRef} style={{ width: "100%", height: "100vh" }} />
       </MantineProvider>
 
-      {/* Footer logo */}
+      {/* Footer logos */}
       <div className="absolute md:mx-auto bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2">
         <a
           href="https://controller.lacity.gov/"
