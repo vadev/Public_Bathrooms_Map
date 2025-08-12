@@ -8,7 +8,6 @@ import restroomsData from "./data/restrooms_water_fountains_cleaned.json";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mantine/core/styles.css";
-import { computeclosestcoordsfromevent } from "@/components/getclosestcoordsfromevent";
 
 const optionsCd = [...Array(15)].map((_, i) => ({
   value: `${i + 1}`,
@@ -30,12 +29,17 @@ const Home = () => {
       mapref.current.setFilter(layerId, ["in", "Council District", ""]);
     } else {
       const parsed = districts.map((v) => parseInt(v));
-      mapref.current.setFilter(layerId, ["in", ["get", "Council District"], ["literal", parsed]]);
+      mapref.current.setFilter(layerId, [
+        "in",
+        ["get", "Council District"],
+        ["literal", parsed],
+      ]);
     }
   };
 
   useEffect(() => {
-    mapboxgl.accessToken = "pk.eyJ1Ijoia2VubmV0aG1lamlhIiwiYSI6ImNseGV6b3c0djAyOGYyc3B3a3Bzd2xtNXEifQ.iNXcgdwigbqLTpSYbMJUOg";
+    mapboxgl.accessToken =
+      "pk.eyJ1Ijoia2VubmV0aG1lamlhIiwiYSI6ImNseGV6b3c0djAyOGYyc3B3a3Bzd2xtNXEifQ.iNXcgdwigbqLTpSYbMJUOg";
 
     const map = new mapboxgl.Map({
       container: divRef.current,
@@ -74,158 +78,166 @@ const Home = () => {
     };
 
     map.on("load", () => {
-      map.addSource("hydration-source", {
-        type: "geojson",
-        data: geoJsonData,
-      });
+      // Load toilet icon
+      map.loadImage("/restroom.png", (error, image) => {
+        if (error) throw error;
+        if (!map.hasImage("restroom-icon"))
+          map.addImage("restroom-icon", image, { pixelRatio: 2 });
 
-      map.addSource("restrooms-source", {
-        type: "geojson",
-        data: restroomsGeoData,
-      });
+        // Load fountain icon
+        map.loadImage("/drop.png", (error2, image2) => {
+          if (error2) throw error2;
+          if (!map.hasImage("fountain-icon"))
+            map.addImage("fountain-icon", image2, { pixelRatio: 2 });
 
-      map.addSource("cd-boundaries-source", {
-        type: "geojson",
-        data: CouncilDistData,
-      });
-
-      map.addLayer({
-        id: "cd-boundaries",
-        type: "line",
-        source: "cd-boundaries-source",
-        paint: {
-          "line-color": "white",
-          "line-width": 1,
-        },
-      });
-
-      map.addLayer({
-        id: "hydration",
-        type: "circle",
-        source: "hydration-source",
-        paint: {
-          "circle-radius": 4,
-          "circle-color": "#41ffca",
-          "circle-stroke-color": "#41ffca",
-          "circle-stroke-width": 1,
-          "circle-opacity": 0.8,
-        },
-      });
-
-      map.addLayer({
-        id: "restrooms-layer",
-        type: "circle",
-        source: "restrooms-source",
-        paint: {
-          "circle-radius": 4,
-          "circle-color": "#e2ba55",
-          "circle-stroke-color": "#e2ba55",
-          "circle-stroke-width": 1,
-          "circle-opacity": 0.8,
-        },
-      });
-
-      applyLayerFilter("hydration", filteredCD);
-      applyLayerFilter("restrooms-layer", filteredCD);
-
-      const popup = new mapboxgl.Popup({ closeButton: false, closeOnClick: false });
-
-      const handleMouseMove = (e) => {
-        if (e.features && e.features.length > 0) {
-          map.getCanvas().style.cursor = "pointer";
-          const closestCoords = computeclosestcoordsfromevent(e);
-
-          const filteredFeatures = e.features.filter((feature) => {
-            const coords = feature?.geometry?.coordinates;
-            return (
-              feature.geometry?.type === "Point" &&
-              coords &&
-              coords[0] === closestCoords[0] &&
-              coords[1] === closestCoords[1]
-            );
+          // Add sources
+          map.addSource("hydration-source", {
+            type: "geojson",
+            data: geoJsonData,
+          });
+          map.addSource("restrooms-source", {
+            type: "geojson",
+            data: restroomsGeoData,
+          });
+          map.addSource("cd-boundaries-source", {
+            type: "geojson",
+            data: CouncilDistData,
           });
 
-          const coordinates = [...closestCoords];
-          while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-          }
+          // District boundaries
+          map.addLayer({
+            id: "cd-boundaries",
+            type: "line",
+            source: "cd-boundaries-source",
+            paint: { "line-color": "white", "line-width": 1 },
+          });
 
-          if (filteredFeatures.length > 0) {
-            const content = filteredFeatures
-              .map((item) => {
-                const p = item.properties || {};
-                if (item.layer.id === "restrooms-layer") {
-                  return `
-                    <div>
-                      <p><strong>Facility Name:</strong> ${p["Facility Name"] || ""}</p>
-                      <p><strong>Facility Address:</strong> ${p["Facility Address"] || ""}</p>
-                      <p><strong>CD:</strong> ${p["Council District"] || ""}</p>
-                      <p><strong>Standard:</strong> ${p["Standard"] || ""}</p>
-                      <p><strong>Bottle Fillers:</strong> ${p["Bottle Fillers"] || ""}</p>
-                      <p><strong>Gender Neutral:</strong> ${p["Gender Neutral"] || ""}</p>
-                      <p><strong>Women:</strong> ${p["Women"] || ""}</p>
-                      <p><strong>Men:</strong> ${p["Men"] || ""}</p>
-                      <p><strong>No. of Baby Changing Stations:</strong> ${p["No. of Baby Changing Stations"] || ""}</p>
-                      <p><strong>No. of Toilets:</strong> ${p["No. of Toilets"] || ""}</p>
-                      <p><strong>No. of Urinals:</strong> ${p["No. of Urinals"] || ""}</p>
-                      <p><strong>No. of Sinks:</strong> ${p["No. of Sinks"] || ""}</p>
-                      <p><strong>No. of Showers:</strong> ${p["No. of Showers"] || ""}</p>
-                    </div>
-                  `;
-                } else {
-                  const Name = p["Name"] || "";
-                  const Address = p["Address"] || "";
-                  const HydrationStationStatus = p["Hydration Station Status"] || "";
-                  const NoofHydrationStations = p["No. of Hydration Stations"] || "";
-                  const NoofWaterFountains = p["No. of Water Fountains"] || "";
-                  const NoofRestrooms = p["No. of Restrooms"] || "";
-                  const NoofSinks = p["No. of Sinks"] || "";
-                  const NoofToilets = p["No. of Toilets"] || "";
-                  const NoofUrinals = p["No. of Urinals"] || "";
+          // Hydration (icon)
+          map.addLayer({
+            id: "hydration",
+            type: "symbol",
+            source: "hydration-source",
+            layout: {
+              "icon-image": "fountain-icon",
+              "icon-allow-overlap": true,
+              "icon-anchor": "bottom",
+              "icon-size": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                10, 0.12,
+                14, 0.18,
+                16, 0.24,
+              ],
+            },
+          });
 
-                  return `
-                    <div>
-                      <p><strong>Name:</strong> ${Name}</p>
-                      <p><strong>Address:</strong> ${Address}</p>
-                      <p><strong>Hydration Station Status:</strong> ${HydrationStationStatus}</p>
-                      <p><strong>No. of Hydration Stations:</strong> ${NoofHydrationStations}</p>
-                      <p><strong>No. of Water Fountains:</strong> ${NoofWaterFountains}</p>
-                      <p><strong>No. of Restrooms:</strong> ${NoofRestrooms}</p>
-                      <p><strong>No. of Sinks:</strong> ${NoofSinks}</p>
-                      <p><strong>No. of Toilets:</strong> ${NoofToilets}</p>
-                      <p><strong>No. of Urinals:</strong> ${NoofUrinals}</p>
-                    </div>
-                  `;
-                }
-              })
-              .join(" ");
+          // Restrooms (icon)
+          map.addLayer({
+            id: "restrooms-layer",
+            type: "symbol",
+            source: "restrooms-source",
+            layout: {
+              "icon-image": "restroom-icon",
+              "icon-allow-overlap": true,
+              "icon-anchor": "bottom",
+              "icon-size": [
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                10, 0.12,
+                14, 0.18,
+                16, 0.24,
+              ],
+            },
+          });
 
-            popup
-              .setLngLat(coordinates)
-              .setHTML(`
-                <div style="width: 300px;">${content}</div>
-                <style>
-                  .mapboxgl-popup-content {
-                    background: #212121e0;
-                    color: #ffffff;
-                  }
-                </style>
-              `)
-              .addTo(map);
-          }
-        }
-      };
+          applyLayerFilter("hydration", filteredCD);
+          applyLayerFilter("restrooms-layer", filteredCD);
 
-      map.on("mousemove", "hydration", handleMouseMove);
-      map.on("mouseleave", "hydration", () => {
-        map.getCanvas().style.cursor = "";
-        popup.remove();
-      });
+          // Tooltip setup
+          const hoverPopup = new mapboxgl.Popup({
+            closeButton: false,
+            closeOnClick: false,
+            offset: 10,
+          });
 
-      map.on("mousemove", "restrooms-layer", handleMouseMove);
-      map.on("mouseleave", "restrooms-layer", () => {
-        map.getCanvas().style.cursor = "";
-        popup.remove();
+          // NEW: unified tooltip with exact fields + smart fallbacks
+          const buildHTML = (p = {}) => {
+            // Fallbacks so both datasets render:
+            const Name =
+              p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
+            const CouncilDistrict =
+              p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
+            const Address =
+              p["Address"] || p["Facility Address"] || p.address || "";
+            const CityZip = p["City and Zip"] || "";
+            const HydrationStatus = p["Hydration Station Status"] || "";
+            const NoHydration = p["No. of Hydration Stations"] || "";
+            const NoFountains = p["No. of Water Fountains"] || "";
+            const NoRestrooms = p["No. of Restrooms"] || "";
+            const NoSinks = p["No. of Sinks"] || "";
+            const NoToilets = p["No. of Toilets"] || "";
+            const NoUrinals = p["No. of Urinals"] || "";
+
+            return `
+              <div style="font-size:12px;line-height:1.35;">
+                <div><strong>Name:</strong> ${Name}</div>
+                <div><strong>Council District:</strong> ${CouncilDistrict}</div>
+                <div><strong>Address:</strong> ${Address}</div>
+                <div><strong>City and Zip:</strong> ${CityZip}</div>
+                <div><strong>Hydration Station Status:</strong> ${HydrationStatus}</div>
+                <div><strong>No. of Hydration Stations:</strong> ${NoHydration}</div>
+                <div><strong>No. of Water Fountains:</strong> ${NoFountains}</div>
+                <div><strong>No. of Restrooms:</strong> ${NoRestrooms}</div>
+                <div><strong>No. of Sinks:</strong> ${NoSinks}</div>
+                <div><strong>No. of Toilets:</strong> ${NoToilets}</div>
+                <div><strong>No. of Urinals:</strong> ${NoUrinals}</div>
+              </div>
+            `;
+          };
+
+          const attachTooltip = (layerId) => {
+            map.on("mouseenter", layerId, (e) => {
+              map.getCanvas().style.cursor = "pointer";
+              const f = e.features?.[0];
+              if (!f) return;
+              const coords =
+                f.geometry.type === "Point"
+                  ? f.geometry.coordinates
+                  : [e.lngLat.lng, e.lngLat.lat];
+              hoverPopup.setLngLat(coords).setHTML(buildHTML(f.properties)).addTo(map);
+            });
+            map.on("mousemove", layerId, (e) => {
+              const f = e.features?.[0];
+              if (!f) return;
+              const coords =
+                f.geometry.type === "Point"
+                  ? f.geometry.coordinates
+                  : [e.lngLat.lng, e.lngLat.lat];
+              hoverPopup.setLngLat(coords);
+            });
+            map.on("mouseleave", layerId, () => {
+              map.getCanvas().style.cursor = "";
+              hoverPopup.remove();
+            });
+            map.on("click", layerId, (e) => {
+              const f = e.features?.[0];
+              if (!f) return;
+              const coords =
+                f.geometry.type === "Point"
+                  ? f.geometry.coordinates
+                  : [e.lngLat.lng, e.lngLat.lat];
+              new mapboxgl.Popup({ offset: 12 })
+                .setLngLat(coords)
+                .setHTML(buildHTML(f.properties))
+                .addTo(map);
+            });
+          };
+
+          attachTooltip("hydration");
+          attachTooltip("restrooms-layer");
+        });
       });
     });
 
@@ -254,12 +266,9 @@ const Home = () => {
         <div className="flex-none">
           <Nav />
         </div>
-
         <div className="absolute mt-[3.5em] ml-2 md:ml-3 top-0 z-5 z-50 w-full">
           <div className="flex justify-between w-full h-10">
-            <div
-              className="md:ml-3 ml-2 text-base font-bold bg-[#212121] p-3 text-white"
-            >
+            <div className="md:ml-3 ml-2 text-base font-bold bg-[#212121] p-3 text-white">
               <strong>Los Angeles Public Library Public Hydration Stations</strong>
             </div>
             <div className="geocoder mr-4 ml-1" id="geocoder"></div>
@@ -272,14 +281,21 @@ const Home = () => {
           </button>
         </div>
 
+        {/* Filter panel */}
         <div
-          className={`bottom-0 sm:bottom-auto md:mt-[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${filterpanelopened ? "absolute" : "hidden"}`}
+          className={`bottom-0 sm:bottom-auto md:mt-[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${
+            filterpanelopened ? "absolute" : "hidden"
+          }`}
         >
           <div className="bg-zinc-900 w-content bg-opacity-90 px-2 py-1 mt-1 sm:rounded-lg">
             <div className="gap-x-0 flex flex-row w-full">
               <button
                 onClick={() => setselectedfilteropened("cd")}
-                className={`px-2 border-b-2 py-1 font-semibold ${selectedfilteropened === "cd" ? "border-[#41ffca] text-[#41ffca]" : "hover:border-white border-transparent text-gray-50"}`}
+                className={`px-2 border-b-2 py-1 font-semibold ${
+                  selectedfilteropened === "cd"
+                    ? "border-[#41ffca] text-[#41ffca]"
+                    : "hover:border-white border-transparent text-gray-50"
+                }`}
               >
                 CD #
               </button>
@@ -306,7 +322,9 @@ const Home = () => {
                 <br />
                 <Checkbox.Group
                   value={filteredCD}
-                  onChange={(event) => setfilteredcouncildistrictspre(event, "Council District")}
+                  onChange={(event) =>
+                    setfilteredcouncildistrictspre(event, "Council District")
+                  }
                 >
                   <div className="grid grid-cols-3 gap-x-4 my-2">
                     {optionsCd.map((eachEntry) => (
@@ -314,7 +332,11 @@ const Home = () => {
                         key={eachEntry.value}
                         id={eachEntry.value}
                         value={eachEntry.value}
-                        label={<span className="text-white text-xs">{eachEntry.label}</span>}
+                        label={
+                          <span className="text-white text-xs">
+                            {eachEntry.label}
+                          </span>
+                        }
                         className="my-2"
                       />
                     ))}
@@ -328,8 +350,13 @@ const Home = () => {
         <div ref={divRef} style={{ width: "100%", height: "100vh" }} />
       </MantineProvider>
 
+      {/* Footer logo */}
       <div className="absolute md:mx-auto bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2">
-        <a href="https://controller.lacity.gov/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://controller.lacity.gov/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="https://controller.lacity.gov/images/KennethMejia-logo-white-elect.png"
             className="h-9 md:h-10 z-40"
