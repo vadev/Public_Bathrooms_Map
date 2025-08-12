@@ -26,7 +26,7 @@ const Home = () => {
   const applyLayerFilter = (layerId, districts) => {
     if (!mapref.current || !mapref.current.getLayer(layerId)) return;
     if (!districts || districts.length === 0) {
-      mapref.current.setFilter(layerId, ["in", "Council District", ""]);
+      mapref.current.setFilter(layerId, ["in", "Council District", ""]); // hide all
     } else {
       const parsed = districts.map((v) => parseInt(v));
       mapref.current.setFilter(layerId, [
@@ -35,6 +35,12 @@ const Home = () => {
         ["literal", parsed],
       ]);
     }
+  };
+
+  const applyAllFilters = (districts) => {
+    ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach((id) =>
+      applyLayerFilter(id, districts)
+    );
   };
 
   useEffect(() => {
@@ -78,165 +84,249 @@ const Home = () => {
     };
 
     map.on("load", () => {
-      // Load toilet icon
+      // Load icons (restroom + hydration)
       map.loadImage("/restroom.png", (error, image) => {
         if (error) throw error;
         if (!map.hasImage("restroom-icon"))
           map.addImage("restroom-icon", image, { pixelRatio: 2 });
 
-        // Load fountain icon
         map.loadImage("/drop.png", (error2, image2) => {
           if (error2) throw error2;
           if (!map.hasImage("fountain-icon"))
             map.addImage("fountain-icon", image2, { pixelRatio: 2 });
 
-          // Add sources
-          map.addSource("hydration-source", {
-            type: "geojson",
-            data: geoJsonData,
-          });
-          map.addSource("restrooms-source", {
-            type: "geojson",
-            data: restroomsGeoData,
-          });
-          map.addSource("cd-boundaries-source", {
-            type: "geojson",
-            data: CouncilDistData,
-          });
+          // OPTIONAL: Baby & Shower small icons (only show where counts > 0)
+          // Add /baby.png and /shower.png into your public/ folder.
+          map.loadImage("/baby.png", (e3, babyImg) => {
+            if (!e3 && !map.hasImage("baby-icon"))
+              map.addImage("baby-icon", babyImg, { pixelRatio: 2 });
 
-          // District boundaries
-          map.addLayer({
-            id: "cd-boundaries",
-            type: "line",
-            source: "cd-boundaries-source",
-            paint: { "line-color": "white", "line-width": 1 },
-          });
+            map.loadImage("/shower.png", (e4, showerImg) => {
+              if (!e4 && !map.hasImage("shower-icon"))
+                map.addImage("shower-icon", showerImg, { pixelRatio: 2 });
 
-          // Hydration (icon)
-          map.addLayer({
-            id: "hydration",
-            type: "symbol",
-            source: "hydration-source",
-            layout: {
-              "icon-image": "fountain-icon",
-              "icon-allow-overlap": true,
-              "icon-anchor": "bottom",
-              "icon-size": [
-                "interpolate",
-                ["linear"],
-                ["zoom"],
-                10, 0.12,
-                14, 0.18,
-                16, 0.24,
-              ],
-            },
-          });
+              // Sources
+              map.addSource("hydration-source", {
+                type: "geojson",
+                data: geoJsonData,
+              });
+              map.addSource("restrooms-source", {
+                type: "geojson",
+                data: restroomsGeoData,
+              });
+              map.addSource("cd-boundaries-source", {
+                type: "geojson",
+                data: CouncilDistData,
+              });
 
-          // Restrooms (icon)
-          map.addLayer({
-            id: "restrooms-layer",
-            type: "symbol",
-            source: "restrooms-source",
-            layout: {
-              "icon-image": "restroom-icon",
-              "icon-allow-overlap": true,
-              "icon-anchor": "bottom",
-              "icon-size": [
-                "interpolate",
-                ["linear"],
-                ["zoom"],
-                10, 0.12,
-                14, 0.18,
-                16, 0.24,
-              ],
-            },
-          });
+              // District boundaries
+              map.addLayer({
+                id: "cd-boundaries",
+                type: "line",
+                source: "cd-boundaries-source",
+                paint: { "line-color": "white", "line-width": 1 },
+              });
 
-          applyLayerFilter("hydration", filteredCD);
-          applyLayerFilter("restrooms-layer", filteredCD);
+              // Hydration (icon)
+              map.addLayer({
+                id: "hydration",
+                type: "symbol",
+                source: "hydration-source",
+                layout: {
+                  "icon-image": "fountain-icon",
+                  "icon-allow-overlap": true,
+                  "icon-anchor": "bottom",
+                  "icon-size": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10, 0.12,
+                    14, 0.18,
+                    16, 0.24,
+                  ],
+                },
+              });
 
-          // Tooltip setup
-          const hoverPopup = new mapboxgl.Popup({
-            closeButton: false,
-            closeOnClick: false,
-            offset: 10,
-          });
+              // Restrooms (main icon)
+              map.addLayer({
+                id: "restrooms-layer",
+                type: "symbol",
+                source: "restrooms-source",
+                layout: {
+                  "icon-image": "restroom-icon",
+                  "icon-allow-overlap": true,
+                  "icon-anchor": "bottom",
+                  "icon-size": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10, 0.12,
+                    14, 0.18,
+                    16, 0.24,
+                  ],
+                },
+              });
 
-          // NEW: unified tooltip with exact fields + smart fallbacks
-          const buildHTML = (p = {}) => {
-            // Fallbacks so both datasets render:
-            const Name =
-              p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
-            const CouncilDistrict =
-              p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
-            const Address =
-              p["Address"] || p["Facility Address"] || p.address || "";
-            const CityZip = p["City and Zip"] || "";
-            const HydrationStatus = p["Hydration Station Status"] || "";
-            const NoHydration = p["No. of Hydration Stations"] || "";
-            const NoFountains = p["No. of Water Fountains"] || "";
-            const NoRestrooms = p["No. of Restrooms"] || "";
-            const NoSinks = p["No. of Sinks"] || "";
-            const NoToilets = p["No. of Toilets"] || "";
-            const NoUrinals = p["No. of Urinals"] || "";
+              // Baby-changing icon (shows only where count > 0)
+              if (map.hasImage("baby-icon")) {
+                map.addLayer({
+                  id: "restrooms-baby",
+                  type: "symbol",
+                  source: "restrooms-source",
+                  layout: {
+                    "icon-image": "baby-icon",
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-offset": [-12, 0], // nudge left of restroom icon
+                    "icon-size": [
+                      "interpolate",
+                      ["linear"],
+                      ["zoom"],
+                      10, 0.10,
+                      14, 0.14,
+                      16, 0.18,
+                    ],
+                  },
+                  filter: [
+                    ">",
+                    [
+                      "to-number",
+                      ["coalesce", ["get", "No. of Baby Changing Stations"], 0],
+                    ],
+                    0,
+                  ],
+                });
+              }
 
-            return `
-              <div style="font-size:12px;line-height:1.35;">
-                <div><strong>Name:</strong> ${Name}</div>
-                <div><strong>Council District:</strong> ${CouncilDistrict}</div>
-                <div><strong>Address:</strong> ${Address}</div>
-                <div><strong>City and Zip:</strong> ${CityZip}</div>
-                <div><strong>Hydration Station Status:</strong> ${HydrationStatus}</div>
-                <div><strong>No. of Hydration Stations:</strong> ${NoHydration}</div>
-                <div><strong>No. of Water Fountains:</strong> ${NoFountains}</div>
-                <div><strong>No. of Restrooms:</strong> ${NoRestrooms}</div>
-                <div><strong>No. of Sinks:</strong> ${NoSinks}</div>
-                <div><strong>No. of Toilets:</strong> ${NoToilets}</div>
-                <div><strong>No. of Urinals:</strong> ${NoUrinals}</div>
-              </div>
-            `;
-          };
+              // Shower icon (shows only where count > 0)
+              if (map.hasImage("shower-icon")) {
+                map.addLayer({
+                  id: "restrooms-shower",
+                  type: "symbol",
+                  source: "restrooms-source",
+                  layout: {
+                    "icon-image": "shower-icon",
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-offset": [12, 0], // nudge right of restroom icon
+                    "icon-size": [
+                      "interpolate",
+                      ["linear"],
+                      ["zoom"],
+                      10, 0.10,
+                      14, 0.14,
+                      16, 0.18,
+                    ],
+                  },
+                  filter: [
+                    ">",
+                    [
+                      "to-number",
+                      ["coalesce", ["get", "No. of Showers"], 0],
+                    ],
+                    0,
+                  ],
+                });
+              }
 
-          const attachTooltip = (layerId) => {
-            map.on("mouseenter", layerId, (e) => {
-              map.getCanvas().style.cursor = "pointer";
-              const f = e.features?.[0];
-              if (!f) return;
-              const coords =
-                f.geometry.type === "Point"
-                  ? f.geometry.coordinates
-                  : [e.lngLat.lng, e.lngLat.lat];
-              hoverPopup.setLngLat(coords).setHTML(buildHTML(f.properties)).addTo(map);
+              applyAllFilters(filteredCD);
+
+              // Tooltip setup
+              const hoverPopup = new mapboxgl.Popup({
+                closeButton: false,
+                closeOnClick: false,
+                offset: 10,
+              });
+
+              // Helper to print nice values
+              const safe = (v) =>
+                v === undefined || v === null || v === "" ? "—" : v;
+
+              // UPDATED tooltip: removed City & Zip / Hydration Station Status / No. of Restrooms
+              // Added Men / Women / Gender Neutral / Baby Changing / Showers
+              const buildHTML = (p = {}) => {
+                const Name =
+                  p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
+                const CouncilDistrict =
+                  p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
+                const Address =
+                  p["Address"] || p["Facility Address"] || p.address || "";
+
+                const NoHydration = p["No. of Hydration Stations"];
+                const NoFountains = p["No. of Water Fountains"];
+                const NoSinks = p["No. of Sinks"];
+                const NoToilets = p["No. of Toilets"];
+                const NoUrinals = p["No. of Urinals"];
+
+                const Women = p["Women"];
+                const Men = p["Men"];
+                const GenderNeutral = p["Gender Neutral"];
+                const BabyChanging = p["No. of Baby Changing Stations"];
+                const Showers = p["No. of Showers"];
+
+                return `
+                  <div style="font-size:12px;line-height:1.35;">
+                    <div><strong>Name:</strong> ${safe(Name)}</div>
+                    <div><strong>Council District:</strong> ${safe(CouncilDistrict)}</div>
+                    <div><strong>Address:</strong> ${safe(Address)}</div>
+                    <div><strong>No. of Hydration Stations:</strong> ${safe(NoHydration)}</div>
+                    <div><strong>No. of Water Fountains:</strong> ${safe(NoFountains)}</div>
+                    <div><strong>No. of Sinks:</strong> ${safe(NoSinks)}</div>
+                    <div><strong>No. of Toilets:</strong> ${safe(NoToilets)}</div>
+                    <div><strong>No. of Urinals:</strong> ${safe(NoUrinals)}</div>
+                    <div><strong>Women:</strong> ${safe(Women)}</div>
+                    <div><strong>Men:</strong> ${safe(Men)}</div>
+                    <div><strong>Gender Neutral:</strong> ${safe(GenderNeutral)}</div>
+                    <div><strong>No. of Baby Changing Stations:</strong> ${safe(BabyChanging)}</div>
+                    <div><strong>No. of Showers:</strong> ${safe(Showers)}</div>
+                  </div>
+                `;
+              };
+
+              const attachTooltip = (layerId) => {
+                map.on("mouseenter", layerId, (e) => {
+                  map.getCanvas().style.cursor = "pointer";
+                  const f = e.features?.[0];
+                  if (!f) return;
+                  const coords =
+                    f.geometry.type === "Point"
+                      ? f.geometry.coordinates
+                      : [e.lngLat.lng, e.lngLat.lat];
+                  hoverPopup.setLngLat(coords).setHTML(buildHTML(f.properties)).addTo(map);
+                });
+                map.on("mousemove", layerId, (e) => {
+                  const f = e.features?.[0];
+                  if (!f) return;
+                  const coords =
+                    f.geometry.type === "Point"
+                      ? f.geometry.coordinates
+                      : [e.lngLat.lng, e.lngLat.lat];
+                  hoverPopup.setLngLat(coords);
+                });
+                map.on("mouseleave", layerId, () => {
+                  map.getCanvas().style.cursor = "";
+                  hoverPopup.remove();
+                });
+                map.on("click", layerId, (e) => {
+                  const f = e.features?.[0];
+                  if (!f) return;
+                  const coords =
+                    f.geometry.type === "Point"
+                      ? f.geometry.coordinates
+                      : [e.lngLat.lng, e.lngLat.lat];
+                  new mapboxgl.Popup({ offset: 12 })
+                    .setLngLat(coords)
+                    .setHTML(buildHTML(f.properties))
+                    .addTo(map);
+                });
+              };
+
+              attachTooltip("hydration");
+              attachTooltip("restrooms-layer");
+              if (map.getLayer("restrooms-baby")) attachTooltip("restrooms-baby");
+              if (map.getLayer("restrooms-shower")) attachTooltip("restrooms-shower");
             });
-            map.on("mousemove", layerId, (e) => {
-              const f = e.features?.[0];
-              if (!f) return;
-              const coords =
-                f.geometry.type === "Point"
-                  ? f.geometry.coordinates
-                  : [e.lngLat.lng, e.lngLat.lat];
-              hoverPopup.setLngLat(coords);
-            });
-            map.on("mouseleave", layerId, () => {
-              map.getCanvas().style.cursor = "";
-              hoverPopup.remove();
-            });
-            map.on("click", layerId, (e) => {
-              const f = e.features?.[0];
-              if (!f) return;
-              const coords =
-                f.geometry.type === "Point"
-                  ? f.geometry.coordinates
-                  : [e.lngLat.lng, e.lngLat.lat];
-              new mapboxgl.Popup({ offset: 12 })
-                .setLngLat(coords)
-                .setHTML(buildHTML(f.properties))
-                .addTo(map);
-            });
-          };
-
-          attachTooltip("hydration");
-          attachTooltip("restrooms-layer");
+          });
         });
       });
     });
@@ -245,8 +335,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    applyLayerFilter("hydration", filteredCD);
-    applyLayerFilter("restrooms-layer", filteredCD);
+    applyAllFilters(filteredCD);
   }, [filteredCD]);
 
   const setfilteredcouncildistrictspre = (event, type) => {
@@ -332,11 +421,7 @@ const Home = () => {
                         key={eachEntry.value}
                         id={eachEntry.value}
                         value={eachEntry.value}
-                        label={
-                          <span className="text-white text-xs">
-                            {eachEntry.label}
-                          </span>
-                        }
+                        label={<span className="text-white text-xs">{eachEntry.label}</span>}
                         className="my-2"
                       />
                     ))}
