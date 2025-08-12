@@ -272,11 +272,13 @@ const Home = () => {
                     <div><strong>No. of Hydration Stations:</strong> ${safe(NoHydration)}</div>
                     <div><strong>No. of Water Fountains:</strong> ${safe(NoFountains)}</div>
                     <div><strong>No. of Sinks:</strong> ${safe(NoSinks)}</div>
-                    <div><strong>No. of Toilets:</strong> ${safe(NoToilets)}</div>
-                    <div><strong>No. of Urinals:</strong> ${safe(NoUrinals)}</div>
-                    <div><strong>Women:</strong> ${safe(Women)}</div>
-                    <div><strong>Men:</strong> ${safe(Men)}</div>
-                    <div><strong>Gender Neutral:</strong> ${safe(GenderNeutral)}</div>
+                   
+                    
+                    <div><strong>Women’s Restrooms </strong> ${safe(Women)}</div>
+                    <div><strong>Men’s Restrooms </strong> ${safe(Men)}</div>
+                    <div><strong>Gender Neutral Restrooms </strong> ${safe(GenderNeutral)}</div>
+                      <div><strong>No. of Toilets :</strong> ${safe(NoToilets)}</div>
+                       <div><strong>No. of Urinals:</strong> ${safe(NoUrinals)}</div>
                     <div><strong>No. of Baby Changing Stations:</strong> ${safe(BabyChanging)}</div>
                     <div><strong>No. of Showers:</strong> ${safe(Showers)}</div>
                   </div>
