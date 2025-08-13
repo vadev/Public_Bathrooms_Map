@@ -438,10 +438,12 @@ const Home = () => {
         
         {/* Filter panel */}
         <div
+        id="cd-filter-panel"
           className={`bottom-0 sm:bottom-auto md:mt?[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${
             filterpanelopened ? "absolute" : "hidden"
           }`}
         >
+ 
           <div className="bg-zinc-900 w-content bg-opacity-90 px-2 py-1 mt-1 sm:rounded-lg">
             <div className="gap-x-0 flex flex-row w-full">
               <button
@@ -554,6 +556,11 @@ const Home = () => {
           height: 32px;
         }
       `}</style>
+                <style jsx global>{`
+  #cd-filter-panel {
+    top: 120px; /* adjust to taste */
+  }
+`}</style>
     </div>
   );
 };
