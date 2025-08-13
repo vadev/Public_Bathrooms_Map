@@ -417,13 +417,14 @@ const Home = () => {
         <div className="flex-none">
           <Nav />
         </div>
-
+ 
         {/* Top header with title + geocoder host */}
         <div className="absolute mt-[3.5em] ml-2 md:ml-3 top-0 z-5 z-50 w-full">
           <div className="flex justify-between w-full h-10">
             <div className="md:ml-3 ml-2 text-base font-bold bg-[#212121] p-3 text-white">
               <strong>City of LA Bathrooms and Drinking Fountains</strong>
             </div>
+           
             {/* nudge the geocoder slightly down via margin (plus global CSS below) */}
             <div className="geocoder mr-4 ml-1 mt-2" id="geocoder"></div>
           </div>
@@ -434,7 +435,8 @@ const Home = () => {
             Filter
           </button>
         </div>
-
+        <br></br>
+        <br></br>
         {/* Filter panel */}
         <div
           className={`bottom-0 sm:bottom-auto md:mt?[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${
