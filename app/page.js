@@ -435,8 +435,7 @@ const Home = () => {
             Filter
           </button>
         </div>
-        <br></br>
-        <br></br>
+        
         {/* Filter panel */}
         <div
           className={`bottom-0 sm:bottom-auto md:mt?[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${

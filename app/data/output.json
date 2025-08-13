@@ -58,7 +58,7 @@
       },
       "properties": {
         "Name": "Arroyo Seco Regional Branch Library",
-        "Council District": 1,
+        "Council District": 14,
         "Address": "6145 N. Figueroa Street",
         "City and Zip": "Angeles, CA 90042",
         "Hydration Station Status": "Operational No issues.",
@@ -1622,7 +1622,7 @@
       },
       "properties": {
         "Name": "Wilshire Branch Library",
-        "Council District": 4,
+        "Council District": 13,
         "Address": "149 N. Saint Andrews PI Los",
         "City and Zip": "Los Angeles, CA 90004",
         "Hydration Station Status": "Operational No issues.",
