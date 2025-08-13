@@ -28,8 +28,7 @@ const Home = () => {
   const applyLayerFilter = (layerId, districts) => {
     if (!mapref.current || !mapref.current.getLayer(layerId)) return;
     if (!districts || districts.length === 0) {
-      // hide all
-      mapref.current.setFilter(layerId, ["in", "Council District", ""]);
+      mapref.current.setFilter(layerId, ["in", "Council District", ""]); // hide all
     } else {
       const parsed = districts.map((v) => parseInt(v));
       mapref.current.setFilter(layerId, [
@@ -46,7 +45,6 @@ const Home = () => {
     );
   };
 
-  // Helper to slightly enlarge road/street label text so cross streets are readable
   const boostStreetLabels = () => {
     if (!mapref.current) return;
     try {
@@ -63,9 +61,6 @@ const Home = () => {
         .map((l) => l.id);
 
       labelIds.forEach((id) => {
-        // Only touch if property exists (won’t throw if some layers differ)
-        const layer = style.layers.find((l) => l.id === id);
-        if (!layer) return;
         mapref.current.setLayoutProperty(
           id,
           "text-size",
@@ -79,10 +74,7 @@ const Home = () => {
           ]
         );
       });
-    } catch (e) {
-      // Non-fatal: if style changes, this just won’t apply
-      // console.warn("Label boost skipped:", e);
-    }
+    } catch {}
   };
 
   useEffect(() => {
@@ -91,7 +83,7 @@ const Home = () => {
 
     const map = new mapboxgl.Map({
       container: divRef.current,
-      style: "mapbox://styles/mapbox/dark-v11", // keep dark; streets-v12 also works great for labels
+      style: "mapbox://styles/mapbox/dark-v11",
       center: [-118.41, 34],
       zoom: 10,
     });
@@ -155,7 +147,7 @@ const Home = () => {
     };
 
     map.on("load", () => {
-      // Slightly enlarge cross-street labels for readability
+      // Make cross streets more readable
       boostStreetLabels();
 
       // Load icons (restroom + hydration)
@@ -314,7 +306,6 @@ const Home = () => {
               const safe = (v) =>
                 v === undefined || v === null || v === "" ? "—" : v;
 
-              // Tooltip HTML
               const buildHTML = (p = {}) => {
                 const Name =
                   p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
@@ -433,7 +424,8 @@ const Home = () => {
             <div className="md:ml-3 ml-2 text-base font-bold bg-[#212121] p-3 text-white">
               <strong>City of LA Bathrooms and Drinking Fountains</strong>
             </div>
-            <div className="geocoder mr-4 ml-1" id="geocoder"></div>
+            {/* nudge the geocoder slightly down via margin (plus global CSS below) */}
+            <div className="geocoder mr-4 ml-1 mt-2" id="geocoder"></div>
           </div>
           <button
             onClick={() => setfilterpanelopened(!filterpanelopened)}
@@ -445,7 +437,7 @@ const Home = () => {
 
         {/* Filter panel */}
         <div
-          className={`bottom-0 sm:bottom-auto md:mt-[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${
+          className={`bottom-0 sm:bottom-auto md:mt?[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${
             filterpanelopened ? "absolute" : "hidden"
           }`}
         >
@@ -546,6 +538,21 @@ const Home = () => {
           />
         </a>
       </div>
+
+      {/* Global tweaks to push controls + geocoder a little down */}
+      <style jsx global>{`
+        .mapboxgl-ctrl-top-right {
+          top: 72px !important; /* moves zoom/geolocate down a bit */
+        }
+        #geocoder .mapboxgl-ctrl-geocoder {
+          margin-top: 8px; /* nudges the search bar down */
+          min-width: 280px;
+        }
+        /* Optional: tighten the geocoder input height for your compact header */
+        #geocoder .mapboxgl-ctrl-geocoder--input {
+          height: 32px;
+        }
+      `}</style>
     </div>
   );
 };
