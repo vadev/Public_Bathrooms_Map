@@ -6,6 +6,8 @@ import CouncilDist from "./data/CouncilDistricts.json";
 import geoData from "./data/output.json";
 import restroomsData from "./data/restrooms_water_fountains_cleaned.json";
 import mapboxgl from "mapbox-gl";
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
+import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "@mantine/core/styles.css";
 
@@ -26,7 +28,8 @@ const Home = () => {
   const applyLayerFilter = (layerId, districts) => {
     if (!mapref.current || !mapref.current.getLayer(layerId)) return;
     if (!districts || districts.length === 0) {
-      mapref.current.setFilter(layerId, ["in", "Council District", ""]); // hide all
+      // hide all
+      mapref.current.setFilter(layerId, ["in", "Council District", ""]);
     } else {
       const parsed = districts.map((v) => parseInt(v));
       mapref.current.setFilter(layerId, [
@@ -43,18 +46,86 @@ const Home = () => {
     );
   };
 
+  // Helper to slightly enlarge road/street label text so cross streets are readable
+  const boostStreetLabels = () => {
+    if (!mapref.current) return;
+    try {
+      const style = mapref.current.getStyle();
+      if (!style?.layers) return;
+
+      const labelIds = style.layers
+        .filter(
+          (l) =>
+            l.type === "symbol" &&
+            /label/i.test(l.id) &&
+            /road|street|highway|motorway/i.test(l.id)
+        )
+        .map((l) => l.id);
+
+      labelIds.forEach((id) => {
+        // Only touch if property exists (won’t throw if some layers differ)
+        const layer = style.layers.find((l) => l.id === id);
+        if (!layer) return;
+        mapref.current.setLayoutProperty(
+          id,
+          "text-size",
+          [
+            "interpolate",
+            ["linear"],
+            ["zoom"],
+            10, 12,
+            14, 15,
+            16, 18
+          ]
+        );
+      });
+    } catch (e) {
+      // Non-fatal: if style changes, this just won’t apply
+      // console.warn("Label boost skipped:", e);
+    }
+  };
+
   useEffect(() => {
     mapboxgl.accessToken =
       "pk.eyJ1Ijoia2VubmV0aG1lamlhIiwiYSI6ImNseGV6b3c0djAyOGYyc3B3a3Bzd2xtNXEifQ.iNXcgdwigbqLTpSYbMJUOg";
 
     const map = new mapboxgl.Map({
       container: divRef.current,
-      style: "mapbox://styles/mapbox/dark-v11",
+      style: "mapbox://styles/mapbox/dark-v11", // keep dark; streets-v12 also works great for labels
       center: [-118.41, 34],
       zoom: 10,
     });
 
     mapref.current = map;
+
+    // Controls: zoom/rotate + geolocate (“Locate me”)
+    map.addControl(new mapboxgl.NavigationControl(), "top-right");
+    map.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: { enableHighAccuracy: true },
+        trackUserLocation: true,
+        showAccuracyCircle: true,
+        showUserHeading: true,
+        fitBoundsOptions: { maxZoom: 16 },
+      }),
+      "top-right"
+    );
+
+    // Geocoder (address/POI search) into #geocoder div
+    const geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl,
+      marker: false,
+      placeholder: "Search address or place…",
+      countries: "us",
+      types: "address,poi",
+      proximity: { longitude: -118.41, latitude: 34.0 },
+    });
+    geocoder.addTo("#geocoder");
+    geocoder.on("result", (e) => {
+      const center = e?.result?.center;
+      if (center) map.flyTo({ center, zoom: 16, speed: 0.8, curve: 1.4 });
+    });
 
     const geoJsonData = {
       type: "FeatureCollection",
@@ -84,6 +155,9 @@ const Home = () => {
     };
 
     map.on("load", () => {
+      // Slightly enlarge cross-street labels for readability
+      boostStreetLabels();
+
       // Load icons (restroom + hydration)
       map.loadImage("/restroom.png", (error, image) => {
         if (error) throw error;
@@ -96,7 +170,6 @@ const Home = () => {
             map.addImage("fountain-icon", image2, { pixelRatio: 2 });
 
           // OPTIONAL: Baby & Shower small icons (only show where counts > 0)
-          // Add /baby.png and /shower.png into your public/ folder.
           map.loadImage("/baby.png", (e3, babyImg) => {
             if (!e3 && !map.hasImage("baby-icon"))
               map.addImage("baby-icon", babyImg, { pixelRatio: 2 });
@@ -177,7 +250,7 @@ const Home = () => {
                     "icon-image": "baby-icon",
                     "icon-allow-overlap": true,
                     "icon-anchor": "bottom",
-                    "icon-offset": [-12, 0], // nudge left of restroom icon
+                    "icon-offset": [-12, 0], // left of restroom icon
                     "icon-size": [
                       "interpolate",
                       ["linear"],
@@ -208,7 +281,7 @@ const Home = () => {
                     "icon-image": "shower-icon",
                     "icon-allow-overlap": true,
                     "icon-anchor": "bottom",
-                    "icon-offset": [12, 0], // nudge right of restroom icon
+                    "icon-offset": [12, 0], // right of restroom icon
                     "icon-size": [
                       "interpolate",
                       ["linear"],
@@ -238,12 +311,10 @@ const Home = () => {
                 offset: 10,
               });
 
-              // Helper to print nice values
               const safe = (v) =>
                 v === undefined || v === null || v === "" ? "—" : v;
 
-              // UPDATED tooltip: removed City & Zip / Hydration Station Status / No. of Restrooms
-              // Added Men / Women / Gender Neutral / Baby Changing / Showers
+              // Tooltip HTML
               const buildHTML = (p = {}) => {
                 const Name =
                   p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
@@ -272,13 +343,11 @@ const Home = () => {
                     <div><strong>No. of Hydration Stations:</strong> ${safe(NoHydration)}</div>
                     <div><strong>No. of Water Fountains:</strong> ${safe(NoFountains)}</div>
                     <div><strong>No. of Sinks:</strong> ${safe(NoSinks)}</div>
-                   
-                    
                     <div><strong>Women’s Restrooms </strong> ${safe(Women)}</div>
                     <div><strong>Men’s Restrooms </strong> ${safe(Men)}</div>
                     <div><strong>Gender Neutral Restrooms </strong> ${safe(GenderNeutral)}</div>
-                      <div><strong>No. of Toilets :</strong> ${safe(NoToilets)}</div>
-                       <div><strong>No. of Urinals:</strong> ${safe(NoUrinals)}</div>
+                    <div><strong>No. of Toilets :</strong> ${safe(NoToilets)}</div>
+                    <div><strong>No. of Urinals:</strong> ${safe(NoUrinals)}</div>
                     <div><strong>No. of Baby Changing Stations:</strong> ${safe(BabyChanging)}</div>
                     <div><strong>No. of Showers:</strong> ${safe(Showers)}</div>
                   </div>
@@ -357,10 +426,12 @@ const Home = () => {
         <div className="flex-none">
           <Nav />
         </div>
+
+        {/* Top header with title + geocoder host */}
         <div className="absolute mt-[3.5em] ml-2 md:ml-3 top-0 z-5 z-50 w-full">
           <div className="flex justify-between w-full h-10">
             <div className="md:ml-3 ml-2 text-base font-bold bg-[#212121] p-3 text-white">
-              <strong>Los Angeles Public Library Public Hydration Stations</strong>
+              <strong>City of LA Bathrooms and Drinking Fountains</strong>
             </div>
             <div className="geocoder mr-4 ml-1" id="geocoder"></div>
           </div>
@@ -429,6 +500,30 @@ const Home = () => {
                     ))}
                   </div>
                 </Checkbox.Group>
+
+                {/* Sources */}
+                <div className="mt-3 space-y-1">
+                  <div>
+                    <a
+                      href="https://cityclerk.lacity.org/onlinedocs/2024/24-0708_rpt_drp_04-18-25.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#41ffca] text-xs underline hover:text-white"
+                    >
+                      Department of Recreation and Parks 2025 report
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://cityclerk.lacity.org/onlinedocs/2024/24-0708_rpt_LD_10-31-24.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#41ffca] text-xs underline hover:text-white"
+                    >
+                      LA Public Library 2024 report
+                    </a>
+                  </div>
+                </div>
               </div>
             )}
           </div>

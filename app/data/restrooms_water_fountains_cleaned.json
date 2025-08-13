@@ -38,7 +38,7 @@
       "properties": {
         "Facility Name": "109th Street Recreation Center",
         "Facility Address": "1464 East 109th Street Los Angeles, CA 90059",
-        "Council District": 15,
+        "Council District": 14,
         "Standard": 1.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 1.0,
@@ -163,7 +163,7 @@
       "properties": {
         "Facility Name": "76th Street Park",
         "Facility Address": "833 West 76th Street Los Angeles, CA 90044",
-        "Council District": 8,
+        "Council District": 14,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -238,7 +238,7 @@
       "properties": {
         "Facility Name": "Albion Riverside Park",
         "Facility Address": "1739 North Albion Street Los Angeles, CA 90031",
-        "Council District": 14,
+        "Council District": 1,
         "Standard": 2.0,
         "Bottle Fillers": 2.0,
         "Gender Neutral": 2.0,
@@ -363,7 +363,7 @@
       "properties": {
         "Facility Name": "Alpine Recreation Center",
         "Facility Address": "817 Yale Street Los Angeles, CA 90012",
-        "Council District": 1,
+        "Council District": 14,
         "Standard": 3.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 1.0,
@@ -488,7 +488,7 @@
       "properties": {
         "Facility Name": "Andres Pico Adobe Park",
         "Facility Address": "10940 Sepulveda Blvd. Mission Hills, CA 91345",
-        "Council District": 12,
+        "Council District": 7,
         "Standard": "",
         "Bottle Fillers": "",
         "Gender Neutral": 1.0,
@@ -738,7 +738,7 @@
       "properties": {
         "Facility Name": "Baldwin Hills Recreation Center",
         "Facility Address": "5401 Highlight Place Los Angeles, CA 90016",
-        "Council District": 11,
+        "Council District": 10,
         "Standard": 10.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 1.0,
@@ -1013,7 +1013,7 @@
       "properties": {
         "Facility Name": "Betty Davis ",
         "Facility Address": "1850 Riverside Drive Glendale, CA 91201",
-        "Council District": 4,
+        "Council District": 13,
         "Standard": "",
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -1413,7 +1413,7 @@
       "properties": {
         "Facility Name": "Camp De Cahuenga ",
         "Facility Address": "3919 Lankershim Blvd. North Hollywood, CA 91604",
-        "Council District": 4,
+        "Council District": 2,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -1513,7 +1513,7 @@
       "properties": {
         "Facility Name": "Carlton Way Park ",
         "Facility Address": "5927 Carlton Way Los Angeles, CA 90028",
-        "Council District": 13,
+        "Council District": 9,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -1563,7 +1563,7 @@
       "properties": {
         "Facility Name": "Central Avenue Jazz Park ",
         "Facility Address": "4222 South Central Avenue Los Angeles, CA 90011",
-        "Council District": 8,
+        "Council District": 9,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -1588,7 +1588,7 @@
       "properties": {
         "Facility Name": "Central Recreation Center ",
         "Facility Address": "1357 East 22nd Street Los Angeles, CA 90011",
-        "Council District": 9,
+        "Council District": 14,
         "Standard": 3.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -1763,7 +1763,7 @@
       "properties": {
         "Facility Name": "Chesterfield Square Park ",
         "Facility Address": "1950 West 50th Street Los Angeles, CA 90064",
-        "Council District": 8,
+        "Council District": 9,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": 2.0,
@@ -1788,7 +1788,7 @@
       "properties": {
         "Facility Name": "Cheviot Hills Recreation Center",
         "Facility Address": "2551 Motor Avenue Los Angeles, CA 90064",
-        "Council District": 13,
+        "Council District": 5,
         "Standard": 1.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 1.0,
@@ -1888,7 +1888,7 @@
       "properties": {
         "Facility Name": "Cotanso Fire Station 94 Park",
         "Facility Address": "5340 Canoga Avenue Woodland Hills, CA 91364",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -1938,7 +1938,7 @@
       "properties": {
         "Facility Name": "Country Club Heritage Plaza Park AKA Wilton Place Park ",
         "Facility Address": "1015 South Wilton Place Los Angeles, CA 90018",
-        "Council District": 10,
+        "Council District": 14,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -2138,7 +2138,7 @@
       "properties": {
         "Facility Name": "David M. Gonzalez Recreation Center",
         "Facility Address": "10943 Herrick Avenue Pacoima, CA 91331",
-        "Council District": 6,
+        "Council District": 7,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -2188,7 +2188,7 @@
       "properties": {
         "Facility Name": "De Longpre Park ",
         "Facility Address": "1350 North Cherokee Avenue Los Angeles, CA 90028",
-        "Council District": 4,
+        "Council District": 13,
         "Standard": "",
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -2413,7 +2413,7 @@
       "properties": {
         "Facility Name": "Downey Child Care Center",
         "Facility Address": "219 South Avenue 18 Los Angeles, CA 90031",
-        "Council District": 14,
+        "Council District": 1,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": 2.0,
@@ -2688,7 +2688,7 @@
       "properties": {
         "Facility Name": "Echo Park Youth Center",
         "Facility Address": "515 La Veta Terrace Los Angeles, CA 90026",
-        "Council District": 1,
+        "Council District": 13,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -2788,7 +2788,7 @@
       "properties": {
         "Facility Name": "ELA Park",
         "Facility Address": "2500 North Eastlake Avenue Los Angeles, CA 90031",
-        "Council District": 1,
+        "Council District": 14,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -2813,7 +2813,7 @@
       "properties": {
         "Facility Name": "Elysian Park ",
         "Facility Address": "929 Academy Road Los Angeles, CA 90012",
-        "Council District": 13,
+        "Council District": 1,
         "Standard": 13.0,
         "Bottle Fillers": 2.0,
         "Gender Neutral": 14.0,
@@ -2888,7 +2888,7 @@
       "properties": {
         "Facility Name": "Encino Community Center/Park",
         "Facility Address": "16953 Ventura Blvd. Encino CA 91316",
-        "Council District": 5,
+        "Council District": 4,
         "Standard": 2.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -3213,7 +3213,7 @@
       "properties": {
         "Facility Name": "Four Oaks Park ",
         "Facility Address": "7499 Melba Avenue West Hills, CA 91307",
-        "Council District": 3,
+        "Council District": 12,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -3238,7 +3238,7 @@
       "properties": {
         "Facility Name": "Franklin Ivar Park ",
         "Facility Address": "1900 Ivar Avenue Los Angeles, CA 90028",
-        "Council District": 13,
+        "Council District": 9,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -4088,7 +4088,7 @@
       "properties": {
         "Facility Name": "Hazard Recreation Center ",
         "Facility Address": "2230 Norfolk Street Los Angeles, CA 90033",
-        "Council District": 14,
+        "Council District": 9,
         "Standard": 4.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -4138,7 +4138,7 @@
       "properties": {
         "Facility Name": "Highland Park Recreation Center",
         "Facility Address": "6150 Piedmont Avenue Los Angeles, CA 90042",
-        "Council District": 1,
+        "Council District": 14,
         "Standard": 4.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 3.0,
@@ -4263,7 +4263,7 @@
       "properties": {
         "Facility Name": "Hollywood Recreation Center",
         "Facility Address": "1122 Cole Avenue Los Angeles, CA 90038",
-        "Council District": 13,
+        "Council District": 14,
         "Standard": 2.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -4288,7 +4288,7 @@
       "properties": {
         "Facility Name": "Holmby Park ",
         "Facility Address": "601 Club View Drive Los Angeles, CA 90024",
-        "Council District": 10,
+        "Council District": 5,
         "Standard": 7.0,
         "Bottle Fillers": "",
         "Gender Neutral": 4.0,
@@ -4338,7 +4338,7 @@
       "properties": {
         "Facility Name": "Hoover-Gage Park",
         "Facility Address": "6265 South Hoover Street Los Angeles, CA 90044",
-        "Council District": 8,
+        "Council District": 9,
         "Standard": "",
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -4513,7 +4513,7 @@
       "properties": {
         "Facility Name": "Jacaranda Park ",
         "Facility Address": "700 East 98th Street Los Angeles, CA 90002",
-        "Council District": 8,
+        "Council District": 14,
         "Standard": "",
         "Bottle Fillers": 2.0,
         "Gender Neutral": "",
@@ -4538,7 +4538,7 @@
       "properties": {
         "Facility Name": "Jackie Tatum Harvard ",
         "Facility Address": "1535 West 62nd Street Los Angeles, CA 90047",
-        "Council District": 8,
+        "Council District": 14,
         "Standard": 6.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 1.0,
@@ -4713,7 +4713,7 @@
       "properties": {
         "Facility Name": "John Quimby Park ",
         "Facility Address": "7008 De Soto Avenue Canoga Park, CA 91306",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -5263,7 +5263,7 @@
       "properties": {
         "Facility Name": "Leimert Plaza Park ",
         "Facility Address": "4395 Leimert Boulevard Los Angeles, CA 90008",
-        "Council District": 8,
+        "Council District": 10,
         "Standard": "",
         "Bottle Fillers": 2.0,
         "Gender Neutral": 8.0,
@@ -5388,7 +5388,7 @@
       "properties": {
         "Facility Name": "Libbit Park ",
         "Facility Address": "5101 Libbit Ave. Encino, CA 91436",
-        "Council District": 5,
+        "Council District": 4,
         "Standard": "",
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -5488,7 +5488,7 @@
       "properties": {
         "Facility Name": "Lincoln Park Recreation Center ",
         "Facility Address": "3501 Valley Blvd. Los Angeles, CA 90031",
-        "Council District": 1,
+        "Council District": 14,
         "Standard": 6.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 38.0,
@@ -6138,7 +6138,7 @@
       "properties": {
         "Facility Name": "Mount Carmel Recreation Center ",
         "Facility Address": "830 W 70th Street Los Angeles, CA 90044",
-        "Council District": 8,
+        "Council District": 14,
         "Standard": 5.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 2.0,
@@ -6463,7 +6463,7 @@
       "properties": {
         "Facility Name": "Oakridge Estate Park ",
         "Facility Address": "18650 Devonshire Street Los Angeles, CA 91324",
-        "Council District": 3,
+        "Council District": 12,
         "Standard": "",
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -6488,7 +6488,7 @@
       "properties": {
         "Facility Name": "Oakwood Recreation Center ",
         "Facility Address": "767 California Ave. Venice, CA 90291",
-        "Council District": 10,
+        "Council District": 11,
         "Standard": 5.0,
         "Bottle Fillers": "",
         "Gender Neutral": 1.0,
@@ -6763,7 +6763,7 @@
       "properties": {
         "Facility Name": "Pan Pacific Recreation Center ",
         "Facility Address": "7600 Beverly Blvd. Los Angeles, CA 90036",
-        "Council District": 4,
+        "Council District": 5,
         "Standard": 9.0,
         "Bottle Fillers": 2.0,
         "Gender Neutral": "",
@@ -6788,7 +6788,7 @@
       "properties": {
         "Facility Name": "Pan Pacific Senior Activity Center ",
         "Facility Address": "141 S Gardner St Los Angeles, CA 90036",
-        "Council District": 4,
+        "Council District": 5,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": 2.0,
@@ -6838,7 +6838,7 @@
       "properties": {
         "Facility Name": "Parthenia Park ",
         "Facility Address": "21444 Parthenia Street Canoga Park, CA 91304",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": "",
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -7263,7 +7263,7 @@
       "properties": {
         "Facility Name": "Queen Anne Recreation Cener ",
         "Facility Address": "1240 West Blvd. Los Angeles, CA 90019",
-        "Council District": 10,
+        "Council District": 14,
         "Standard": 4.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -7588,7 +7588,7 @@
       "properties": {
         "Facility Name": "Robert F. Kennedy Inspiration Park (Ambassador Park) ",
         "Facility Address": "3400 Wilshire Blvd. Los Angeles, CA 90057",
-        "Council District": 1,
+        "Council District": 10,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -7613,7 +7613,7 @@
       "properties": {
         "Facility Name": "Robert L Burns Park ",
         "Facility Address": "4900 Beverly Blvd Los Angeles, CA 90004",
-        "Council District": 4,
+        "Council District": 13,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -7713,7 +7713,7 @@
       "properties": {
         "Facility Name": "Rockwood Park ",
         "Facility Address": "1571 Rockwood Street Los Angeles, CA 90026",
-        "Council District": 13,
+        "Council District": 14,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -7838,7 +7838,7 @@
       "properties": {
         "Facility Name": "Ross Snyder Recreation Center ",
         "Facility Address": "1501 East 41st Street Los Angeles, CA 90011",
-        "Council District": 9,
+        "Council District": 14,
         "Standard": 4.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 1.0,
@@ -7888,7 +7888,7 @@
       "properties": {
         "Facility Name": "Runnymede Park",
         "Facility Address": "20200 Runnymede Street Winnetka, CA 91306",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": 2.0,
@@ -8088,7 +8088,7 @@
       "properties": {
         "Facility Name": "Sean Brown Park (Formerly Chase Park) ",
         "Facility Address": "22525 Chase Street West Hills, CA 91304",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": "",
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -8163,7 +8163,7 @@
       "properties": {
         "Facility Name": "Seol International Park ",
         "Facility Address": "3250 San Marino Street Los Angeles, CA 90006",
-        "Council District": 1,
+        "Council District": 10,
         "Standard": 3.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -8238,7 +8238,7 @@
       "properties": {
         "Facility Name": "Sepulveda Garden Center ",
         "Facility Address": "16633 Magnolia Blvd. Encino, CA 91406",
-        "Council District": 6,
+        "Council District": 4,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -8288,7 +8288,7 @@
       "properties": {
         "Facility Name": "Sepulveda Wildlife Area/Woodley Section IV",
         "Facility Address": "6450 Woodley Avenue Van Nuys, CA 91406",
-        "Council District": 3,
+        "Council District": 6,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -8388,7 +8388,7 @@
       "properties": {
         "Facility Name": "Shatto Recreation Center ",
         "Facility Address": "3191 West 4th Street Los Angeles, CA 90020",
-        "Council District": 13,
+        "Council District": 10,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": 1.0,
@@ -8413,7 +8413,7 @@
       "properties": {
         "Facility Name": "Sheldon Skate Park ",
         "Facility Address": "12511 Sheldon Street Sun Valley, CA 91352",
-        "Council District": 7,
+        "Council District": 6,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -8538,7 +8538,7 @@
       "properties": {
         "Facility Name": "Slauson Recreation Center ",
         "Facility Address": "5306 South Compton Avenue Los Angeles, CA 90011",
-        "Council District": 8,
+        "Council District": 9,
         "Standard": "",
         "Bottle Fillers": 2.0,
         "Gender Neutral": 2.0,
@@ -8713,7 +8713,7 @@
       "properties": {
         "Facility Name": "South Weddington Park ",
         "Facility Address": "10800 Valley Heart Drive North Hollywood, CA 91602",
-        "Council District": 4,
+        "Council District": 2,
         "Standard": 5.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -8888,7 +8888,7 @@
       "properties": {
         "Facility Name": "Studio City Recreation Center ",
         "Facility Address": "12621 Rye Street Studio City, CA 91604",
-        "Council District": 2,
+        "Council District": 4,
         "Standard": 6.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -9238,7 +9238,7 @@
       "properties": {
         "Facility Name": "Tommy Lasorda Field of Dreams ",
         "Facility Address": "1901 Waterloo Street Los Angeles, CA 90039",
-        "Council District": 13,
+        "Council District": 9,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": 2.0,
@@ -9313,7 +9313,7 @@
       "properties": {
         "Facility Name": "Unidad Park ",
         "Facility Address": "1644 West Beverly Boulevard Los Angeles, CA 90027",
-        "Council District": 4,
+        "Council District": 13,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -9363,7 +9363,7 @@
       "properties": {
         "Facility Name": "Valey Plaza Park Nature Center ",
         "Facility Address": "6911 Laurelgrove Avenue North Hollywood, CA 91605",
-        "Council District": 6,
+        "Council District": 2,
         "Standard": "",
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -9663,7 +9663,7 @@
       "properties": {
         "Facility Name": "Vermont Miracle Mile ",
         "Facility Address": "956 West 81st Street Los Angeles, CA 90044",
-        "Council District": 9,
+        "Council District": 14,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -9688,7 +9688,7 @@
       "properties": {
         "Facility Name": "Vermont Square Park ",
         "Facility Address": "1248 West 47th Street Los Angeles, CA 90037",
-        "Council District": 9,
+        "Council District": 14,
         "Standard": "",
         "Bottle Fillers": 2.0,
         "Gender Neutral": 3.0,
@@ -9738,7 +9738,7 @@
       "properties": {
         "Facility Name": "Victory Memorial Grove Elysian Park ",
         "Facility Address": "929 Academy Road Los Angeles, CA 90012",
-        "Council District": 13,
+        "Council District": 1,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -9838,7 +9838,7 @@
       "properties": {
         "Facility Name": "Villa Cabrini Park ",
         "Facility Address": "9401 Villa Cabrini Drive West Sun Valley, CA 91504",
-        "Council District": 7,
+        "Council District": 2,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -9913,7 +9913,7 @@
       "properties": {
         "Facility Name": "Vista Hermosa Park ",
         "Facility Address": "100 North Toluca Street Los Angeles, CA 90026",
-        "Council District": 13,
+        "Council District": 1,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -9988,7 +9988,7 @@
       "properties": {
         "Facility Name": "Warner Center Ranch Park ",
         "Facility Address": "5800 Topanga Canyon Blvd. Woodland Hills, CA 91367",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": 4.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -10513,7 +10513,7 @@
       "properties": {
         "Facility Name": "Winnetka Child Center ",
         "Facility Address": "8361 Winnetka Avenue Winnetka, CA 91306",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": 2.0,
         "Bottle Fillers": "",
         "Gender Neutral": 2.0,
@@ -10538,7 +10538,7 @@
       "properties": {
         "Facility Name": "Winnetka Recreation Center ",
         "Facility Address": "8401 Winnetka Avenue Winnetka, CA 91306",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": 4.0,
         "Bottle Fillers": "",
         "Gender Neutral": 1.0,
@@ -10613,7 +10613,7 @@
       "properties": {
         "Facility Name": "Woodland Hills Recreation Center ",
         "Facility Address": "5858 Shoup Avenue Woodland Hills, CA 91367",
-        "Council District": 12,
+        "Council District": 3,
         "Standard": 6.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": 6.0,
@@ -10638,7 +10638,7 @@
       "properties": {
         "Facility Name": "Woodley Park Apollo 11 Model Aircraft Field",
         "Facility Address": "6201 Woodley Avenue Encino, CA 91436",
-        "Council District": 3,
+        "Council District": 6,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -10663,7 +10663,7 @@
       "properties": {
         "Facility Name": "Woodley Park Archery Range ",
         "Facility Address": "6100 Woodley Avenue Van Nuys, CA 91406",
-        "Council District": 3,
+        "Council District": 6,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -10688,7 +10688,7 @@
       "properties": {
         "Facility Name": "Woodley Park Section I",
         "Facility Address": "6350 Woodley Avenue Van Nuys, CA 91406",
-        "Council District": 3,
+        "Council District": 6,
         "Standard": 4.0,
         "Bottle Fillers": 1.0,
         "Gender Neutral": "",
@@ -10713,7 +10713,7 @@
       "properties": {
         "Facility Name": "Woodley Park Section II ",
         "Facility Address": "6350 Woodley Avenue Van Nuys, CA 91406",
-        "Council District": 3,
+        "Council District": 6,
         "Standard": 4.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",
@@ -10738,7 +10738,7 @@
       "properties": {
         "Facility Name": "Woodley Park Section III ",
         "Facility Address": "6350 Woodley Avenue Van Nuys, CA 91406",
-        "Council District": 3,
+        "Council District": 6,
         "Standard": 1.0,
         "Bottle Fillers": "",
         "Gender Neutral": "",

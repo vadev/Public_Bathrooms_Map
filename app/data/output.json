@@ -472,7 +472,7 @@
       },
       "properties": {
         "Name": "Fairfax Branch Library",
-        "Council District": 4,
+        "Council District": 5,
         "Address": "161 S. Gardner Street Los",
         "City and Zip": "Los Angeles, CA 90036",
         "Hydration Station Status": "Operational No issues.",
@@ -633,7 +633,7 @@
       },
       "properties": {
         "Name": "John C. Fremont Branch Library",
-        "Council District": 4,
+        "Council District": 5,
         "Address": "6121 Melrose Avenue Los",
         "City and Zip": "Los Angeles, CA 90038",
         "Hydration Station Status": "Operational No issues.",
@@ -863,7 +863,7 @@
       },
       "properties": {
         "Name": "Memorial Branch Library",
-        "Council District": 4,
+        "Council District": 5,
         "Address": "4625 W. Olympic Blvsd.",
         "City and Zip": "Los Angeles, CA 90019",
         "Hydration Station Status": "Operational No issues.",
@@ -1277,7 +1277,7 @@
       },
       "properties": {
         "Name": "Studio City Branch Library",
-        "Council District": 2,
+        "Council District": 4,
         "Address": "12511 Moorpark Street",
         "City and Zip": "Studio City, CA 91604",
         "Hydration Station Status": "Operational No issues.",
