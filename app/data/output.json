@@ -1656,6 +1656,71 @@
         "No. of Toilets": 4,
         "No. of Urinals": 2
       }
+    },
+    {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -118.24523,
+              34.04446
+            ]
+          },
+          "properties": {
+            "Facility Address": "509 S. San Julian St., Los Angeles, CA 90013",
+            "Council District": 14,
+            "No. of Hydration Stations": "",
+            "No. of Water Fountains": "",
+            "No. of Restrooms": "",
+            "No. of Sinks": "",
+            "No. of Toilets": "",
+            "No. of Urinals": ""
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -118.24247,
+              34.04032
+            ]
+          },
+          "properties": {
+            "Facility Address": "814 E. 6th St. , Los Angeles, CA 90021",
+            "Council District": 14,
+            "No. of Hydration Stations": "",
+            "No. of Water Fountains": "",
+            "No. of Restrooms": "",
+            "No. of Sinks": "",
+            "No. of Toilets": "",
+            "No. of Urinals": ""
+          }
+        },
+        {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              -118.2475,
+              34.04583
+            ]
+          },
+          "properties": {
+            "Facility Address": "204 E. 5th St. , Los Angeles, CA 90013",
+            "Council District": 14,
+            "No. of Hydration Stations": "",
+            "No. of Water Fountains": "",
+            "No. of Restrooms": "",
+            "No. of Sinks": "",
+            "No. of Toilets": "",
+            "No. of Urinals": ""
+          }
+        }
+      ]
     }
   ]
 }
