@@ -19,7 +19,7 @@ const optionsCd = [...Array(15)].map((_, i) => ({
 const Home = () => {
   const cdValues = optionsCd.map((entry) => entry.value);
   const [filteredCD, setFilteredCD] = useState(cdValues);
-  const [filterpanelopened, setfilterpanelopened] = useState(true);
+  const [filterpanelopened, setfilterpanelopened] = useState(false);
   const [selectedfilteropened, setselectedfilteropened] = useState("cd");
   const [selectAll, setSelectAll] = useState(true);
   const mapref = useRef(null);
@@ -517,6 +517,18 @@ const Home = () => {
                     >
                       LA Public Library 2024 report
                     </a>
+                     
+                  </div>
+                  <div>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#41ffca] text-xs underline hover:text-white"
+                    >
+                      Bureau of Streets Services
+                    </a>
+                     
                   </div>
                 </div>
               </div>
