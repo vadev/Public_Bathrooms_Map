@@ -41,7 +41,7 @@ const Home = () => {
   };
 
   const applyAllFilters = (districts) => {
-    // NOTE: Not filtering the manual addresses so they always show
+    // Manual restrooms are intentionally not filtered so they always show
     ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach((id) =>
       applyLayerFilter(id, districts)
     );
@@ -67,12 +67,9 @@ const Home = () => {
           "interpolate",
           ["linear"],
           ["zoom"],
-          10,
-          12,
-          14,
-          15,
-          16,
-          18,
+          10, 12,
+          14, 15,
+          16, 18,
         ]);
       });
     } catch {}
@@ -120,24 +117,13 @@ const Home = () => {
       if (center) map.flyTo({ center, zoom: 16, speed: 0.8, curve: 1.4 });
     });
 
-    const geoJsonData = {
-      type: "FeatureCollection",
-      features: geoData?.features,
-    };
-
-    const restroomsGeoData = {
-      type: "FeatureCollection",
-      features: restroomsData?.features,
-    };
-
+    const geoJsonData = { type: "FeatureCollection", features: geoData?.features };
+    const restroomsGeoData = { type: "FeatureCollection", features: restroomsData?.features };
     const CouncilDistData = {
       type: "FeatureCollection",
       features: CouncilDist.features.map((feature) => ({
         type: "Feature",
-        geometry: {
-          type: "MultiPolygon",
-          coordinates: feature.geometry.coordinates,
-        },
+        geometry: { type: "MultiPolygon", coordinates: feature.geometry.coordinates },
         properties: {
           dist_name: feature.properties.dist_name,
           district: feature.properties.district,
@@ -153,35 +139,22 @@ const Home = () => {
       // Load icons
       map.loadImage("/restroom.png", (error, image) => {
         if (error) throw error;
-        if (!map.hasImage("restroom-icon"))
-          map.addImage("restroom-icon", image, { pixelRatio: 2 });
+        if (!map.hasImage("restroom-icon")) map.addImage("restroom-icon", image, { pixelRatio: 2 });
 
         map.loadImage("/drop.png", (error2, image2) => {
           if (error2) throw error2;
-          if (!map.hasImage("fountain-icon"))
-            map.addImage("fountain-icon", image2, { pixelRatio: 2 });
+          if (!map.hasImage("fountain-icon")) map.addImage("fountain-icon", image2, { pixelRatio: 2 });
 
           map.loadImage("/baby.png", (e3, babyImg) => {
-            if (!e3 && !map.hasImage("baby-icon"))
-              map.addImage("baby-icon", babyImg, { pixelRatio: 2 });
+            if (!e3 && !map.hasImage("baby-icon")) map.addImage("baby-icon", babyImg, { pixelRatio: 2 });
 
             map.loadImage("/shower.png", (e4, showerImg) => {
-              if (!e4 && !map.hasImage("shower-icon"))
-                map.addImage("shower-icon", showerImg, { pixelRatio: 2 });
+              if (!e4 && !map.hasImage("shower-icon")) map.addImage("shower-icon", showerImg, { pixelRatio: 2 });
 
               // Sources
-              map.addSource("hydration-source", {
-                type: "geojson",
-                data: geoJsonData,
-              });
-              map.addSource("restrooms-source", {
-                type: "geojson",
-                data: restroomsGeoData,
-              });
-              map.addSource("cd-boundaries-source", {
-                type: "geojson",
-                data: CouncilDistData,
-              });
+              map.addSource("hydration-source", { type: "geojson", data: geoJsonData });
+              map.addSource("restrooms-source", { type: "geojson", data: restroomsGeoData });
+              map.addSource("cd-boundaries-source", { type: "geojson", data: CouncilDistData });
 
               // CD boundaries
               map.addLayer({
@@ -191,7 +164,7 @@ const Home = () => {
                 paint: { "line-color": "white", "line-width": 1 },
               });
 
-              // Hydration icons
+              // HYDRATION icons — ONLY where there is at least 1 fountain or hydration station
               map.addLayer({
                 id: "hydration",
                 type: "symbol",
@@ -204,17 +177,19 @@ const Home = () => {
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    10,
-                    0.12,
-                    14,
-                    0.18,
-                    16,
-                    0.24,
+                    10, 0.12,
+                    14, 0.18,
+                    16, 0.24,
                   ],
                 },
+                filter: [
+                  "any",
+                  [">", ["to-number", ["coalesce", ["get", "No. of Water Fountains"], 0]], 0],
+                  [">", ["to-number", ["coalesce", ["get", "No. of Hydration Stations"], 0]], 0],
+                ],
               });
 
-              // Restrooms icons
+              // RESTROOMS icons
               map.addLayer({
                 id: "restrooms-layer",
                 type: "symbol",
@@ -227,12 +202,9 @@ const Home = () => {
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    10,
-                    0.12,
-                    14,
-                    0.18,
-                    16,
-                    0.24,
+                    10, 0.12,
+                    14, 0.18,
+                    16, 0.24,
                   ],
                 },
               });
@@ -252,20 +224,14 @@ const Home = () => {
                       "interpolate",
                       ["linear"],
                       ["zoom"],
-                      10,
-                      0.1,
-                      14,
-                      0.14,
-                      16,
-                      0.18,
+                      10, 0.1,
+                      14, 0.14,
+                      16, 0.18,
                     ],
                   },
                   filter: [
                     ">",
-                    [
-                      "to-number",
-                      ["coalesce", ["get", "No. of Baby Changing Stations"], 0],
-                    ],
+                    ["to-number", ["coalesce", ["get", "No. of Baby Changing Stations"], 0]],
                     0,
                   ],
                 });
@@ -286,12 +252,9 @@ const Home = () => {
                       "interpolate",
                       ["linear"],
                       ["zoom"],
-                      10,
-                      0.1,
-                      14,
-                      0.14,
-                      16,
-                      0.18,
+                      10, 0.1,
+                      14, 0.14,
+                      16, 0.18,
                     ],
                   },
                   filter: [
@@ -302,23 +265,20 @@ const Home = () => {
                 });
               }
 
-              // Tooltip helpers
+              // ---------- Tooltips (layer-aware icon) ----------
               const hoverPopup = new mapboxgl.Popup({
                 closeButton: false,
                 closeOnClick: false,
                 offset: 10,
               });
 
-              const safe = (v) =>
-                v === undefined || v === null || v === "" ? "—" : v;
+              const safe = (v) => (v === undefined || v === null || v === "" ? "—" : v);
 
-              const buildHTML = (p = {}) => {
-                const Name =
-                  p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
+              const buildHTML = (p = {}, layerId = "") => {
+                const Name = p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
                 const CouncilDistrict =
                   p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
-                const Address =
-                  p["Address"] || p["Facility Address"] || p.address || "";
+                const Address = p["Address"] || p["Facility Address"] || p.address || "";
 
                 const NoHydration = p["No. of Hydration Stations"];
                 const NoFountains = p["No. of Water Fountains"];
@@ -331,7 +291,9 @@ const Home = () => {
                 const GenderNeutral = p["Gender Neutral"];
                 const BabyChanging = p["No. of Baby Changing Stations"];
                 const Showers = p["No. of Showers"];
-                const icon = p["Facility Name"] ? "/restroom.png" : "/drop.png";
+
+                const isRestroomLayer = /^restrooms|^manual-restrooms/.test(layerId);
+                const icon = isRestroomLayer ? "/restroom.png" : "/drop.png";
 
                 return `
                   <div style="font-size:12px;line-height:1.35;">
@@ -366,7 +328,7 @@ const Home = () => {
                       : [e.lngLat.lng, e.lngLat.lat];
                   hoverPopup
                     .setLngLat(coords)
-                    .setHTML(buildHTML(f.properties))
+                    .setHTML(buildHTML(f.properties, layerId))
                     .addTo(map);
                 });
 
@@ -394,18 +356,18 @@ const Home = () => {
                       : [e.lngLat.lng, e.lngLat.lat];
                   new mapboxgl.Popup({ offset: 12 })
                     .setLngLat(coords)
-                    .setHTML(buildHTML(f.properties))
+                    .setHTML(buildHTML(f.properties, layerId))
                     .addTo(map);
                 });
               };
 
-              // Attach tooltips to existing layers
+              // Attach tooltips
               ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach(
                 attachTooltip
               );
 
-              // --------- Add the 4 addresses as restroom icons ----------
-              const addCustomRestroomsFromAddresses = async (addresses) => {
+              // ---------- Add two specific manual restroom pins ----------
+              async function addManualRestrooms(addresses) {
                 const features = [];
 
                 for (const addr of addresses) {
@@ -413,7 +375,6 @@ const Home = () => {
                     const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
                       addr + ", Los Angeles, CA"
                     )}.json?access_token=${mapboxgl.accessToken}&limit=1&country=US&proximity=-118.242,34.053`;
-
                     const res = await fetch(url);
                     const data = await res.json();
                     const match = data?.features?.[0];
@@ -445,17 +406,11 @@ const Home = () => {
                 if (!map.getSource("manual-restrooms-source")) {
                   map.addSource("manual-restrooms-source", {
                     type: "geojson",
-                    data: {
-                      type: "FeatureCollection",
-                      features,
-                    },
+                    data: { type: "FeatureCollection", features },
                   });
                 } else {
                   const src = map.getSource("manual-restrooms-source");
-                  src.setData({
-                    type: "FeatureCollection",
-                    features,
-                  });
+                  src.setData({ type: "FeatureCollection", features });
                 }
 
                 if (!map.getLayer("manual-restrooms-layer")) {
@@ -471,27 +426,27 @@ const Home = () => {
                         "interpolate",
                         ["linear"],
                         ["zoom"],
-                        10,
-                        0.12,
-                        14,
-                        0.18,
-                        16,
-                        0.24,
+                        10, 0.12,
+                        14, 0.18,
+                        16, 0.24,
                       ],
                     },
                   });
                   attachTooltip("manual-restrooms-layer");
                 }
-              };
 
-              addCustomRestroomsFromAddresses([
+                // Optional: zoom to these two points
+                const b = new mapboxgl.LngLatBounds();
+                features.forEach((f) => b.extend(f.geometry.coordinates));
+                map.fitBounds(b, { padding: 60, maxZoom: 17, duration: 800 });
+              }
+
+              addManualRestrooms([
                 "509 S. San Julian St.",
                 "814 E. 6th St.",
-                "204 E. 5th St.",
-                "545 S. San Pedro St.",
               ]);
 
-              // Apply initial CD filters to the main datasets
+              // Initial CD filters for main datasets
               applyAllFilters(filteredCD);
             });
           });
@@ -530,8 +485,6 @@ const Home = () => {
             <div className="md:ml-3 ml-2 text-base font-bold bg-[#212121] p-3 text-white">
               <strong>City of LA Bathrooms and Drinking Fountains</strong>
             </div>
-
-            {/* nudge the geocoder slightly down via margin */}
             <div className="geocoder mr-4 ml-1 mt-2" id="geocoder"></div>
           </div>
           <button
@@ -567,26 +520,20 @@ const Home = () => {
               <div className="pl-5 pr-2 py-2">
                 <button
                   className="align-middle text-white rounded-lg px-1 border border-gray-400 text-sm md:text-base"
-                  onClick={() => {
-                    setfilteredcouncildistrictspre(cdValues, "Council District");
-                  }}
+                  onClick={() => setfilteredcouncildistrictspre(cdValues, "Council District")}
                 >
                   Select All
                 </button>
                 <button
                   className="align-middle text-white rounded-lg px-1 border border-gray-400 text-sm md:text-base"
-                  onClick={() => {
-                    setfilteredcouncildistrictspre("sndk", "Council District");
-                  }}
+                  onClick={() => setfilteredcouncildistrictspre("sndk", "Council District")}
                 >
                   Unselect All
                 </button>
                 <br />
                 <Checkbox.Group
                   value={filteredCD}
-                  onChange={(event) =>
-                    setfilteredcouncildistrictspre(event, "Council District")
-                  }
+                  onChange={(event) => setfilteredcouncildistrictspre(event, "Council District")}
                 >
                   <div className="grid grid-cols-3 gap-x-4 my-2">
                     {optionsCd.map((eachEntry) => (
@@ -594,11 +541,7 @@ const Home = () => {
                         key={eachEntry.value}
                         id={eachEntry.value}
                         value={eachEntry.value}
-                        label={
-                          <span className="text-white text-xs">
-                            {eachEntry.label}
-                          </span>
-                        }
+                        label={<span className="text-white text-xs">{eachEntry.label}</span>}
                         className="my-2"
                       />
                     ))}
@@ -648,11 +591,7 @@ const Home = () => {
 
       {/* Footer logos */}
       <div className="absolute md:mx-auto bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2">
-        <a
-          href="https://controller.lacity.gov/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://controller.lacity.gov/" target="_blank" rel="noopener noreferrer">
           <img
             src="https://controller.lacity.gov/images/KennethMejia-logo-white-elect.png"
             className="h-9 md:h-10 z-40"
@@ -661,7 +600,7 @@ const Home = () => {
         </a>
       </div>
 
-      {/* Global tweaks to push controls + geocoder a little down */}
+      {/* Global tweaks */}
       <style jsx global>{`
         .mapboxgl-ctrl-top-right {
           top: 72px !important;
