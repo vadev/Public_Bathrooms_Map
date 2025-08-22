@@ -198,7 +198,7 @@ const Home = () => {
                   type: "Feature",
                   geometry: { type: "Point", coordinates: p.center },
                   properties: {
-                    "Facility Name": "Restroom (manual)",
+                    "Facility Name": "Restroom",
                     Address: p.addr,
                   },
                 })),
