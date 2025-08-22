@@ -325,9 +325,11 @@ const Home = () => {
                 const GenderNeutral = p["Gender Neutral"];
                 const BabyChanging = p["No. of Baby Changing Stations"];
                 const Showers = p["No. of Showers"];
+                const icon =  p["Facility Name"] ? "/restroom.png" : "/drop.png"
 
                 return `
                   <div style="font-size:12px;line-height:1.35;">
+                    <img src="${icon}" alt="icon" style="width:30px;height:30px;object-fit:contain;" />
                     <div><strong>Name:</strong> ${safe(Name)}</div>
                     <div><strong>Council District:</strong> ${safe(CouncilDistrict)}</div>
                     <div><strong>Address:</strong> ${safe(Address)}</div>
