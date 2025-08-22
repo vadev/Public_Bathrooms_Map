@@ -385,7 +385,7 @@ const Home = () => {
                       type: "Feature",
                       geometry: { type: "Point", coordinates: match.center },
                       properties: {
-                        "Facility Name": "Restroom (manual)",
+                        "Facility Name": "Restroom",
                         Address: addr,
                         "No. of Hydration Stations": undefined,
                         "No. of Water Fountains": undefined,
