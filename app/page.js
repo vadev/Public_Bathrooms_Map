@@ -1,4 +1,5 @@
 "use client";
+
 import { Checkbox, MantineProvider } from "@mantine/core";
 import React, { useEffect, useState, useRef } from "react";
 import Nav from "@/components/Nav";
@@ -40,6 +41,7 @@ const Home = () => {
   };
 
   const applyAllFilters = (districts) => {
+    // NOTE: Not filtering the manual addresses so they always show
     ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach((id) =>
       applyLayerFilter(id, districts)
     );
@@ -61,18 +63,17 @@ const Home = () => {
         .map((l) => l.id);
 
       labelIds.forEach((id) => {
-        mapref.current.setLayoutProperty(
-          id,
-          "text-size",
-          [
-            "interpolate",
-            ["linear"],
-            ["zoom"],
-            10, 12,
-            14, 15,
-            16, 18
-          ]
-        );
+        mapref.current.setLayoutProperty(id, "text-size", [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+        ]);
       });
     } catch {}
   };
@@ -90,7 +91,7 @@ const Home = () => {
 
     mapref.current = map;
 
-    // Controls: zoom/rotate + geolocate (“Locate me”)
+    // Controls
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
     map.addControl(
       new mapboxgl.GeolocateControl({
@@ -103,7 +104,7 @@ const Home = () => {
       "top-right"
     );
 
-    // Geocoder (address/POI search) into #geocoder div
+    // Geocoder
     const geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       mapboxgl,
@@ -147,10 +148,9 @@ const Home = () => {
     };
 
     map.on("load", () => {
-      // Make cross streets more readable
       boostStreetLabels();
 
-      // Load icons (restroom + hydration)
+      // Load icons
       map.loadImage("/restroom.png", (error, image) => {
         if (error) throw error;
         if (!map.hasImage("restroom-icon"))
@@ -161,7 +161,6 @@ const Home = () => {
           if (!map.hasImage("fountain-icon"))
             map.addImage("fountain-icon", image2, { pixelRatio: 2 });
 
-          // OPTIONAL: Baby & Shower small icons (only show where counts > 0)
           map.loadImage("/baby.png", (e3, babyImg) => {
             if (!e3 && !map.hasImage("baby-icon"))
               map.addImage("baby-icon", babyImg, { pixelRatio: 2 });
@@ -184,7 +183,7 @@ const Home = () => {
                 data: CouncilDistData,
               });
 
-              // District boundaries
+              // CD boundaries
               map.addLayer({
                 id: "cd-boundaries",
                 type: "line",
@@ -192,7 +191,7 @@ const Home = () => {
                 paint: { "line-color": "white", "line-width": 1 },
               });
 
-              // Hydration (icon)
+              // Hydration icons
               map.addLayer({
                 id: "hydration",
                 type: "symbol",
@@ -205,14 +204,17 @@ const Home = () => {
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    10, 0.12,
-                    14, 0.18,
-                    16, 0.24,
+                    10,
+                    0.12,
+                    14,
+                    0.18,
+                    16,
+                    0.24,
                   ],
                 },
               });
 
-              // Restrooms (main icon)
+              // Restrooms icons
               map.addLayer({
                 id: "restrooms-layer",
                 type: "symbol",
@@ -225,14 +227,17 @@ const Home = () => {
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    10, 0.12,
-                    14, 0.18,
-                    16, 0.24,
+                    10,
+                    0.12,
+                    14,
+                    0.18,
+                    16,
+                    0.24,
                   ],
                 },
               });
 
-              // Baby-changing icon (shows only where count > 0)
+              // Baby-changing (only where count > 0)
               if (map.hasImage("baby-icon")) {
                 map.addLayer({
                   id: "restrooms-baby",
@@ -242,14 +247,17 @@ const Home = () => {
                     "icon-image": "baby-icon",
                     "icon-allow-overlap": true,
                     "icon-anchor": "bottom",
-                    "icon-offset": [-12, 0], // left of restroom icon
+                    "icon-offset": [-12, 0],
                     "icon-size": [
                       "interpolate",
                       ["linear"],
                       ["zoom"],
-                      10, 0.10,
-                      14, 0.14,
-                      16, 0.18,
+                      10,
+                      0.1,
+                      14,
+                      0.14,
+                      16,
+                      0.18,
                     ],
                   },
                   filter: [
@@ -263,7 +271,7 @@ const Home = () => {
                 });
               }
 
-              // Shower icon (shows only where count > 0)
+              // Shower (only where count > 0)
               if (map.hasImage("shower-icon")) {
                 map.addLayer({
                   id: "restrooms-shower",
@@ -273,30 +281,28 @@ const Home = () => {
                     "icon-image": "shower-icon",
                     "icon-allow-overlap": true,
                     "icon-anchor": "bottom",
-                    "icon-offset": [12, 0], // right of restroom icon
+                    "icon-offset": [12, 0],
                     "icon-size": [
                       "interpolate",
                       ["linear"],
                       ["zoom"],
-                      10, 0.10,
-                      14, 0.14,
-                      16, 0.18,
+                      10,
+                      0.1,
+                      14,
+                      0.14,
+                      16,
+                      0.18,
                     ],
                   },
                   filter: [
                     ">",
-                    [
-                      "to-number",
-                      ["coalesce", ["get", "No. of Showers"], 0],
-                    ],
+                    ["to-number", ["coalesce", ["get", "No. of Showers"], 0]],
                     0,
                   ],
                 });
               }
 
-              applyAllFilters(filteredCD);
-
-              // Tooltip setup
+              // Tooltip helpers
               const hoverPopup = new mapboxgl.Popup({
                 closeButton: false,
                 closeOnClick: false,
@@ -325,7 +331,7 @@ const Home = () => {
                 const GenderNeutral = p["Gender Neutral"];
                 const BabyChanging = p["No. of Baby Changing Stations"];
                 const Showers = p["No. of Showers"];
-                const icon =  p["Facility Name"] ? "/restroom.png" : "/drop.png"
+                const icon = p["Facility Name"] ? "/restroom.png" : "/drop.png";
 
                 return `
                   <div style="font-size:12px;line-height:1.35;">
@@ -348,6 +354,8 @@ const Home = () => {
               };
 
               const attachTooltip = (layerId) => {
+                if (!map.getLayer(layerId)) return;
+
                 map.on("mouseenter", layerId, (e) => {
                   map.getCanvas().style.cursor = "pointer";
                   const f = e.features?.[0];
@@ -356,8 +364,12 @@ const Home = () => {
                     f.geometry.type === "Point"
                       ? f.geometry.coordinates
                       : [e.lngLat.lng, e.lngLat.lat];
-                  hoverPopup.setLngLat(coords).setHTML(buildHTML(f.properties)).addTo(map);
+                  hoverPopup
+                    .setLngLat(coords)
+                    .setHTML(buildHTML(f.properties))
+                    .addTo(map);
                 });
+
                 map.on("mousemove", layerId, (e) => {
                   const f = e.features?.[0];
                   if (!f) return;
@@ -367,10 +379,12 @@ const Home = () => {
                       : [e.lngLat.lng, e.lngLat.lat];
                   hoverPopup.setLngLat(coords);
                 });
+
                 map.on("mouseleave", layerId, () => {
                   map.getCanvas().style.cursor = "";
                   hoverPopup.remove();
                 });
+
                 map.on("click", layerId, (e) => {
                   const f = e.features?.[0];
                   if (!f) return;
@@ -385,10 +399,100 @@ const Home = () => {
                 });
               };
 
-              attachTooltip("hydration");
-              attachTooltip("restrooms-layer");
-              if (map.getLayer("restrooms-baby")) attachTooltip("restrooms-baby");
-              if (map.getLayer("restrooms-shower")) attachTooltip("restrooms-shower");
+              // Attach tooltips to existing layers
+              ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach(
+                attachTooltip
+              );
+
+              // --------- Add the 4 addresses as restroom icons ----------
+              const addCustomRestroomsFromAddresses = async (addresses) => {
+                const features = [];
+
+                for (const addr of addresses) {
+                  try {
+                    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
+                      addr + ", Los Angeles, CA"
+                    )}.json?access_token=${mapboxgl.accessToken}&limit=1&country=US&proximity=-118.242,34.053`;
+
+                    const res = await fetch(url);
+                    const data = await res.json();
+                    const match = data?.features?.[0];
+                    if (!match?.center) continue;
+
+                    features.push({
+                      type: "Feature",
+                      geometry: { type: "Point", coordinates: match.center },
+                      properties: {
+                        "Facility Name": "Restroom (manual)",
+                        Address: addr,
+                        "No. of Hydration Stations": undefined,
+                        "No. of Water Fountains": undefined,
+                        "No. of Sinks": undefined,
+                        "No. of Toilets": undefined,
+                        "No. of Urinals": undefined,
+                        Women: undefined,
+                        Men: undefined,
+                        "Gender Neutral": undefined,
+                        "No. of Baby Changing Stations": undefined,
+                        "No. of Showers": undefined,
+                      },
+                    });
+                  } catch {}
+                }
+
+                if (!features.length) return;
+
+                if (!map.getSource("manual-restrooms-source")) {
+                  map.addSource("manual-restrooms-source", {
+                    type: "geojson",
+                    data: {
+                      type: "FeatureCollection",
+                      features,
+                    },
+                  });
+                } else {
+                  const src = map.getSource("manual-restrooms-source");
+                  src.setData({
+                    type: "FeatureCollection",
+                    features,
+                  });
+                }
+
+                if (!map.getLayer("manual-restrooms-layer")) {
+                  map.addLayer({
+                    id: "manual-restrooms-layer",
+                    type: "symbol",
+                    source: "manual-restrooms-source",
+                    layout: {
+                      "icon-image": "restroom-icon",
+                      "icon-allow-overlap": true,
+                      "icon-anchor": "bottom",
+                      "icon-size": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        10,
+                        0.12,
+                        14,
+                        0.18,
+                        16,
+                        0.24,
+                      ],
+                    },
+                  });
+                  attachTooltip("manual-restrooms-layer");
+                }
+              };
+
+              addCustomRestroomsFromAddresses([
+                "509 S. San Julian St.",
+                "814 E. 6th St.",
+                "204 E. 5th St.",
+                "545 S. San Pedro St.",
+              ]);
+
+              // Apply initial CD filters to the main datasets
+              applyAllFilters(filteredCD);
             });
           });
         });
@@ -396,13 +500,13 @@ const Home = () => {
     });
 
     return () => map.remove();
-  }, []);
+  }, []); // mount once
 
   useEffect(() => {
     applyAllFilters(filteredCD);
   }, [filteredCD]);
 
-  const setfilteredcouncildistrictspre = (event, type) => {
+  const setfilteredcouncildistrictspre = (event) => {
     if (event === "") {
       setSelectAll(!selectAll);
       setFilteredCD(cdValues);
@@ -419,15 +523,15 @@ const Home = () => {
         <div className="flex-none">
           <Nav />
         </div>
- 
+
         {/* Top header with title + geocoder host */}
-        <div className="absolute mt-[3.5em] ml-2 md:ml-3 top-0 z-5 z-50 w-full">
+        <div className="absolute mt-[3.5em] ml-2 md:ml-3 top-0 z-50 w-full">
           <div className="flex justify-between w-full h-10">
             <div className="md:ml-3 ml-2 text-base font-bold bg-[#212121] p-3 text-white">
               <strong>City of LA Bathrooms and Drinking Fountains</strong>
             </div>
-           
-            {/* nudge the geocoder slightly down via margin (plus global CSS below) */}
+
+            {/* nudge the geocoder slightly down via margin */}
             <div className="geocoder mr-4 ml-1 mt-2" id="geocoder"></div>
           </div>
           <button
@@ -437,15 +541,14 @@ const Home = () => {
             Filter
           </button>
         </div>
-        
+
         {/* Filter panel */}
         <div
-        id="cd-filter-panel"
-          className={`bottom-0 sm:bottom-auto md:mt?[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${
+          id="cd-filter-panel"
+          className={`bottom-0 sm:bottom-auto md:mt-[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${
             filterpanelopened ? "absolute" : "hidden"
           }`}
         >
- 
           <div className="bg-zinc-900 w-content bg-opacity-90 px-2 py-1 mt-1 sm:rounded-lg">
             <div className="gap-x-0 flex flex-row w-full">
               <button
@@ -491,7 +594,11 @@ const Home = () => {
                         key={eachEntry.value}
                         id={eachEntry.value}
                         value={eachEntry.value}
-                        label={<span className="text-white text-xs">{eachEntry.label}</span>}
+                        label={
+                          <span className="text-white text-xs">
+                            {eachEntry.label}
+                          </span>
+                        }
                         className="my-2"
                       />
                     ))}
@@ -519,7 +626,6 @@ const Home = () => {
                     >
                       LA Public Library 2024 report
                     </a>
-                     
                   </div>
                   <div>
                     <a
@@ -530,7 +636,6 @@ const Home = () => {
                     >
                       Bureau of Streets Services
                     </a>
-                     
                   </div>
                 </div>
               </div>
@@ -559,22 +664,19 @@ const Home = () => {
       {/* Global tweaks to push controls + geocoder a little down */}
       <style jsx global>{`
         .mapboxgl-ctrl-top-right {
-          top: 72px !important; /* moves zoom/geolocate down a bit */
+          top: 72px !important;
         }
         #geocoder .mapboxgl-ctrl-geocoder {
-          margin-top: 8px; /* nudges the search bar down */
+          margin-top: 8px;
           min-width: 280px;
         }
-        /* Optional: tighten the geocoder input height for your compact header */
         #geocoder .mapboxgl-ctrl-geocoder--input {
           height: 32px;
         }
+        #cd-filter-panel {
+          top: 120px;
+        }
       `}</style>
-                <style jsx global>{`
-  #cd-filter-panel {
-    top: 120px; /* adjust to taste */
-  }
-`}</style>
     </div>
   );
 };
