@@ -4,7 +4,7 @@ import { Checkbox, MantineProvider } from "@mantine/core";
 import React, { useEffect, useState, useRef } from "react";
 import Nav from "@/components/Nav";
 import CouncilDist from "./data/CouncilDistricts.json";
-import geoData from "./data/output.json";
+import geoData from "./data/output.json"; // hydration dataset
 import restroomsData from "./data/restrooms_water_fountains_cleaned.json";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
@@ -41,7 +41,7 @@ const Home = () => {
   };
 
   const applyAllFilters = (districts) => {
-    // Manual restrooms are intentionally not filtered so they always show
+    // manual-restrooms remain always visible
     ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach((id) =>
       applyLayerFilter(id, districts)
     );
@@ -117,7 +117,6 @@ const Home = () => {
       if (center) map.flyTo({ center, zoom: 16, speed: 0.8, curve: 1.4 });
     });
 
-    const geoJsonData = { type: "FeatureCollection", features: geoData?.features };
     const restroomsGeoData = { type: "FeatureCollection", features: restroomsData?.features };
     const CouncilDistData = {
       type: "FeatureCollection",
@@ -148,15 +147,93 @@ const Home = () => {
           map.loadImage("/baby.png", (e3, babyImg) => {
             if (!e3 && !map.hasImage("baby-icon")) map.addImage("baby-icon", babyImg, { pixelRatio: 2 });
 
-            map.loadImage("/shower.png", (e4, showerImg) => {
-              if (!e4 && !map.hasImage("shower-icon")) map.addImage("shower-icon", showerImg, { pixelRatio: 2 });
+          map.loadImage("/shower.png", (e4, showerImg) => {
+            if (!e4 && !map.hasImage("shower-icon")) map.addImage("shower-icon", showerImg, { pixelRatio: 2 });
 
-              // Sources
-              map.addSource("hydration-source", { type: "geojson", data: geoJsonData });
+            // ---------- Helpers: geocode + distance ----------
+            const deg2rad = (d) => (d * Math.PI) / 180;
+            const haversineMeters = (a, b) => {
+              // a, b: [lng, lat]
+              const R = 6371000;
+              const dLat = deg2rad(b[1] - a[1]);
+              const dLng = deg2rad(b[0] - a[0]);
+              const lat1 = deg2rad(a[1]);
+              const lat2 = deg2rad(b[1]);
+              const sin1 = Math.sin(dLat / 2);
+              const sin2 = Math.sin(dLng / 2);
+              const h =
+                sin1 * sin1 +
+                Math.cos(lat1) * Math.cos(lat2) * sin2 * sin2;
+              return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
+            };
+            const isWithinAny = (coord, centers, radiusM) =>
+              centers.some((c) => haversineMeters(coord, c) <= radiusM);
+
+            const geocodeAddresses = async (addresses) => {
+              const out = [];
+              for (const addr of addresses) {
+                try {
+                  const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
+                    addr + ", Los Angeles, CA"
+                  )}.json?access_token=${mapboxgl.accessToken}&limit=1&country=US&proximity=-118.242,34.053`;
+                  const res = await fetch(url);
+                  const data = await res.json();
+                  const match = data?.features?.[0];
+                  if (match?.center) out.push({ addr, center: match.center });
+                } catch {}
+              }
+              return out;
+            };
+
+            (async () => {
+              // Geocode the two addresses first
+              const manualAddrs = ["509 S. San Julian St.", "814 E. 6th St."];
+              const manualPoints = await geocodeAddresses(manualAddrs);
+              const manualCenters = manualPoints.map((p) => p.center);
+
+              // Build MANUAL RESTROOMS GeoJSON (toilet icons)
+              const manualRestrooms = {
+                type: "FeatureCollection",
+                features: manualPoints.map((p) => ({
+                  type: "Feature",
+                  geometry: { type: "Point", coordinates: p.center },
+                  properties: {
+                    "Facility Name": "Restroom (manual)",
+                    Address: p.addr,
+                  },
+                })),
+              };
+
+              // Filter HYDRATION dataset to remove any point near the two addresses (<= 80m)
+              // and keep only those with fountains/hydration counts > 0
+              const hydrationFiltered = {
+                type: "FeatureCollection",
+                features: (geoData?.features || []).filter((f) => {
+                  try {
+                    if (!f?.geometry || f.geometry.type !== "Point") return false;
+                    const coords = f.geometry.coordinates;
+                    const props = f.properties || {};
+                    const fountains = Number(props["No. of Water Fountains"] || 0);
+                    const stations = Number(props["No. of Hydration Stations"] || 0);
+                    const hasWater = fountains > 0 || stations > 0;
+                    if (!hasWater) return false;
+                    // exclude if within 80m of either manual restroom
+                    return !isWithinAny(coords, manualCenters, 80);
+                  } catch {
+                    return false;
+                  }
+                }),
+              };
+
+              // ---------- Sources ----------
+              map.addSource("hydration-source", { type: "geojson", data: hydrationFiltered });
               map.addSource("restrooms-source", { type: "geojson", data: restroomsGeoData });
               map.addSource("cd-boundaries-source", { type: "geojson", data: CouncilDistData });
+              if (manualRestrooms.features.length) {
+                map.addSource("manual-restrooms-source", { type: "geojson", data: manualRestrooms });
+              }
 
-              // CD boundaries
+              // ---------- Layers ----------
               map.addLayer({
                 id: "cd-boundaries",
                 type: "line",
@@ -164,8 +241,7 @@ const Home = () => {
                 paint: { "line-color": "white", "line-width": 1 },
               });
 
-              // HYDRATION icons — only where actual fountains/hydration exist,
-              // and EXCLUDING the two specific addresses below
+              // Hydration (droplet)
               map.addLayer({
                 id: "hydration",
                 type: "symbol",
@@ -183,38 +259,9 @@ const Home = () => {
                     16, 0.24,
                   ],
                 },
-                filter: [
-                  "all",
-                  // must actually have fountains or hydration stations
-                  [
-                    "any",
-                    [">", ["to-number", ["coalesce", ["get", "No. of Water Fountains"], 0]], 0],
-                    [">", ["to-number", ["coalesce", ["get", "No. of Hydration Stations"], 0]], 0],
-                  ],
-                  // EXCLUDE these two addresses (case-insensitive)
-                  [
-                    "!",
-                    [
-                      "match",
-                      [
-                        "downcase",
-                        [
-                          "coalesce",
-                          ["get", "Address"],
-                          ["get", "Facility Address"],
-                          ["get", "Facility"],
-                          ""
-                        ]
-                      ],
-                      ["509 s. san julian st.", "814 e. 6th st."],
-                      true,   // if matches -> exclude
-                      false   // otherwise keep
-                    ]
-                  ]
-                ],
               });
 
-              // RESTROOMS icons
+              // Restrooms (toilet)
               map.addLayer({
                 id: "restrooms-layer",
                 type: "symbol",
@@ -234,7 +281,6 @@ const Home = () => {
                 },
               });
 
-              // Baby-changing (only where count > 0)
               if (map.hasImage("baby-icon")) {
                 map.addLayer({
                   id: "restrooms-baby",
@@ -262,7 +308,6 @@ const Home = () => {
                 });
               }
 
-              // Shower (only where count > 0)
               if (map.hasImage("shower-icon")) {
                 map.addLayer({
                   id: "restrooms-shower",
@@ -287,6 +332,28 @@ const Home = () => {
                     ["to-number", ["coalesce", ["get", "No. of Showers"], 0]],
                     0,
                   ],
+                });
+              }
+
+              // Manual restroom pins (toilet)
+              if (map.getSource("manual-restrooms-source")) {
+                map.addLayer({
+                  id: "manual-restrooms-layer",
+                  type: "symbol",
+                  source: "manual-restrooms-source",
+                  layout: {
+                    "icon-image": "restroom-icon",
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-size": [
+                      "interpolate",
+                      ["linear"],
+                      ["zoom"],
+                      10, 0.12,
+                      14, 0.18,
+                      16, 0.24,
+                    ],
+                  },
                 });
               }
 
@@ -317,7 +384,6 @@ const Home = () => {
                 const BabyChanging = p["No. of Baby Changing Stations"];
                 const Showers = p["No. of Showers"];
 
-                // Choose popup icon by layer, not properties
                 const isRestroomLayer = /^restrooms|^manual-restrooms/.test(layerId);
                 const icon = isRestroomLayer ? "/restroom.png" : "/drop.png";
 
@@ -387,82 +453,17 @@ const Home = () => {
                 });
               };
 
-              // Attach tooltips
-              ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach(
-                attachTooltip
-              );
-
-              // ---------- Add the two specific manual restroom pins ----------
-              async function addManualRestrooms(addresses) {
-                const features = [];
-
-                for (const addr of addresses) {
-                  try {
-                    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
-                      addr + ", Los Angeles, CA"
-                    )}.json?access_token=${mapboxgl.accessToken}&limit=1&country=US&proximity=-118.242,34.053`;
-                    const res = await fetch(url);
-                    const data = await res.json();
-                    const match = data?.features?.[0];
-                    if (!match?.center) continue;
-
-                    features.push({
-                      type: "Feature",
-                      geometry: { type: "Point", coordinates: match.center },
-                      properties: {
-                        "Facility Name": "Restroom (manual)",
-                        Address: addr,
-                      },
-                    });
-                  } catch {}
-                }
-
-                if (!features.length) return;
-
-                if (!map.getSource("manual-restrooms-source")) {
-                  map.addSource("manual-restrooms-source", {
-                    type: "geojson",
-                    data: { type: "FeatureCollection", features },
-                  });
-                } else {
-                  const src = map.getSource("manual-restrooms-source");
-                  src.setData({ type: "FeatureCollection", features });
-                }
-
-                if (!map.getLayer("manual-restrooms-layer")) {
-                  map.addLayer({
-                    id: "manual-restrooms-layer",
-                    type: "symbol",
-                    source: "manual-restrooms-source",
-                    layout: {
-                      "icon-image": "restroom-icon",
-                      "icon-allow-overlap": true,
-                      "icon-anchor": "bottom",
-                      "icon-size": [
-                        "interpolate",
-                        ["linear"],
-                        ["zoom"],
-                        10, 0.12,
-                        14, 0.18,
-                        16, 0.24,
-                      ],
-                    },
-                  });
-                  attachTooltip("manual-restrooms-layer");
-                }
-              }
-
-              addManualRestrooms([
-                "509 S. San Julian St.",
-                "814 E. 6th St.",
-              ]);
+              ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower", "manual-restrooms-layer"]
+                .filter((id) => map.getLayer(id))
+                .forEach(attachTooltip);
 
               // Initial CD filters for main datasets
               applyAllFilters(filteredCD);
-            });
-          });
-        });
-      });
+            })();
+          }); // shower load
+        }); // baby load
+        }); // drop load
+      }); // restroom load
     });
 
     return () => map.remove();
@@ -531,26 +532,20 @@ const Home = () => {
               <div className="pl-5 pr-2 py-2">
                 <button
                   className="align-middle text-white rounded-lg px-1 border border-gray-400 text-sm md:text-base"
-                  onClick={() => {
-                    setfilteredcouncildistrictspre(cdValues, "Council District");
-                  }}
+                  onClick={() => setfilteredcouncildistrictspre(cdValues, "Council District")}
                 >
                   Select All
                 </button>
                 <button
                   className="align-middle text-white rounded-lg px-1 border border-gray-400 text-sm md:text-base"
-                  onClick={() => {
-                    setfilteredcouncildistrictspre("sndk", "Council District");
-                  }}
+                  onClick={() => setfilteredcouncildistrictspre("sndk", "Council District")}
                 >
                   Unselect All
                 </button>
                 <br />
                 <Checkbox.Group
                   value={filteredCD}
-                  onChange={(event) =>
-                    setfilteredcouncildistrictspre(event, "Council District")
-                  }
+                  onChange={(event) => setfilteredcouncildistrictspre(event, "Council District")}
                 >
                   <div className="grid grid-cols-3 gap-x-4 my-2">
                     {optionsCd.map((eachEntry) => (
