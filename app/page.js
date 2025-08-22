@@ -41,7 +41,7 @@ const Home = () => {
   };
 
   const applyAllFilters = (districts) => {
-    // Manual restrooms are intentionally not filtered so they always show
+    // Manual restrooms intentionally not filtered so they always show
     ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach((id) =>
       applyLayerFilter(id, districts)
     );
@@ -101,7 +101,7 @@ const Home = () => {
       "top-right"
     );
 
-    // Geocoder
+    // Geocoder (doesn't run unless the user searches)
     const geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       mapboxgl,
@@ -164,7 +164,7 @@ const Home = () => {
                 paint: { "line-color": "white", "line-width": 1 },
               });
 
-              // HYDRATION icons — ONLY where there is at least 1 fountain or hydration station
+              // HYDRATION icons — only where there is at least 1 fountain or hydration station
               map.addLayer({
                 id: "hydration",
                 type: "symbol",
@@ -292,6 +292,7 @@ const Home = () => {
                 const BabyChanging = p["No. of Baby Changing Stations"];
                 const Showers = p["No. of Showers"];
 
+                // Choose popup icon by layer, not properties
                 const isRestroomLayer = /^restrooms|^manual-restrooms/.test(layerId);
                 const icon = isRestroomLayer ? "/restroom.png" : "/drop.png";
 
@@ -366,7 +367,7 @@ const Home = () => {
                 attachTooltip
               );
 
-              // ---------- Add two specific manual restroom pins ----------
+              // ---------- Add two specific manual restroom pins (NO AUTO-ZOOM) ----------
               async function addManualRestrooms(addresses) {
                 const features = [];
 
@@ -435,10 +436,7 @@ const Home = () => {
                   attachTooltip("manual-restrooms-layer");
                 }
 
-                // Optional: zoom to these two points
-                const b = new mapboxgl.LngLatBounds();
-                features.forEach((f) => b.extend(f.geometry.coordinates));
-                map.fitBounds(b, { padding: 60, maxZoom: 17, duration: 800 });
+                // 🔕 No fitBounds here—keeps original center/zoom
               }
 
               addManualRestrooms([
@@ -520,20 +518,26 @@ const Home = () => {
               <div className="pl-5 pr-2 py-2">
                 <button
                   className="align-middle text-white rounded-lg px-1 border border-gray-400 text-sm md:text-base"
-                  onClick={() => setfilteredcouncildistrictspre(cdValues, "Council District")}
+                  onClick={() => {
+                    setfilteredcouncildistrictspre(cdValues, "Council District");
+                  }}
                 >
                   Select All
                 </button>
                 <button
                   className="align-middle text-white rounded-lg px-1 border border-gray-400 text-sm md:text-base"
-                  onClick={() => setfilteredcouncildistrictspre("sndk", "Council District")}
+                  onClick={() => {
+                    setfilteredcouncildistrictspre("sndk", "Council District");
+                  }}
                 >
                   Unselect All
                 </button>
                 <br />
                 <Checkbox.Group
                   value={filteredCD}
-                  onChange={(event) => setfilteredcouncildistrictspre(event, "Council District")}
+                  onChange={(event) =>
+                    setfilteredcouncildistrictspre(event, "Council District")
+                  }
                 >
                   <div className="grid grid-cols-3 gap-x-4 my-2">
                     {optionsCd.map((eachEntry) => (
