@@ -1722,6 +1722,28 @@
         "No. of Toilets": " " ,
         "No. of Urinals": " " 
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24486,
+          34.04311
+        ]
+      },
+      "properties": {
+        "Name": "545 S. San Pedro St.",
+        "Address": "545 S. San Pedro St.",
+        "City and Zip": "Los Angeles, CA 90013",
+        "Council District": 14,
+        "No. of Hydration Stations": " " ,
+        "No. of Water Fountains": " " ,
+        "No. of Restrooms": " " ,
+        "No. of Sinks": " " ,
+        "No. of Toilets": " " ,
+        "No. of Urinals": " " 
+      }
     }
   ]
 }
