@@ -41,7 +41,7 @@ const Home = () => {
   };
 
   const applyAllFilters = (districts) => {
-    // Manual restrooms intentionally not filtered so they always show
+    // Manual restrooms are intentionally not filtered so they always show
     ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach((id) =>
       applyLayerFilter(id, districts)
     );
@@ -101,7 +101,7 @@ const Home = () => {
       "top-right"
     );
 
-    // Geocoder (doesn't run unless the user searches)
+    // Geocoder
     const geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       mapboxgl,
@@ -164,7 +164,8 @@ const Home = () => {
                 paint: { "line-color": "white", "line-width": 1 },
               });
 
-              // HYDRATION icons — only where there is at least 1 fountain or hydration station
+              // HYDRATION icons — only where actual fountains/hydration exist,
+              // and EXCLUDING the two specific addresses below
               map.addLayer({
                 id: "hydration",
                 type: "symbol",
@@ -183,9 +184,33 @@ const Home = () => {
                   ],
                 },
                 filter: [
-                  "any",
-                  [">", ["to-number", ["coalesce", ["get", "No. of Water Fountains"], 0]], 0],
-                  [">", ["to-number", ["coalesce", ["get", "No. of Hydration Stations"], 0]], 0],
+                  "all",
+                  // must actually have fountains or hydration stations
+                  [
+                    "any",
+                    [">", ["to-number", ["coalesce", ["get", "No. of Water Fountains"], 0]], 0],
+                    [">", ["to-number", ["coalesce", ["get", "No. of Hydration Stations"], 0]], 0],
+                  ],
+                  // EXCLUDE these two addresses (case-insensitive)
+                  [
+                    "!",
+                    [
+                      "match",
+                      [
+                        "downcase",
+                        [
+                          "coalesce",
+                          ["get", "Address"],
+                          ["get", "Facility Address"],
+                          ["get", "Facility"],
+                          ""
+                        ]
+                      ],
+                      ["509 s. san julian st.", "814 e. 6th st."],
+                      true,   // if matches -> exclude
+                      false   // otherwise keep
+                    ]
+                  ]
                 ],
               });
 
@@ -367,7 +392,7 @@ const Home = () => {
                 attachTooltip
               );
 
-              // ---------- Add two specific manual restroom pins (NO AUTO-ZOOM) ----------
+              // ---------- Add the two specific manual restroom pins ----------
               async function addManualRestrooms(addresses) {
                 const features = [];
 
@@ -385,18 +410,8 @@ const Home = () => {
                       type: "Feature",
                       geometry: { type: "Point", coordinates: match.center },
                       properties: {
-                        "Facility Name": "Restroom",
+                        "Facility Name": "Restroom (manual)",
                         Address: addr,
-                        "No. of Hydration Stations": undefined,
-                        "No. of Water Fountains": undefined,
-                        "No. of Sinks": undefined,
-                        "No. of Toilets": undefined,
-                        "No. of Urinals": undefined,
-                        Women: undefined,
-                        Men: undefined,
-                        "Gender Neutral": undefined,
-                        "No. of Baby Changing Stations": undefined,
-                        "No. of Showers": undefined,
                       },
                     });
                   } catch {}
@@ -435,8 +450,6 @@ const Home = () => {
                   });
                   attachTooltip("manual-restrooms-layer");
                 }
-
-                // 🔕 No fitBounds here—keeps original center/zoom
               }
 
               addManualRestrooms([
