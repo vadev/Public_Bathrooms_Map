@@ -23,6 +23,8 @@ const Home = () => {
   const [filterpanelopened, setfilterpanelopened] = useState(false);
   const [selectedfilteropened, setselectedfilteropened] = useState("cd");
   const [selectAll, setSelectAll] = useState(true);
+  const [showBathrooms, setShowBathrooms] = useState(true);
+  const [showWaterFountains, setShowWaterFountains] = useState(true);
   const mapref = useRef(null);
   const divRef = useRef(null);
 
@@ -40,8 +42,40 @@ const Home = () => {
     }
   };
 
+  const applyBathroomFilter = () => {
+    const layers = ['restrooms-layer', 'restrooms-baby', 'restrooms-shower', 'manual-restrooms-layer'];
+    layers.forEach(layerId => {
+      if (mapref.current && mapref.current.getLayer(layerId)) {
+        // Only show layers with actual toilets (filter out locations with 0 toilets)
+        if (showBathrooms) {
+          mapref.current.setLayoutProperty(layerId, 'visibility', 'visible');
+          // Add filter to only show locations with toilets > 0
+          if (layerId === 'restrooms-layer') {
+            mapref.current.setFilter(layerId, [
+              'all',
+              ['>', ['to-number', ['get', 'No. of Toilets']], 0]
+            ]);
+          }
+        } else {
+          mapref.current.setLayoutProperty(layerId, 'visibility', 'none');
+        }
+      }
+    });
+  };
+
+  const applyWaterFountainFilter = () => {
+    const layers = ['hydration'];
+    layers.forEach(layerId => {
+      if (mapref.current && mapref.current.getLayer(layerId)) {
+        mapref.current.setLayoutProperty(layerId, 'visibility', showWaterFountains ? 'visible' : 'none');
+      }
+    });
+  };
+
   const applyAllFilters = (districts) => {
     // manual-restrooms remain always visible
+    applyBathroomFilter();
+    applyWaterFountainFilter();
     ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach((id) =>
       applyLayerFilter(id, districts)
     );
@@ -187,14 +221,20 @@ const Home = () => {
 
             (async () => {
               // Geocode the two addresses first
-              const manualAddrs = ["509 S. San Julian St.", "814 E. 6th St."];
+              const manualAddrs = ["509 S. San Julian St.", "814 E. 6th St.", "204 E. 5th St.", "545 S. San Pedro St."];
               const manualPoints = await geocodeAddresses(manualAddrs);
               const manualCenters = manualPoints.map((p) => p.center);
 
-              // Build MANUAL RESTROOMS GeoJSON (toilet icons)
+              // Build MANUAL RESTROOMS GeoJSON (toilet icons) - only for locations with actual bathrooms
+              // Filter out locations that don't have bathrooms (like LA Mirada Park)
+              const locationsWithoutBathrooms = ["5401 La Mirada Avenue"];
+              const manualRestroomsFiltered = manualPoints.filter(p => 
+                !locationsWithoutBathrooms.some(addr => p.addr.includes(addr.split(' ')[0]))
+              );
+              
               const manualRestrooms = {
                 type: "FeatureCollection",
-                features: manualPoints.map((p) => ({
+                features: manualRestroomsFiltered.map((p) => ({
                   type: "Feature",
                   geometry: { type: "Point", coordinates: p.center },
                   properties: {
@@ -203,7 +243,8 @@ const Home = () => {
                   },
                 })),
               };
-
+              // 5401 La Mirada avenue  address - LA Mirada Park. It's showing toilet icons at park locations where there isn't a bathroom and i dont see these locations on the map 204 E. 5th St. 545 S. San Pedro St.
+              // and also add Filter by bathrooms and water fountains . 
               // Filter HYDRATION dataset to remove any point near the two addresses (<= 80m)
               // and keep only those with fountains/hydration counts > 0
               const hydrationFiltered = {
@@ -473,6 +514,11 @@ const Home = () => {
     applyAllFilters(filteredCD);
   }, [filteredCD]);
 
+  useEffect(() => {
+    applyBathroomFilter();
+    applyWaterFountainFilter();
+  }, [showBathrooms, showWaterFountains]);
+
   const setfilteredcouncildistrictspre = (event) => {
     if (event === "") {
       setSelectAll(!selectAll);
@@ -559,6 +605,34 @@ const Home = () => {
                     ))}
                   </div>
                 </Checkbox.Group>
+
+                {/* Bathroom and Water Fountain Filters */}
+                <div className="mt-4 space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="checkbox"
+                      id="bathrooms-filter"
+                      checked={showBathrooms}
+                      onChange={(e) => setShowBathrooms(e.target.checked)}
+                      className="text-blue-600"
+                    />
+                    <label htmlFor="bathrooms-filter" className="text-white text-sm">
+                      Show Bathrooms
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="checkbox"
+                      id="fountains-filter"
+                      checked={showWaterFountains}
+                      onChange={(e) => setShowWaterFountains(e.target.checked)}
+                      className="text-blue-600"
+                    />
+                    <label htmlFor="fountains-filter" className="text-white text-sm">
+                      Show Water Fountains
+                    </label>
+                  </div>
+                </div>
 
                 {/* Sources */}
                 <div className="mt-3 space-y-1">
