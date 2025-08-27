@@ -4,7 +4,10 @@ import { Checkbox, MantineProvider } from "@mantine/core";
 import React, { useEffect, useState, useRef } from "react";
 import Nav from "@/components/Nav";
 import CouncilDist from "./data/CouncilDistricts.json";
-import geoData from "./data/output.json"; // hydration dataset
+import geoData from "./data/output.json";
+import geoDataFalse from "./data/output_false.json";
+import combo_true from "./data/combo_true.json";
+import combo_false from "./data/combo_false.json";
 import restroomsData from "./data/restrooms_water_fountains_cleaned.json";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
@@ -25,6 +28,7 @@ const Home = () => {
   const [selectAll, setSelectAll] = useState(true);
   const [showBathrooms, setShowBathrooms] = useState(true);
   const [showWaterFountains, setShowWaterFountains] = useState(true);
+  const [showCombo, setShowCombo] = useState(true);
   const mapref = useRef(null);
   const divRef = useRef(null);
 
@@ -72,11 +76,21 @@ const Home = () => {
     });
   };
 
+  const applyComboFilter = () => {
+    const layers = ['combo-layer', 'combo-layer-for-hydration'];
+    layers.forEach(layerId => {
+      if (mapref.current && mapref.current.getLayer(layerId)) {
+        mapref.current.setLayoutProperty(layerId, 'visibility', showCombo ? 'visible' : 'none');
+      }
+    });
+  };
+
   const applyAllFilters = (districts) => {
     // manual-restrooms remain always visible
     applyBathroomFilter();
     applyWaterFountainFilter();
-    ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower"].forEach((id) =>
+    applyComboFilter();
+    ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower", 'combo-layer-for-hydration', 'combo-layer'].forEach((id) =>
       applyLayerFilter(id, districts)
     );
   };
@@ -106,7 +120,7 @@ const Home = () => {
           16, 18,
         ]);
       });
-    } catch {}
+    } catch { }
   };
 
   useEffect(() => {
@@ -181,207 +195,141 @@ const Home = () => {
           map.loadImage("/baby.png", (e3, babyImg) => {
             if (!e3 && !map.hasImage("baby-icon")) map.addImage("baby-icon", babyImg, { pixelRatio: 2 });
 
-          map.loadImage("/shower.png", (e4, showerImg) => {
-            if (!e4 && !map.hasImage("shower-icon")) map.addImage("shower-icon", showerImg, { pixelRatio: 2 });
+            map.loadImage("/shower.png", (e4, showerImg) => {
+              if (!e4 && !map.hasImage("shower-icon")) map.addImage("shower-icon", showerImg, { pixelRatio: 2 });
 
-            // ---------- Helpers: geocode + distance ----------
-            const deg2rad = (d) => (d * Math.PI) / 180;
-            const haversineMeters = (a, b) => {
-              // a, b: [lng, lat]
-              const R = 6371000;
-              const dLat = deg2rad(b[1] - a[1]);
-              const dLng = deg2rad(b[0] - a[0]);
-              const lat1 = deg2rad(a[1]);
-              const lat2 = deg2rad(b[1]);
-              const sin1 = Math.sin(dLat / 2);
-              const sin2 = Math.sin(dLng / 2);
-              const h =
-                sin1 * sin1 +
-                Math.cos(lat1) * Math.cos(lat2) * sin2 * sin2;
-              return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
-            };
-            const isWithinAny = (coord, centers, radiusM) =>
-              centers.some((c) => haversineMeters(coord, c) <= radiusM);
+              map.loadImage("/combo.png", (err, comboImg) => {
+                if (!err && !map.hasImage("combo-icon")) {
+                  map.addImage("combo-icon", comboImg, { pixelRatio: 2 });
+                }
+              });
 
-            const geocodeAddresses = async (addresses) => {
-              const out = [];
-              for (const addr of addresses) {
-                try {
-                  const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
-                    addr + ", Los Angeles, CA"
-                  )}.json?access_token=${mapboxgl.accessToken}&limit=1&country=US&proximity=-118.242,34.053`;
-                  const res = await fetch(url);
-                  const data = await res.json();
-                  const match = data?.features?.[0];
-                  if (match?.center) out.push({ addr, center: match.center });
-                } catch {}
-              }
-              return out;
-            };
-
-            (async () => {
-              // Geocode the two addresses first
-              const manualAddrs = ["509 S. San Julian St.", "814 E. 6th St.", "204 E. 5th St.", "545 S. San Pedro St."];
-              const manualPoints = await geocodeAddresses(manualAddrs);
-              const manualCenters = manualPoints.map((p) => p.center);
-
-              // Build MANUAL RESTROOMS GeoJSON (toilet icons) - only for locations with actual bathrooms
-              // Filter out locations that don't have bathrooms (like LA Mirada Park)
-              const locationsWithoutBathrooms = ["5401 La Mirada Avenue"];
-              const manualRestroomsFiltered = manualPoints.filter(p => 
-                !locationsWithoutBathrooms.some(addr => p.addr.includes(addr.split(' ')[0]))
-              );
-              
-              const manualRestrooms = {
-                type: "FeatureCollection",
-                features: manualRestroomsFiltered.map((p) => ({
-                  type: "Feature",
-                  geometry: { type: "Point", coordinates: p.center },
-                  properties: {
-                    "Facility Name": "Restroom",
-                    Address: p.addr,
-                  },
-                })),
+              // ---------- Helpers: geocode + distance ----------
+              const deg2rad = (d) => (d * Math.PI) / 180;
+              const haversineMeters = (a, b) => {
+                // a, b: [lng, lat]
+                const R = 6371000;
+                const dLat = deg2rad(b[1] - a[1]);
+                const dLng = deg2rad(b[0] - a[0]);
+                const lat1 = deg2rad(a[1]);
+                const lat2 = deg2rad(b[1]);
+                const sin1 = Math.sin(dLat / 2);
+                const sin2 = Math.sin(dLng / 2);
+                const h =
+                  sin1 * sin1 +
+                  Math.cos(lat1) * Math.cos(lat2) * sin2 * sin2;
+                return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
               };
-              // 5401 La Mirada avenue  address - LA Mirada Park. It's showing toilet icons at park locations where there isn't a bathroom and i dont see these locations on the map 204 E. 5th St. 545 S. San Pedro St.
-              // and also add Filter by bathrooms and water fountains . 
-              // Filter HYDRATION dataset to remove any point near the two addresses (<= 80m)
-              // and keep only those with fountains/hydration counts > 0
-              const hydrationFiltered = {
-                type: "FeatureCollection",
-                features: (geoData?.features || []).filter((f) => {
+              const isWithinAny = (coord, centers, radiusM) =>
+                centers.some((c) => haversineMeters(coord, c) <= radiusM);
+
+              const geocodeAddresses = async (addresses) => {
+                const out = [];
+                for (const addr of addresses) {
                   try {
-                    if (!f?.geometry || f.geometry.type !== "Point") return false;
-                    const coords = f.geometry.coordinates;
-                    const props = f.properties || {};
-                    const fountains = Number(props["No. of Water Fountains"] || 0);
-                    const stations = Number(props["No. of Hydration Stations"] || 0);
-                    const hasWater = fountains > 0 || stations > 0;
-                    if (!hasWater) return false;
-                    // exclude if within 80m of either manual restroom
-                    return !isWithinAny(coords, manualCenters, 80);
-                  } catch {
-                    return false;
-                  }
-                }),
+                    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(
+                      addr + ", Los Angeles, CA"
+                    )}.json?access_token=${mapboxgl.accessToken}&limit=1&country=US&proximity=-118.242,34.053`;
+                    const res = await fetch(url);
+                    const data = await res.json();
+                    const match = data?.features?.[0];
+                    if (match?.center) out.push({ addr, center: match.center });
+                  } catch { }
+                }
+                return out;
               };
 
-              // ---------- Sources ----------
-              map.addSource("hydration-source", { type: "geojson", data: hydrationFiltered });
-              map.addSource("restrooms-source", { type: "geojson", data: restroomsGeoData });
-              map.addSource("cd-boundaries-source", { type: "geojson", data: CouncilDistData });
-              if (manualRestrooms.features.length) {
-                map.addSource("manual-restrooms-source", { type: "geojson", data: manualRestrooms });
-              }
+              (async () => {
+                // Geocode the two addresses first
+                const manualAddrs = ["509 S. San Julian St.", "814 E. 6th St.", "204 E. 5th St.", "545 S. San Pedro St."];
+                const manualPoints = await geocodeAddresses(manualAddrs);
+                const manualCenters = manualPoints.map((p) => p.center);
 
-              // ---------- Layers ----------
-              map.addLayer({
-                id: "cd-boundaries",
-                type: "line",
-                source: "cd-boundaries-source",
-                paint: { "line-color": "white", "line-width": 1 },
-              });
+                // Build MANUAL RESTROOMS GeoJSON (toilet icons) - only for locations with actual bathrooms
+                // Filter out locations that don't have bathrooms (like LA Mirada Park)
+                const locationsWithoutBathrooms = ["5401 La Mirada Avenue"];
+                const manualRestroomsFiltered = manualPoints.filter(p =>
+                  !locationsWithoutBathrooms.some(addr => p.addr.includes(addr.split(' ')[0]))
+                );
 
-              // Hydration (droplet)
-              map.addLayer({
-                id: "hydration",
-                type: "symbol",
-                source: "hydration-source",
-                layout: {
-                  "icon-image": "fountain-icon",
-                  "icon-allow-overlap": true,
-                  "icon-anchor": "bottom",
-                  "icon-size": [
-                    "interpolate",
-                    ["linear"],
-                    ["zoom"],
-                    10, 0.12,
-                    14, 0.18,
-                    16, 0.24,
-                  ],
-                },
-              });
+                const manualRestrooms = {
+                  type: "FeatureCollection",
+                  features: manualRestroomsFiltered.map((p) => ({
+                    type: "Feature",
+                    geometry: { type: "Point", coordinates: p.center },
+                    properties: {
+                      "Facility Name": "Restroom",
+                      Address: p.addr,
+                    },
+                  })),
+                };
+                // 5401 La Mirada avenue  address - LA Mirada Park. It's showing toilet icons at park locations where there isn't a bathroom and i dont see these locations on the map 204 E. 5th St. 545 S. San Pedro St.
+                // and also add Filter by bathrooms and water fountains . 
+                // Filter HYDRATION dataset to remove any point near the two addresses (<= 80m)
+                // and keep only those with fountains/hydration counts > 0
+                const hydrationFiltered = {
+                  type: "FeatureCollection",
+                  features: (geoData?.features || []).filter((f) => {
+                    try {
+                      if (!f?.geometry || f.geometry.type !== "Point") return false;
+                      const coords = f.geometry.coordinates;
+                      const props = f.properties || {};
+                      const fountains = Number(props["No. of Water Fountains"] || 0);
+                      const stations = Number(props["No. of Hydration Stations"] || 0);
+                      const hasWater = fountains > 0 || stations > 0;
+                      if (!hasWater) return false;
+                      // exclude if within 80m of either manual restroom
+                      return !isWithinAny(coords, manualCenters, 80);
+                    } catch {
+                      return false;
+                    }
+                  }),
+                };
 
-              // Restrooms (toilet)
-              map.addLayer({
-                id: "restrooms-layer",
-                type: "symbol",
-                source: "restrooms-source",
-                layout: {
-                  "icon-image": "restroom-icon",
-                  "icon-allow-overlap": true,
-                  "icon-anchor": "bottom",
-                  "icon-size": [
-                    "interpolate",
-                    ["linear"],
-                    ["zoom"],
-                    10, 0.12,
-                    14, 0.18,
-                    16, 0.24,
-                  ],
-                },
-              });
+                // ---------- Sources ----------
+                map.addSource("combo_true-source", { type: "geojson", data: combo_true });
+                map.addSource("combo_false-source", { type: "geojson", data: combo_false });
+                map.addSource("restrooms-source", { type: "geojson", data: geoData });
+                map.addSource("hydration-source", { type: "geojson", data: geoDataFalse });
+                map.addSource("cd-boundaries-source", { type: "geojson", data: CouncilDistData });
+                if (manualRestrooms.features.length) {
+                  map.addSource("manual-restrooms-source", { type: "geojson", data: manualRestrooms });
+                }
 
-              if (map.hasImage("baby-icon")) {
+                // ---------- Layers ----------
                 map.addLayer({
-                  id: "restrooms-baby",
+                  id: "cd-boundaries",
+                  type: "line",
+                  source: "cd-boundaries-source",
+                  paint: { "line-color": "white", "line-width": 1 },
+                });
+
+                // Hydration (droplet)
+                map.addLayer({
+                  id: "combo-layer-for-hydration",
                   type: "symbol",
                   source: "restrooms-source",
                   layout: {
-                    "icon-image": "baby-icon",
+                    "icon-image": "combo-icon",
                     "icon-allow-overlap": true,
                     "icon-anchor": "bottom",
-                    "icon-offset": [-12, 0],
                     "icon-size": [
                       "interpolate",
                       ["linear"],
                       ["zoom"],
-                      10, 0.1,
-                      14, 0.14,
-                      16, 0.18,
+                      10, 0.12,
+                      14, 0.18,
+                      16, 0.24,
                     ],
                   },
-                  filter: [
-                    ">",
-                    ["to-number", ["coalesce", ["get", "No. of Baby Changing Stations"], 0]],
-                    0,
-                  ],
+                  // filter: ["==", ["get", "Combo"], 0]
                 });
-              }
 
-              if (map.hasImage("shower-icon")) {
+                // Restrooms (toilet)
                 map.addLayer({
-                  id: "restrooms-shower",
+                  id: "restrooms-layer",
                   type: "symbol",
-                  source: "restrooms-source",
-                  layout: {
-                    "icon-image": "shower-icon",
-                    "icon-allow-overlap": true,
-                    "icon-anchor": "bottom",
-                    "icon-offset": [12, 0],
-                    "icon-size": [
-                      "interpolate",
-                      ["linear"],
-                      ["zoom"],
-                      10, 0.1,
-                      14, 0.14,
-                      16, 0.18,
-                    ],
-                  },
-                  filter: [
-                    ">",
-                    ["to-number", ["coalesce", ["get", "No. of Showers"], 0]],
-                    0,
-                  ],
-                });
-              }
-
-              // Manual restroom pins (toilet)
-              if (map.getSource("manual-restrooms-source")) {
-                map.addLayer({
-                  id: "manual-restrooms-layer",
-                  type: "symbol",
-                  source: "manual-restrooms-source",
+                  source: "combo_false-source",
                   layout: {
                     "icon-image": "restroom-icon",
                     "icon-allow-overlap": true,
@@ -395,40 +343,169 @@ const Home = () => {
                       16, 0.24,
                     ],
                   },
+                  // filter: ["==", ["get", "Combo"], 0]
                 });
-              }
 
-              // ---------- Tooltips (layer-aware icon) ----------
-              const hoverPopup = new mapboxgl.Popup({
-                closeButton: false,
-                closeOnClick: false,
-                offset: 10,
-              });
+                if (map.hasImage("baby-icon")) {
+                  map.addLayer({
+                    id: "restrooms-baby",
+                    type: "symbol",
+                    source: "restrooms-source",
+                    layout: {
+                      "icon-image": "baby-icon",
+                      "icon-allow-overlap": true,
+                      "icon-anchor": "bottom",
+                      "icon-offset": [-12, 0],
+                      "icon-size": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        10, 0.1,
+                        14, 0.14,
+                        16, 0.18,
+                      ],
+                    },
+                    filter: [
+                      ">",
+                      ["to-number", ["coalesce", ["get", "No. of Baby Changing Stations"], 0]],
+                      0,
+                    ],
+                  });
+                }
 
-              const safe = (v) => (v === undefined || v === null || v === "" ? "—" : v);
+                if (map.hasImage("shower-icon")) {
+                  map.addLayer({
+                    id: "restrooms-shower",
+                    type: "symbol",
+                    source: "restrooms-source",
+                    layout: {
+                      "icon-image": "shower-icon",
+                      "icon-allow-overlap": true,
+                      "icon-anchor": "bottom",
+                      "icon-offset": [12, 0],
+                      "icon-size": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        10, 0.1,
+                        14, 0.14,
+                        16, 0.18,
+                      ],
+                    },
+                    filter: [
+                      ">",
+                      ["to-number", ["coalesce", ["get", "No. of Showers"], 0]],
+                      0,
+                    ],
+                  });
+                }
 
-              const buildHTML = (p = {}, layerId = "") => {
-                const Name = p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
-                const CouncilDistrict =
-                  p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
-                const Address = p["Address"] || p["Facility Address"] || p.address || "";
+                // Manual restroom pins (toilet)
+                if (map.getSource("manual-restrooms-source")) {
+                  map.addLayer({
+                    id: "manual-restrooms-layer",
+                    type: "symbol",
+                    source: "manual-restrooms-source",
+                    layout: {
+                      "icon-image": "restroom-icon",
+                      "icon-allow-overlap": true,
+                      "icon-anchor": "bottom",
+                      "icon-size": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        10, 0.12,
+                        14, 0.18,
+                        16, 0.24,
+                      ],
+                    },
+                  });
+                }
 
-                const NoHydration = p["No. of Hydration Stations"];
-                const NoFountains = p["No. of Water Fountains"];
-                const NoSinks = p["No. of Sinks"];
-                const NoToilets = p["No. of Toilets"];
-                const NoUrinals = p["No. of Urinals"];
+                map.addLayer({
+                  id: "combo-layer",
+                  type: "symbol",
+                  source: "combo_true-source",
+                  layout: {
+                    "icon-image": "combo-icon",
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-size": [
+                      "interpolate",
+                      ["linear"],
+                      ["zoom"],
+                      10, 0.15,
+                      14, 0.22,
+                      16, 0.28,
+                    ],
+                  },
+                  // filter: ["==", ["get", "Combo"], 1]
+                });
 
-                const Women = p["Women"];
-                const Men = p["Men"];
-                const GenderNeutral = p["Gender Neutral"];
-                const BabyChanging = p["No. of Baby Changing Stations"];
-                const Showers = p["No. of Showers"];
 
-                const isRestroomLayer = /^restrooms|^manual-restrooms/.test(layerId);
-                const icon = isRestroomLayer ? "/restroom.png" : "/drop.png";
+                map.addLayer({
+                  id: "hydration",
+                  type: "symbol",
+                  source: "hydration-source",
+                  layout: {
+                    "icon-image": "fountain-icon",
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-size": [
+                      "interpolate",
+                      ["linear"],
+                      ["zoom"],
+                      10, 0.15,
+                      14, 0.22,
+                      16, 0.28,
+                    ],
+                  },
+                  // filter: ["==", ["get", "Combo"], 1]
+                });
 
-                return `
+                // ---------- Tooltips (layer-aware icon) ----------
+                const hoverPopup = new mapboxgl.Popup({
+                  closeButton: false,
+                  closeOnClick: false,
+                  offset: 10,
+                });
+
+                const safe = (v) => (v === undefined || v === null || v === "" ? "—" : v);
+
+                const buildHTML = (p = {}, layerId = "") => {
+                  const Name = p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
+                  const CouncilDistrict =
+                    p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
+                  const Address = p["Address"] || p["Facility Address"] || p.address || "";
+
+                  const NoHydration = p["No. of Hydration Stations"];
+                  const NoFountains = p["No. of Water Fountains"];
+                  const NoSinks = p["No. of Sinks"];
+                  const NoToilets = p["No. of Toilets"];
+                  const NoUrinals = p["No. of Urinals"];
+
+                  const Women = p["Women"];
+                  const Men = p["Men"];
+                  const GenderNeutral = p["Gender Neutral"];
+                  const BabyChanging = p["No. of Baby Changing Stations"];
+                  const Showers = p["No. of Showers"];
+                  const combo = p["Combo"];
+
+                  // const isRestroomLayer = /^restrooms|^manual-restrooms/.test(layerId);
+                  // const icon = isRestroomLayer ? "/restroom.png" : "/drop.png";
+
+                  const isCombo = String(combo).toLowerCase() === "1";
+                  let icon;
+                  console.log(isCombo)
+                  if (isCombo) {
+                    icon = "/combo.png";
+                  } else if (/^restrooms|^manual-restrooms/.test(layerId)) {
+                    icon = "/restroom.png";
+                  } else {
+                    icon = "/drop.png";
+                  }
+
+                  return `
                   <div style="font-size:12px;line-height:1.35;">
                     <img src="${icon}" alt="icon" style="width:30px;height:30px;object-fit:contain;" />
                     <div><strong>Name:</strong> ${safe(Name)}</div>
@@ -446,63 +523,63 @@ const Home = () => {
                     <div><strong>No. of Showers:</strong> ${safe(Showers)}</div>
                   </div>
                 `;
-              };
+                };
 
-              const attachTooltip = (layerId) => {
-                if (!map.getLayer(layerId)) return;
+                const attachTooltip = (layerId) => {
+                  if (!map.getLayer(layerId)) return;
 
-                map.on("mouseenter", layerId, (e) => {
-                  map.getCanvas().style.cursor = "pointer";
-                  const f = e.features?.[0];
-                  if (!f) return;
-                  const coords =
-                    f.geometry.type === "Point"
-                      ? f.geometry.coordinates
-                      : [e.lngLat.lng, e.lngLat.lat];
-                  hoverPopup
-                    .setLngLat(coords)
-                    .setHTML(buildHTML(f.properties, layerId))
-                    .addTo(map);
-                });
+                  map.on("mouseenter", layerId, (e) => {
+                    map.getCanvas().style.cursor = "pointer";
+                    const f = e.features?.[0];
+                    if (!f) return;
+                    const coords =
+                      f.geometry.type === "Point"
+                        ? f.geometry.coordinates
+                        : [e.lngLat.lng, e.lngLat.lat];
+                    hoverPopup
+                      .setLngLat(coords)
+                      .setHTML(buildHTML(f.properties, layerId))
+                      .addTo(map);
+                  });
 
-                map.on("mousemove", layerId, (e) => {
-                  const f = e.features?.[0];
-                  if (!f) return;
-                  const coords =
-                    f.geometry.type === "Point"
-                      ? f.geometry.coordinates
-                      : [e.lngLat.lng, e.lngLat.lat];
-                  hoverPopup.setLngLat(coords);
-                });
+                  map.on("mousemove", layerId, (e) => {
+                    const f = e.features?.[0];
+                    if (!f) return;
+                    const coords =
+                      f.geometry.type === "Point"
+                        ? f.geometry.coordinates
+                        : [e.lngLat.lng, e.lngLat.lat];
+                    hoverPopup.setLngLat(coords);
+                  });
 
-                map.on("mouseleave", layerId, () => {
-                  map.getCanvas().style.cursor = "";
-                  hoverPopup.remove();
-                });
+                  map.on("mouseleave", layerId, () => {
+                    map.getCanvas().style.cursor = "";
+                    hoverPopup.remove();
+                  });
 
-                map.on("click", layerId, (e) => {
-                  const f = e.features?.[0];
-                  if (!f) return;
-                  const coords =
-                    f.geometry.type === "Point"
-                      ? f.geometry.coordinates
-                      : [e.lngLat.lng, e.lngLat.lat];
-                  new mapboxgl.Popup({ offset: 12 })
-                    .setLngLat(coords)
-                    .setHTML(buildHTML(f.properties, layerId))
-                    .addTo(map);
-                });
-              };
+                  map.on("click", layerId, (e) => {
+                    const f = e.features?.[0];
+                    if (!f) return;
+                    const coords =
+                      f.geometry.type === "Point"
+                        ? f.geometry.coordinates
+                        : [e.lngLat.lng, e.lngLat.lat];
+                    new mapboxgl.Popup({ offset: 12 })
+                      .setLngLat(coords)
+                      .setHTML(buildHTML(f.properties, layerId))
+                      .addTo(map);
+                  });
+                };
 
-              ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower", "manual-restrooms-layer"]
-                .filter((id) => map.getLayer(id))
-                .forEach(attachTooltip);
+                ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower", "manual-restrooms-layer", "combo-layer", "combo-layer-for-hydration"]
+                  .filter((id) => map.getLayer(id))
+                  .forEach(attachTooltip);
 
-              // Initial CD filters for main datasets
-              applyAllFilters(filteredCD);
-            })();
-          }); // shower load
-        }); // baby load
+                // Initial CD filters for main datasets
+                applyAllFilters(filteredCD);
+              })();
+            }); // shower load
+          }); // baby load
         }); // drop load
       }); // restroom load
     });
@@ -517,7 +594,8 @@ const Home = () => {
   useEffect(() => {
     applyBathroomFilter();
     applyWaterFountainFilter();
-  }, [showBathrooms, showWaterFountains]);
+    applyComboFilter();
+  }, [showBathrooms, showWaterFountains, showCombo]);
 
   const setfilteredcouncildistrictspre = (event) => {
     if (event === "") {
@@ -556,19 +634,17 @@ const Home = () => {
         {/* Filter panel */}
         <div
           id="cd-filter-panel"
-          className={`bottom-0 sm:bottom-auto md:mt-[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${
-            filterpanelopened ? "absolute" : "hidden"
-          }`}
+          className={`bottom-0 sm:bottom-auto md:mt-[7.6em] md:ml-3 w-screen sm:w-auto z-50 ${filterpanelopened ? "absolute" : "hidden"
+            }`}
         >
           <div className="bg-zinc-900 w-content bg-opacity-90 px-2 py-1 mt-1 sm:rounded-lg">
             <div className="gap-x-0 flex flex-row w-full">
               <button
                 onClick={() => setselectedfilteropened("cd")}
-                className={`px-2 border-b-2 py-1 font-semibold ${
-                  selectedfilteropened === "cd"
-                    ? "border-[#41ffca] text-[#41ffca]"
-                    : "hover:border-white border-transparent text-gray-50"
-                }`}
+                className={`px-2 border-b-2 py-1 font-semibold ${selectedfilteropened === "cd"
+                  ? "border-[#41ffca] text-[#41ffca]"
+                  : "hover:border-white border-transparent text-gray-50"
+                  }`}
               >
                 CD #
               </button>
@@ -630,6 +706,18 @@ const Home = () => {
                     />
                     <label htmlFor="fountains-filter" className="text-white text-sm">
                       Show Water Fountains
+                    </label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="checkbox"
+                      id="combo-filter"
+                      checked={showCombo}
+                      onChange={(e) => setShowCombo(e.target.checked)}
+                      className="text-blue-600"
+                    />
+                    <label htmlFor="combo-filter" className="text-white text-sm">
+                      Show Water Fountains and Bathroom
                     </label>
                   </div>
                 </div>

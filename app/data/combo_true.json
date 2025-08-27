@@ -1,0 +1,3359 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24892,
+          33.93666
+        ]
+      },
+      "properties": {
+        "Facility Name": "109th Street Recreation Center",
+        "Facility Address": "1464 East 109th Street Los Angeles, CA 90059",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.22338,
+          34.06833
+        ]
+      },
+      "properties": {
+        "Facility Name": "Albion Riverside Park",
+        "Facility Address": "1739 North Albion Street Los Angeles, CA 90031",
+        "Council District": 1,
+        "Standard": 2.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": 1.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28682,
+          33.95787
+        ]
+      },
+      "properties": {
+        "Facility Name": "Algin Sutton Recreation Center",
+        "Facility Address": "8800 South Hoover Street Los Angeles, CA 90044",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": 4.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 12.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24074,
+          34.06375
+        ]
+      },
+      "properties": {
+        "Facility Name": "Alpine Recreation Center",
+        "Facility Address": "817 Yale Street Los Angeles, CA 90012",
+        "Council District": 1,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 6.0,
+        "No. of Sinks": 13.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45419,
+          34.21509
+        ]
+      },
+      "properties": {
+        "Facility Name": "Andres and Maria Cardenas Recreation Center",
+        "Facility Address": "14740 Blythe Street Panorama, CA 91402",
+        "Council District": 6,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 5.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 5.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18992,
+          34.06971
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ascot Hills Park",
+        "Facility Address": "4371 Multnomah Street Los Angeles, CA 90032",
+        "Council District": 14,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24759,
+          33.99043
+        ]
+      },
+      "properties": {
+        "Facility Name": "Augustus F. Hawkins Nature Park",
+        "Facility Address": "5790 Compton Avenue Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 1.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50389,
+          34.17236
+        ]
+      },
+      "properties": {
+        "Facility Name": "Balboa Sports Complex",
+        "Facility Address": "17015 Burbank Blvd. Encino CA 91316",
+        "Council District": 6,
+        "Standard": 10.0,
+        "Bottle Fillers": 4.0,
+        "Gender Neutral": 1.0,
+        "Women": 6.0,
+        "Men": 6.0,
+        "No. of Baby Changing Stations": 3.0,
+        "No. of Toilets": 22.0,
+        "No. of Urinals": 7.0,
+        "No. of Sinks": 19.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36456,
+          34.02341
+        ]
+      },
+      "properties": {
+        "Facility Name": "Baldwin Hills Recreation Center",
+        "Facility Address": "5401 Highlight Place Los Angeles, CA 90016",
+        "Council District": 10,
+        "Standard": 10.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 15.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 13.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25625,
+          33.79019
+        ]
+      },
+      "properties": {
+        "Facility Name": "Banning Park and Recreation Center",
+        "Facility Address": "1331 Eubank Avenue Wilmington, CA 90744",
+        "Council District": 15,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 4.0,
+        "Men": 4.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 16.0,
+        "No. of Urinals": 5.0,
+        "No. of Sinks": 12.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46865,
+          34.06139
+        ]
+      },
+      "properties": {
+        "Facility Name": "Barrington Park ",
+        "Facility Address": "333 South Barrington Avenue Los Angeles, CA 90049",
+        "Council District": 11,
+        "Standard": 3.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 4.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2833,
+          34.08407
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bellevue Recreation Center ",
+        "Facility Address": "826 Lucile Avenue Los Angeles, CA 90026",
+        "Council District": 13,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 5.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30458,
+          34.02321
+        ]
+      },
+      "properties": {
+        "Facility Name": "Betty Hill Senior Citizen Center ",
+        "Facility Address": "3570 South Denker Avenue Los Angeles, CA 90018",
+        "Council District": 8,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 1.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 1.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.237945,
+          34.080908
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bishop Canyon (Elysian Park) ",
+        "Facility Address": "929 Academy Road Los Angeles, CA 90012",
+        "Council District": 1,
+        "Standard": 2.0,
+        "Bottle Fillers": 4.0,
+        "Gender Neutral": 10.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 10.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31939,
+          33.72959
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bogdanovich Recreation Center",
+        "Facility Address": "1920 Cumbre Drive San Pedro, CA 90732",
+        "Council District": 15,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 9.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 8.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.312013,
+          33.721528
+        ]
+      },
+      "properties": {
+        "Facility Name": "Cabrillo Beach Bathouse ",
+        "Facility Address": "3800 Stephen White Drive San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": 8.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.312013,
+          33.721528
+        ]
+      },
+      "properties": {
+        "Facility Name": "Cabrillo Beach Marine Aquarium ",
+        "Facility Address": "3720 Stephen White Drive San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 4.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 4.0,
+        "No. of Toilets": 29.0,
+        "No. of Urinals": 10.0,
+        "No. of Sinks": 22.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40785,
+          34.04637
+        ]
+      },
+      "properties": {
+        "Facility Name": "Cheviot Hills Recreation Center",
+        "Facility Address": "2551 Motor Avenue Los Angeles, CA 90064",
+        "Council District": 5,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26667,
+          34.13354
+        ]
+      },
+      "properties": {
+        "Facility Name": "Chevy Chase Recreation Center ",
+        "Facility Address": "4165 Chevy Chase Drive Los Angeles, CA 90039",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.22554,
+          34.08945
+        ]
+      },
+      "properties": {
+        "Facility Name": "Cypress Park Recreation Center ",
+        "Facility Address": "2630 Pepper Avenue Los Angeles, CA 90065",
+        "Council District": 1,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50786,
+          34.23595
+        ]
+      },
+      "properties": {
+        "Facility Name": "Dearborn Park ",
+        "Facility Address": "17141 Nordhoff Street Northridge, CA 91325",
+        "Council District": 12,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 3.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 1.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46212,
+          34.18281
+        ]
+      },
+      "properties": {
+        "Facility Name": "Delano Recreation Center ",
+        "Facility Address": "15100 Erwin Street Van Nuys, CA 91411",
+        "Council District": 6,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 4.0,
+        "No. of Toilets": 14.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30447,
+          34.02356
+        ]
+      },
+      "properties": {
+        "Facility Name": "Denker Recreation Center ",
+        "Facility Address": "1550 West 35th Place Los Angeles, CA 90018",
+        "Council District": 8,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.223443,
+          34.071031
+        ]
+      },
+      "properties": {
+        "Facility Name": "Downey Recreation Center",
+        "Facility Address": "1772 North Spring Street Los Angeles, CA 90031",
+        "Council District": 1,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 3.0,
+        "No. of Toilets": 9.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.247835,
+          33.787368
+        ]
+      },
+      "properties": {
+        "Facility Name": "East Wilmington Green Belt Pocket Park",
+        "Facility Address": "1300 East L Street Wilmington, CA 90744",
+        "Council District": 15,
+        "Standard": 2.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25998,
+          34.07242
+        ]
+      },
+      "properties": {
+        "Facility Name": "Echo Park Lake ",
+        "Facility Address": "751 Echo Park Avenue Los Angeles, CA 90026",
+        "Council District": 13,
+        "Standard": 4.0,
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": 20.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 22.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 12.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26075,
+          34.07013
+        ]
+      },
+      "properties": {
+        "Facility Name": "Echo Park Recreation Center ",
+        "Facility Address": "1632 Bellevue Avenue Los Angeles, CA 90026",
+        "Council District": 13,
+        "Standard": 4.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 2.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 4.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18153,
+          34.0757
+        ]
+      },
+      "properties": {
+        "Facility Name": "El Sereno Recreation Center",
+        "Facility Address": "4721 Klamath Street Los Angeles, CA 90032",
+        "Council District": 14,
+        "Standard": 2.0,
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": 3.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 4.0,
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.237945,
+          34.080908
+        ]
+      },
+      "properties": {
+        "Facility Name": "Elysian Park ",
+        "Facility Address": "929 Academy Road Los Angeles, CA 90012",
+        "Council District": 1,
+        "Standard": 13.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 14.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 3.0,
+        "No. of Toilets": 15.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.237945,
+          34.080908
+        ]
+      },
+      "properties": {
+        "Facility Name": "Elysian Theraputic Recreation Center ",
+        "Facility Address": "929 Academy Road Los Angeles, CA 90012",
+        "Council District": 1,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 5.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24509,
+          34.09892
+        ]
+      },
+      "properties": {
+        "Facility Name": "Elysian Valley Recreation Center",
+        "Facility Address": "1811 Ripple Street Los Angeles, CA 90039",
+        "Council District": 13,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 8.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50253,
+          34.15984
+        ]
+      },
+      "properties": {
+        "Facility Name": "Encino Community Center/Park",
+        "Facility Address": "16953 Ventura Blvd. Encino CA 91316",
+        "Council District": 4,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 12.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.20448,
+          34.03905
+        ]
+      },
+      "properties": {
+        "Facility Name": "Evergreen Recreation Center",
+        "Facility Address": "2844 East 2nd Street Los Angeles, CA 90033",
+        "Council District": 14,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 4.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 3.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2841,
+          34.15543
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ferraro Soccer Complex ",
+        "Facility Address": "5101 North Zoo Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 7.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 7.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26679,
+          34.00672
+        ]
+      },
+      "properties": {
+        "Facility Name": "Gilbert Lindsay Rec Center ",
+        "Facility Address": "429 East 42nd Place Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 6.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 6.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.243594,
+          34.041236
+        ]
+      },
+      "properties": {
+        "Facility Name": "Gladys Park",
+        "Facility Address": "6th Street & Gladys Street Los Angeles, CA 90021",
+        "Council District": 14,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 4.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 4.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23319,
+          34.11661
+        ]
+      },
+      "properties": {
+        "Facility Name": "Glassell Park Recreation Center ",
+        "Facility Address": "3650 Verdugo Road Los Angeles, CA 90065",
+        "Council District": 1,
+        "Standard": 2.0,
+        "Bottle Fillers": 4.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 12.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 12.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49686,
+          34.26459
+        ]
+      },
+      "properties": {
+        "Facility Name": "Granada Hills Recreation Center",
+        "Facility Address": "16730 Chatsworth Street Granada Hills, CA 91344",
+        "Council District": 12,
+        "Standard": 5.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 3.0,
+        "No. of Toilets": 10.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26719,
+          33.9557
+        ]
+      },
+      "properties": {
+        "Facility Name": "Green Meadows Recreation Center",
+        "Facility Address": "431 East 89th Street Los Angeles, CA 90003",
+        "Council District": 9,
+        "Standard": 3.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 2.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 5.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.300387,
+          34.118385
+        ]
+      },
+      "properties": {
+        "Facility Name": "Griffith Observatory ",
+        "Facility Address": "2800 East Observatory Road Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 6.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 8.0,
+        "Women": 4.0,
+        "Men": 4.0,
+        "No. of Baby Changing Stations": 10.0,
+        "No. of Toilets": 45.0,
+        "No. of Urinals": 17.0,
+        "No. of Sinks": 25.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.268102,
+          34.113035
+        ]
+      },
+      "properties": {
+        "Facility Name": "Griffith Recreation Complex ",
+        "Facility Address": "3343 Riverside Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 4.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.418767,
+          34.29669
+        ]
+      },
+      "properties": {
+        "Facility Name": "Hansen Dam Sports Center",
+        "Facility Address": "111480 Foothill Blvd. Lake View Terrace, CA 91342",
+        "Council District": 7,
+        "Standard": 8.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 9.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29927,
+          33.79836
+        ]
+      },
+      "properties": {
+        "Facility Name": "Habor City Recreation Center ",
+        "Facility Address": "24901 Frampton Avenue Harbor City, CA 90710",
+        "Council District": 15,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 14.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2966,
+          33.75782
+        ]
+      },
+      "properties": {
+        "Facility Name": "Harbor Highlands Park ",
+        "Facility Address": "825 West Capitol Drive San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.20081,
+          34.06069
+        ]
+      },
+      "properties": {
+        "Facility Name": "Hazard Recreation Center ",
+        "Facility Address": "2230 Norfolk Street Los Angeles, CA 90033",
+        "Council District": 14,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18892,
+          34.11313
+        ]
+      },
+      "properties": {
+        "Facility Name": "Highland Park Recreation Center",
+        "Facility Address": "6150 Piedmont Avenue Los Angeles, CA 90042",
+        "Council District": 14,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 3.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.1857,
+          34.11391
+        ]
+      },
+      "properties": {
+        "Facility Name": "Highland Park Senior Citizen Center ",
+        "Facility Address": "6152 North Figueroa Street Los Angeles, CA 90042",
+        "Council District": 14,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21595,
+          34.04178
+        ]
+      },
+      "properties": {
+        "Facility Name": "Hollenbeck Park/Recreation Center",
+        "Facility Address": "415 South Saint Louis Street Los Angeles, CA 90033",
+        "Council District": 14,
+        "Standard": 14.0,
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 20.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 16.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3319547,
+          34.0920437
+        ]
+      },
+      "properties": {
+        "Facility Name": "Hollywood Recreation Center",
+        "Facility Address": "1122 Cole Avenue Los Angeles, CA 90038",
+        "Council District": 13,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 4.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28301,
+          34.03259
+        ]
+      },
+      "properties": {
+        "Facility Name": "Hoover Recreation Center ",
+        "Facility Address": "1010 West 25th Street Los Angeles, CA 90007",
+        "Council District": 1,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 4.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.351695,
+          34.021359
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ira C. Massey Child Care Center",
+        "Facility Address": "5001 Rodeo Road Los Angeles, CA 90016",
+        "Council District": 10,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 4.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 6.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 9.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30355,
+          33.98336
+        ]
+      },
+      "properties": {
+        "Facility Name": "Jackie Tatum Harvard ",
+        "Facility Address": "1535 West 62nd Street Los Angeles, CA 90047",
+        "Council District": 8,
+        "Standard": 6.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.51838,
+          34.19935
+        ]
+      },
+      "properties": {
+        "Facility Name": "Jesse Owens Park ",
+        "Facility Address": "7100 White Oak Avenue Van Nuys, CA 91316",
+        "Council District": 6,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 3.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3579546,
+          34.0120985
+        ]
+      },
+      "properties": {
+        "Facility Name": "Jim Gilliam Recreation Center ",
+        "Facility Address": "400 S La Brea Avenue Los Angeles, CA 90008",
+        "Council District": 10,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 3.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 8.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29358,
+          33.78902
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ken Mallory Harbor Regional Park",
+        "Facility Address": "25820 South Vermont Avenue Harbor City, CA 90710",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.293,
+          33.71121
+        ]
+      },
+      "properties": {
+        "Facility Name": "Korean Friendship Bell ",
+        "Facility Address": "3601 South Gaffey Street San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28322,
+          34.06184
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lafayette Multipurpose Community Center ",
+        "Facility Address": "625 South Lafayette Park Place Los Angeles, CA 90057",
+        "Council District": 10,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 10.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27038,
+          34.06895
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lake Street Park ",
+        "Facility Address": "227 North Lake Street Los Angeles, CA 90026",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 10.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.3738612,
+          34.2763815
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lake View Terrace Recreation Center ",
+        "Facility Address": "11075 Foothill Blvd. Lake View Terrace, CA 91343",
+        "Council District": 7,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 8.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 10.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.60384,
+          34.21744
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lanark Recreation Center ",
+        "Facility Address": "21816 Lanark Street Canoga Park, CA 91304",
+        "Council District": 3,
+        "Standard": 9.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33093,
+          34.00389
+        ]
+      },
+      "properties": {
+        "Facility Name": "Leimert Plaza Park ",
+        "Facility Address": "4395 Leimert Boulevard Los Angeles, CA 90008",
+        "Council District": 10,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 8.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 8.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.296005,
+          33.750722
+        ]
+      },
+      "properties": {
+        "Facility Name": "Leland Recreation Center ",
+        "Facility Address": "863 South Herbert Avenue San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 3.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 3.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 3.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30489,
+          34.08636
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lemon Grove Recreation Center ",
+        "Facility Address": "4959 Lemon Grove Avenue Los Angeles, CA 90029",
+        "Council District": 13,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 4.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21455,
+          34.07203
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lincoln Heights Recreation Center ",
+        "Facility Address": "2303 Workman Street Los Angeles, CA 90033",
+        "Council District": 1,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 4.0,
+        "No. of Toilets": 5.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.20179,
+          34.06562
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lincoln Park Recreation Center ",
+        "Facility Address": "3501 Valley Blvd. Los Angeles, CA 90031",
+        "Council District": 14,
+        "Standard": 6.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 38.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 12.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 15.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30299,
+          34.03027
+        ]
+      },
+      "properties": {
+        "Facility Name": "Loren Miller Recreation Center ",
+        "Facility Address": "2717 Halldale Ave. Los Angeles, CA 90018",
+        "Council District": 8,
+        "Standard": 3.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 2.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 8.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50968,
+          34.20018
+        ]
+      },
+      "properties": {
+        "Facility Name": "Louise Park ",
+        "Facility Address": "7140 Louise Ave Van Nuys, CA 91406",
+        "Council District": 6,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27704,
+          34.06036
+        ]
+      },
+      "properties": {
+        "Facility Name": "Mac Arthur Park Community Center ",
+        "Facility Address": "2230 West 6th Street Los Angeles, CA 90057",
+        "Council District": 1,
+        "Standard": 3.0,
+        "Bottle Fillers": 4.0,
+        "Gender Neutral": 3.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 10.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 10.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.429425,
+          34.01804
+        ]
+      },
+      "properties": {
+        "Facility Name": "Mar Vista Recreation Center ",
+        "Facility Address": "11439 Woodbine Ave Los Angeles, CA 90066",
+        "Council District": 11,
+        "Standard": 7.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 4.0,
+        "Men": 4.0,
+        "No. of Baby Changing Stations": 4.0,
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30875,
+          34.01395
+        ]
+      },
+      "properties": {
+        "Facility Name": "Martin Luther King Recreation Center ",
+        "Facility Address": "3916 S Western Avenue Los Angeles, CA 90062",
+        "Council District": 8,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 7.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 12.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 11.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.57962,
+          34.26095
+        ]
+      },
+      "properties": {
+        "Facility Name": "Mason Recreation Center ",
+        "Facility Address": "10500 Mason Ave Chatsworth, CA 91311",
+        "Council District": 12,
+        "Standard": 5.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28837,
+          33.97626
+        ]
+      },
+      "properties": {
+        "Facility Name": "Mount Carmel Recreation Center ",
+        "Facility Address": "830 W 70th Street Los Angeles, CA 90044",
+        "Council District": 8,
+        "Standard": 5.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 15.0,
+        "No. of Urinals": 5.0,
+        "No. of Sinks": 15.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30138,
+          33.82315
+        ]
+      },
+      "properties": {
+        "Facility Name": "Normandale Recreation Center ",
+        "Facility Address": "22400 South Halldale Avenue Torrance, CA 90501",
+        "Council District": 15,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 12.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 12.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30011,
+          34.04457
+        ]
+      },
+      "properties": {
+        "Facility Name": "Normandie Recreation Center ",
+        "Facility Address": "1550 South Normandie Avenue Los Angeles, CA 90006",
+        "Council District": 1,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 5.0,
+        "No. of Toilets": 5.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46612,
+          34.22956
+        ]
+      },
+      "properties": {
+        "Facility Name": "North Hills Community Park ",
+        "Facility Address": "8756 N Parthenia Place North Hills, CA 91343",
+        "Council District": 6,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 10.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 10.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 1.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37982,
+          34.16788
+        ]
+      },
+      "properties": {
+        "Facility Name": "North Hollywood Recreation Center ",
+        "Facility Address": "11430 Chandler Blvd. North Hollywood, CA 91601",
+        "Council District": 2,
+        "Standard": 15.0,
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": 7.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 10.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36623,
+          34.14583
+        ]
+      },
+      "properties": {
+        "Facility Name": "North Weddington Recreation Center ",
+        "Facility Address": "10844 Acama Street North Hollywood, CA 91602",
+        "Council District": 2,
+        "Standard": 5.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 5.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 5.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24181,
+          34.06104
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ord and Yale Street Park ",
+        "Facility Address": "524 Ord Street Los Angeles, CA 90012",
+        "Council District": 1,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.307766,
+          33.779351
+        ]
+      },
+      "properties": {
+        "Facility Name": "Pacific Region Headquarters ",
+        "Facility Address": "1670 Palos Verdes Dr North Harbor City, CA 90710",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52485,
+          34.0441
+        ]
+      },
+      "properties": {
+        "Facility Name": "Palisades Recreation Center",
+        "Facility Address": "851 Alma Real Drive Pacific Palisades, CA 90272",
+        "Council District": 11,
+        "Standard": 12.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3549,
+          34.07489
+        ]
+      },
+      "properties": {
+        "Facility Name": "Pan Pacific Recreation Center ",
+        "Facility Address": "7600 Beverly Blvd. Los Angeles, CA 90036",
+        "Council District": 5,
+        "Standard": 9.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 16.0,
+        "No. of Urinals": 5.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44129,
+          34.22674
+        ]
+      },
+      "properties": {
+        "Facility Name": "Panorama Recreation Center ",
+        "Facility Address": "8600 Hazeltine Avenue Panorama City, CA 91402",
+        "Council District": 6,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 12.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 11.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30907,
+          33.7478
+        ]
+      },
+      "properties": {
+        "Facility Name": "Peck Park Recreation Center ",
+        "Facility Address": "560 Western Ave San Pedro, CA 90732",
+        "Council District": 15,
+        "Standard": 16.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 4.0,
+        "Women": 6.0,
+        "Men": 6.0,
+        "No. of Baby Changing Stations": 5.0,
+        "No. of Toilets": 40.0,
+        "No. of Urinals": 14.0,
+        "No. of Sinks": 31.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35022,
+          34.08723
+        ]
+      },
+      "properties": {
+        "Facility Name": "Poinsettia Recreation Center ",
+        "Facility Address": "7341 Willoughby Avenue Los Angeles, CA 90046",
+        "Council District": 5,
+        "Standard": 2.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29289,
+          33.70634
+        ]
+      },
+      "properties": {
+        "Facility Name": "Point Fermin Park ",
+        "Facility Address": "807 Paseo del Mar San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": 2.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 4.0,
+        "No. of Toilets": 19.0,
+        "No. of Urinals": 5.0,
+        "No. of Sinks": 11.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.267909,
+          34.112883
+        ]
+      },
+      "properties": {
+        "Facility Name": "Pony Rides/Train Rides ",
+        "Facility Address": "4400 Riverside Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 5.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.20702,
+          34.02721
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ramon Garcia Recreation Center, Monignor ",
+        "Facility Address": "1016 South Fresno Street Los Angeles, CA 90023",
+        "Council District": 14,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 5.0,
+        "No. of Toilets": 17.0,
+        "No. of Urinals": 5.0,
+        "No. of Sinks": 14.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.351695,
+          34.021359
+        ]
+      },
+      "properties": {
+        "Facility Name": "Rancho Cienega Sports Center ",
+        "Facility Address": "5001 Rodeo Road Los Angeles, CA 90016",
+        "Council District": 10,
+        "Standard": 9.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": 6.0,
+        "Men": 6.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 28.0,
+        "No. of Urinals": 12.0,
+        "No. of Sinks": 22.0,
+        "No. of Showers": 4.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53453,
+          34.18676
+        ]
+      },
+      "properties": {
+        "Facility Name": "Reseda Recreation Center/Park",
+        "Facility Address": "18411 Victory Blvd. Reseda, CA 91335",
+        "Council District": 3,
+        "Standard": 7.0,
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 14.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 10.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.183444,
+          39.641185
+        ]
+      },
+      "properties": {
+        "Facility Name": "Riverside Park ",
+        "Facility Address": "Stadium Way and Allesandro ",
+        "Council District": 1,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38467,
+          34.04927
+        ]
+      },
+      "properties": {
+        "Facility Name": "Robertson Child Care Center ",
+        "Facility Address": "1641 Preuss Road Los Angeles, CA 90035",
+        "Council District": 5,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 2.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.19283,
+          34.08771
+        ]
+      },
+      "properties": {
+        "Facility Name": "Rose Hill North Park ",
+        "Facility Address": "3606 Boundary Avenue Los Angeles, CA 90032",
+        "Council District": 14,
+        "Standard": 1.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 10.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 10.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18979,
+          34.08579
+        ]
+      },
+      "properties": {
+        "Facility Name": "Rose Hill Recreation Center ",
+        "Facility Address": "4530 Mercury Avenue Los Angeles, CA 90032",
+        "Council District": 14,
+        "Standard": 1.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 10.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 10.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29128,
+          33.89677
+        ]
+      },
+      "properties": {
+        "Facility Name": "Rosecrans Recreation Center ",
+        "Facility Address": "840 West 149th Street Gardena, CA 90247",
+        "Council District": 15,
+        "Standard": 3.0,
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": "",
+        "Women": 3.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24735,
+          34.00873
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ross Snyder Recreation Center ",
+        "Facility Address": "1501 East 41st Street Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.51448,
+          34.03772
+        ]
+      },
+      "properties": {
+        "Facility Name": "Rustic Canyon Recreation Center ",
+        "Facility Address": "601 Latimer Road Santa Monica, CA 90402",
+        "Council District": 11,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 10.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 8.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61967,
+          34.19391
+        ]
+      },
+      "properties": {
+        "Facility Name": "Shadow Ranch Park ",
+        "Facility Address": "22633 Vanowen Street Woodland Hills, CA 91307",
+        "Council District": 12,
+        "Standard": 7.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 3.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28047,
+          34.13245
+        ]
+      },
+      "properties": {
+        "Facility Name": "Shane's Inspiration ",
+        "Facility Address": "4730 Crystal Springs Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 10.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 10.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2476,
+          33.99463
+        ]
+      },
+      "properties": {
+        "Facility Name": "Slauson Recreation Center ",
+        "Facility Address": "5306 South Compton Avenue Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26853,
+          33.99665
+        ]
+      },
+      "properties": {
+        "Facility Name": "South Park Recreation Center ",
+        "Facility Address": "345 East 51st Street Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 4.0,
+        "Bottle Fillers": 5.0,
+        "Gender Neutral": 2.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 18.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 10.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31141,
+          33.95975
+        ]
+      },
+      "properties": {
+        "Facility Name": "St. Andrews Recreation Center ",
+        "Facility Address": "8701 St Andrews Place Los Angeles, CA 90047",
+        "Council District": 8,
+        "Standard": 5.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 10.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37049,
+          34.21846
+        ]
+      },
+      "properties": {
+        "Facility Name": "Sun Valley Recreation Center ",
+        "Facility Address": "8133 Vineland Avenue Sun Valley, CA 91352",
+        "Council District": 6,
+        "Standard": 9.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 2.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 14.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 13.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32166,
+          34.26129
+        ]
+      },
+      "properties": {
+        "Facility Name": "Sunland Senior Citizen Center ",
+        "Facility Address": "8640 Fenwick Street Sunland, CA 91040",
+        "Council District": 7,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 7.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.20339,
+          34.1007
+        ]
+      },
+      "properties": {
+        "Facility Name": "Sycamore Grove Park ",
+        "Facility Address": "4702 North Figueroa Street Los Angeles, CA 90042",
+        "Council District": 1,
+        "Standard": 5.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 9.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 8.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44446,
+          34.30828
+        ]
+      },
+      "properties": {
+        "Facility Name": "Sylmar Recreation Center ",
+        "Facility Address": "13109 Borden Avenue Sylmar, CA 91342",
+        "Council District": 7,
+        "Standard": 5.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 8.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 7.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55022,
+          34.17464
+        ]
+      },
+      "properties": {
+        "Facility Name": "Tarzana Recreation Center",
+        "Facility Address": "5655 Vanalden Avenue Tarzana, CA 91356",
+        "Council District": 3,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.555685,
+          34.038381
+        ]
+      },
+      "properties": {
+        "Facility Name": "Temescal Canyon Park ",
+        "Facility Address": "15900 Pacific Coast Highway Pacific Palisades, CA 90272",
+        "Council District": 11,
+        "Standard": 6.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 4.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 4.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 3.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27871,
+          34.03914
+        ]
+      },
+      "properties": {
+        "Facility Name": "Toberman Recreation Center ",
+        "Facility Address": "1725 Toberman Street Los Angeles, CA 90015",
+        "Council District": 1,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26278,
+          34.02384
+        ]
+      },
+      "properties": {
+        "Facility Name": "Trinity Recreation Center ",
+        "Facility Address": "2415 Trinity Street Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 9.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 8.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40096,
+          34.19612
+        ]
+      },
+      "properties": {
+        "Facility Name": "Valey Plaza Park Nature Center ",
+        "Facility Address": "6911 Laurelgrove Avenue North Hollywood, CA 91605",
+        "Council District": 2,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 1.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 1.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40085,
+          34.19202
+        ]
+      },
+      "properties": {
+        "Facility Name": "Valley Plaza Recreation Center ",
+        "Facility Address": "12240 Archwood Street North Hollywood, CA 91606",
+        "Council District": 2,
+        "Standard": 3.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 11.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40507,
+          34.19767
+        ]
+      },
+      "properties": {
+        "Facility Name": "Valley Plaza Sports Complex",
+        "Facility Address": "7000 Whitsett Avenue North Hollywood, CA 91606",
+        "Council District": 2,
+        "Standard": 3.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 13.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 11.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31908,
+          33.99083
+        ]
+      },
+      "properties": {
+        "Facility Name": "Van Ness Recreation Center",
+        "Facility Address": "5720 2nd Avenue Los Angeles, CA 90043",
+        "Council District": 8,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 14.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 8.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44459,
+          34.19407
+        ]
+      },
+      "properties": {
+        "Facility Name": "Van Nuys Recreation Center ",
+        "Facility Address": "14301 Vanowen Street Van Nuys, CA 91405",
+        "Council District": 6,
+        "Standard": 1.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 2.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 6.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44248,
+          34.15954
+        ]
+      },
+      "properties": {
+        "Facility Name": "Van Nuys Sherman Oaks Recreation Center",
+        "Facility Address": "14201 Huston Street Sherman Oaks, CA 91423",
+        "Council District": 4,
+        "Standard": 14.0,
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": 3.0,
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 1.0,
+        "No. of Toilets": 23.0,
+        "No. of Urinals": 7.0,
+        "No. of Sinks": 17.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.47284,
+          33.98581
+        ]
+      },
+      "properties": {
+        "Facility Name": "Venice Beach ",
+        "Facility Address": "1800 Ocean Front Walk Venice, CA 90291",
+        "Council District": 11,
+        "Standard": 25.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 55.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 6.0,
+        "No. of Toilets": 58.0,
+        "No. of Urinals": 25.0,
+        "No. of Sinks": 20.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29737,
+          34.00049
+        ]
+      },
+      "properties": {
+        "Facility Name": "Vermont Square Park ",
+        "Facility Address": "1248 West 47th Street Los Angeles, CA 90037",
+        "Council District": 9,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": 3.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 3.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 1.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3729,
+          34.18686
+        ]
+      },
+      "properties": {
+        "Facility Name": "Victory Vineland Recreation Center ",
+        "Facility Address": "11117 Victory Blvd. North Hollywood, CA 91606",
+        "Council District": 2,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 2.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 9.0,
+        "No. of Urinals": 3.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34649,
+          34.02829
+        ]
+      },
+      "properties": {
+        "Facility Name": "Vineyard Recreation/ Senior Center ",
+        "Facility Address": "2942 Vineyard Avenue Los Angeles, CA 90016",
+        "Council District": 10,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 9.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 10.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.19815,
+          34.05072
+        ]
+      },
+      "properties": {
+        "Facility Name": "Wabash Recreation Center ",
+        "Facility Address": "2765 Wabash Avenue Los Angeles, CA 90033",
+        "Council District": 14,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 4.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.60548,
+          34.17556
+        ]
+      },
+      "properties": {
+        "Facility Name": "Warner Center Ranch Park ",
+        "Facility Address": "5800 Topanga Canyon Blvd. Woodland Hills, CA 91367",
+        "Council District": 3,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 15.0,
+        "No. of Urinals": 5.0,
+        "No. of Sinks": 10.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46552,
+          34.29769
+        ]
+      },
+      "properties": {
+        "Facility Name": "West Lakeside Street Park",
+        "Facility Address": "15275 West Lakeside Park Sylmar, CA 91342",
+        "Council District": 7,
+        "Standard": "",
+        "Bottle Fillers": 3.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 4.0,
+        "No. of Toilets": 4.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41378,
+          33.95957
+        ]
+      },
+      "properties": {
+        "Facility Name": "Westchester Recreation Center ",
+        "Facility Address": "7000 West Manchester Avenue Los Angeles, CA 90045",
+        "Council District": 11,
+        "Standard": 2.0,
+        "Bottle Fillers": 4.0,
+        "Gender Neutral": 2.0,
+        "Women": 4.0,
+        "Men": 4.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 18.0,
+        "No. of Urinals": 6.0,
+        "No. of Sinks": 12.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44802,
+          34.05226
+        ]
+      },
+      "properties": {
+        "Facility Name": "Westwood Recreation Center ",
+        "Facility Address": "1350 Sepulveda Blvd Los Angeles, CA 90025",
+        "Council District": 5,
+        "Standard": 8.0,
+        "Bottle Fillers": 4.0,
+        "Gender Neutral": 3.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 12.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 10.0,
+        "No. of Showers": 1.0,
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29,
+          33.70597
+        ]
+      },
+      "properties": {
+        "Facility Name": "Wilders Addition (Point Fermin Park) ",
+        "Facility Address": "607 Paseo del Mar San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 4.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26864,
+          33.77315
+        ]
+      },
+      "properties": {
+        "Facility Name": "Wilmington Recreation Center ",
+        "Facility Address": "325 North Neptune Avenue Wilmington, CA 90744",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 1.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 9.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 9.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.6144,
+          34.17705
+        ]
+      },
+      "properties": {
+        "Facility Name": "Woodland Hills Recreation Center ",
+        "Facility Address": "5858 Shoup Avenue Woodland Hills, CA 91367",
+        "Council District": 3,
+        "Standard": 6.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": 6.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 5.0,
+        "No. of Toilets": 17.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 6.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48315,
+          34.18482
+        ]
+      },
+      "properties": {
+        "Facility Name": "Woodley Park Section I",
+        "Facility Address": "6350 Woodley Avenue Van Nuys, CA 91406",
+        "Council District": 6,
+        "Standard": 4.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 4.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.20805,
+          34.13345
+        ]
+      },
+      "properties": {
+        "Facility Name": "Yosemite Recreation Center",
+        "Facility Address": "1840 Yosemite Drive Los Angeles, CA 90041",
+        "Council District": 14,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": 3.0,
+        "Men": 3.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 17.0,
+        "No. of Urinals": 4.0,
+        "No. of Sinks": 14.0,
+        "No. of Showers": "",
+        "Combo": 1
+      }
+    }
+  ]
+}
