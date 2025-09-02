@@ -699,43 +699,48 @@ const Home = () => {
 
                 {/* Bathroom and Water Fountain Filters */}
                 <div className="mt-4 space-y-2">
-                  <div className="flex items-center space-x-2">
-                    <input
-                      type="checkbox"
-                      id="bathrooms-filter"
-                      checked={showBathrooms}
-                      onChange={(e) => setShowBathrooms(e.target.checked)}
-                      className="text-blue-600"
-                    />
-                    <label htmlFor="bathrooms-filter" className="text-white text-sm">
-                      Show Bathrooms
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <input
-                      type="checkbox"
-                      id="fountains-filter"
-                      checked={showWaterFountains}
-                      onChange={(e) => setShowWaterFountains(e.target.checked)}
-                      className="text-blue-600"
-                    />
-                    <label htmlFor="fountains-filter" className="text-white text-sm">
-                      Show Water Fountains
-                    </label>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <input
-                      type="checkbox"
-                      id="combo-filter"
-                      checked={showCombo}
-                      onChange={(e) => setShowCombo(e.target.checked)}
-                      className="text-blue-600"
-                    />
-                    <label htmlFor="combo-filter" className="text-white text-sm">
-                      Show Water Fountains and Bathroom
-                    </label>
-                  </div>
-                </div>
+  <p className="text-white text-sm font-semibold">Show facilities with:</p>
+  
+  <div className="flex items-center space-x-2">
+    <input
+      type="checkbox"
+      id="bathrooms-filter"
+      checked={showBathrooms}
+      onChange={(e) => setShowBathrooms(e.target.checked)}
+      className="text-blue-600"
+    />
+    <label htmlFor="bathrooms-filter" className="text-white text-sm">
+      Bathrooms Only
+    </label>
+  </div>
+
+  <div className="flex items-center space-x-2">
+    <input
+      type="checkbox"
+      id="fountains-filter"
+      checked={showWaterFountains}
+      onChange={(e) => setShowWaterFountains(e.target.checked)}
+      className="text-blue-600"
+    />
+    <label htmlFor="fountains-filter" className="text-white text-sm">
+      Water Fountains Only
+    </label>
+  </div>
+
+  <div className="flex items-center space-x-2">
+    <input
+      type="checkbox"
+      id="combo-filter"
+      checked={showCombo}
+      onChange={(e) => setShowCombo(e.target.checked)}
+      className="text-blue-600"
+    />
+    <label htmlFor="combo-filter" className="text-white text-sm">
+      Water Fountains and Bathrooms
+    </label>
+  </div>
+</div>
+
 
                 {/* Sources */}
                 <div className="mt-3 space-y-1">
