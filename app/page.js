@@ -653,7 +653,7 @@ const Home = () => {
             }`}
         >
           <div className="bg-zinc-900 w-content bg-opacity-90 px-2 py-1 mt-1 sm:rounded-lg">
-            <div className="gap-x-0 flex flex-row w-full">
+            {/* <div className="gap-x-0 flex flex-row w-full">
               <button
                 onClick={() => setselectedfilteropened("cd")}
                 className={`px-2 border-b-2 py-1 font-semibold ${selectedfilteropened === "cd"
@@ -663,7 +663,7 @@ const Home = () => {
               >
                 CD #
               </button>
-            </div>
+            </div> */}
 
             {selectedfilteropened === "cd" && (
               <div className="pl-5 pr-2 py-2">
@@ -680,7 +680,7 @@ const Home = () => {
                   Unselect All
                 </button>
                 <br />
-                <Checkbox.Group
+                {/* <Checkbox.Group
                   value={filteredCD}
                   onChange={(event) => setfilteredcouncildistrictspre(event, "Council District")}
                 >
@@ -695,7 +695,7 @@ const Home = () => {
                       />
                     ))}
                   </div>
-                </Checkbox.Group>
+                </Checkbox.Group> */}
 
                 {/* Bathroom and Water Fountain Filters */}
                 <div className="mt-4 space-y-2">
