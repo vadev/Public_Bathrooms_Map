@@ -3,12 +3,12 @@
 import { Checkbox, MantineProvider } from "@mantine/core";
 import React, { useEffect, useState, useRef } from "react";
 import Nav from "@/components/Nav";
-import CouncilDist from "./data/CouncilDistricts.json";
+import CouncilDist from "../data/CouncilDistricts.json";
 import geoData from "./data/output.json";
 import geoDataFalse from "./data/output_false.json";
-import combo_true from "./data/combo_true.json";
-import combo_false from "./data/combo_false.json";
-import restroomsData from "./data/restrooms_water_fountains_cleaned.json";
+import combo_true from "./data/combo.json";
+import bathroom_only from "./data/bathroom_only.json";
+import water_only from "./data/water_only.json";
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
@@ -68,7 +68,7 @@ const Home = () => {
   };
 
   const applyWaterFountainFilter = () => {
-    const layers = ['hydration'];
+    const layers = ['hydration', 'water_only_layer'];
     layers.forEach(layerId => {
       if (mapref.current && mapref.current.getLayer(layerId)) {
         mapref.current.setLayoutProperty(layerId, 'visibility', showWaterFountains ? 'visible' : 'none');
@@ -165,7 +165,7 @@ const Home = () => {
       if (center) map.flyTo({ center, zoom: 16, speed: 0.8, curve: 1.4 });
     });
 
-    const restroomsGeoData = { type: "FeatureCollection", features: restroomsData?.features };
+    // const restroomsGeoData = { type: "FeatureCollection", features: restroomsData?.features };
     const CouncilDistData = {
       type: "FeatureCollection",
       features: CouncilDist.features.map((feature) => ({
@@ -287,9 +287,10 @@ const Home = () => {
                 };
 
                 // ---------- Sources ----------
-                map.addSource("combo_true-source", { type: "geojson", data: combo_true });
-                map.addSource("combo_false-source", { type: "geojson", data: combo_false });
-                map.addSource("restrooms-source", { type: "geojson", data: geoData });
+                map.addSource("restroom-source-for-combo", { type: "geojson", data: combo_true });
+                map.addSource("restroom-source", { type: "geojson", data: bathroom_only });
+                map.addSource("water_only-source", { type: "geojson", data: water_only });
+                map.addSource("hydration-source-for-combo", { type: "geojson", data: geoData });
                 map.addSource("hydration-source", { type: "geojson", data: geoDataFalse });
                 map.addSource("cd-boundaries-source", { type: "geojson", data: CouncilDistData });
                 if (manualRestrooms.features.length) {
@@ -304,11 +305,10 @@ const Home = () => {
                   paint: { "line-color": "white", "line-width": 1 },
                 });
 
-                // Hydration (droplet)
                 map.addLayer({
                   id: "combo-layer-for-hydration",
                   type: "symbol",
-                  source: "restrooms-source",
+                  source: "hydration-source-for-combo",
                   layout: {
                     "icon-image": "combo-icon",
                     "icon-allow-overlap": true,
@@ -322,14 +322,51 @@ const Home = () => {
                       16, 0.24,
                     ],
                   },
-                  // filter: ["==", ["get", "Combo"], 0]
+                });
+
+                map.addLayer({
+                  id: "hydration",
+                  type: "symbol",
+                  source: "hydration-source",
+                  layout: {
+                    "icon-image": "fountain-icon",
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-size": [
+                      "interpolate",
+                      ["linear"],
+                      ["zoom"],
+                      10, 0.15,
+                      14, 0.22,
+                      16, 0.28,
+                    ],
+                  }
+                });
+
+                                map.addLayer({
+                  id: "water_only_layer",
+                  type: "symbol",
+                  source: "water_only-source",
+                  layout: {
+                    "icon-image": "fountain-icon",
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-size": [
+                      "interpolate",
+                      ["linear"],
+                      ["zoom"],
+                      10, 0.15,
+                      14, 0.22,
+                      16, 0.28,
+                    ],
+                  }
                 });
 
                 // Restrooms (toilet)
                 map.addLayer({
                   id: "restrooms-layer",
                   type: "symbol",
-                  source: "combo_false-source",
+                  source: "restroom-source",
                   layout: {
                     "icon-image": "restroom-icon",
                     "icon-allow-overlap": true,
@@ -344,6 +381,25 @@ const Home = () => {
                     ],
                   },
                   // filter: ["==", ["get", "Combo"], 0]
+                });
+
+                map.addLayer({
+                  id: "combo-layer",
+                  type: "symbol",
+                  source: "restroom-source-for-combo",
+                  layout: {
+                    "icon-image": "combo-icon",
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-size": [
+                      "interpolate",
+                      ["linear"],
+                      ["zoom"],
+                      10, 0.15,
+                      14, 0.22,
+                      16, 0.28,
+                    ],
+                  },
                 });
 
                 if (map.hasImage("baby-icon")) {
@@ -421,47 +477,6 @@ const Home = () => {
                     },
                   });
                 }
-
-                map.addLayer({
-                  id: "combo-layer",
-                  type: "symbol",
-                  source: "combo_true-source",
-                  layout: {
-                    "icon-image": "combo-icon",
-                    "icon-allow-overlap": true,
-                    "icon-anchor": "bottom",
-                    "icon-size": [
-                      "interpolate",
-                      ["linear"],
-                      ["zoom"],
-                      10, 0.15,
-                      14, 0.22,
-                      16, 0.28,
-                    ],
-                  },
-                  // filter: ["==", ["get", "Combo"], 1]
-                });
-
-
-                map.addLayer({
-                  id: "hydration",
-                  type: "symbol",
-                  source: "hydration-source",
-                  layout: {
-                    "icon-image": "fountain-icon",
-                    "icon-allow-overlap": true,
-                    "icon-anchor": "bottom",
-                    "icon-size": [
-                      "interpolate",
-                      ["linear"],
-                      ["zoom"],
-                      10, 0.15,
-                      14, 0.22,
-                      16, 0.28,
-                    ],
-                  },
-                  // filter: ["==", ["get", "Combo"], 1]
-                });
 
                 // ---------- Tooltips (layer-aware icon) ----------
                 const hoverPopup = new mapboxgl.Popup({
@@ -571,7 +586,7 @@ const Home = () => {
                   });
                 };
 
-                ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower", "manual-restrooms-layer", "combo-layer", "combo-layer-for-hydration"]
+                ["hydration", "restrooms-layer", "restrooms-baby", "restrooms-shower", "manual-restrooms-layer", "combo-layer", "combo-layer-for-hydration", "water_only_layer"]
                   .filter((id) => map.getLayer(id))
                   .forEach(attachTooltip);
 

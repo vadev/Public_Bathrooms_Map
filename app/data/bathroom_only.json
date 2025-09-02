@@ -1,0 +1,341 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4464,
+          34.18923
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bernardi Multipurpose Senior Center ",
+        "Facility Address": "6514 Sylmar Avenue Van Nuys, CA 91401",
+        "Council District": 6,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 2.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 4.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.306423,
+          34.161182
+        ]
+      },
+      "properties": {
+        "Facility Name": "Betty Davis ",
+        "Facility Address": "1850 Riverside Drive Glendale, CA 91201",
+        "Council District": 13,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 4.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 4.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53226,
+          34.25529
+        ]
+      },
+      "properties": {
+        "Facility Name": "Devonshire House (Northridge Park) ",
+        "Facility Address": "18300 Lemarsh Street Northridge, CA 91324",
+        "Council District": 12,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29211,
+          33.74079
+        ]
+      },
+      "properties": {
+        "Facility Name": "Fort Macarthur Military Museum ",
+        "Facility Address": "360 S Gaffey Street San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 2.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.290351,
+          33.722416
+        ]
+      },
+      "properties": {
+        "Facility Name": "Harbor View Memorial Park ",
+        "Facility Address": "2411 S Grand Avenue San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 3.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 3.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.500956,
+          34.182138
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lake Balboa Lifeguard ",
+        "Facility Address": "6200 Balboa Blvd. Encino, CA 91316",
+        "Council District": 6,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 5.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 5.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 1.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.500958,
+          34.184174
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lake Balboa Playground ",
+        "Facility Address": "6300 Balboa Blvd. Encino, CA 91316",
+        "Council District": 6,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 6.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 6.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.253053,
+          33.753088
+        ]
+      },
+      "properties": {
+        "Facility Name": "Los Angeles Maritime Museum ",
+        "Facility Address": "Berth 84 San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 1.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 9.0,
+        "No. of Urinals": 2.0,
+        "No. of Sinks": 11.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53226,
+          34.25529
+        ]
+      },
+      "properties": {
+        "Facility Name": "Northridge Park Child Care Center ",
+        "Facility Address": "18300 Lemarsh Street Northridge, CA 91324",
+        "Council District": 12,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 2.0,
+        "Women": 1.0,
+        "Men": 1.0,
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 5.0,
+        "No. of Urinals": 1.0,
+        "No. of Sinks": 5.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.51114,
+          34.18634
+        ]
+      },
+      "properties": {
+        "Facility Name": "Pedlow Skate Park ",
+        "Facility Address": "17334 Victory Blvd. Encino, CA 91316",
+        "Council District": 6,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 1.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52485,
+          34.0441
+        ]
+      },
+      "properties": {
+        "Facility Name": "Potrero Canyon ",
+        "Facility Address": "851 Alma Drive Palisades, CA 90272",
+        "Council District": 11,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": 2.0,
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": "",
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31789,
+          34.03531
+        ]
+      },
+      "properties": {
+        "Facility Name": "South Seas House ",
+        "Facility Address": "2323 Arlington Avenue Los Angeles, CA 90018",
+        "Council District": 10,
+        "Standard": "",
+        "Bottle Fillers": "",
+        "Gender Neutral": 2.0,
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": 2.0,
+        "No. of Urinals": "",
+        "No. of Sinks": 2.0,
+        "No. of Showers": 1.0,
+        "Bathroom ONLY": 1,
+        "Water ONLY": 0,
+        "Combo": 0
+      }
+    }
+  ]
+}

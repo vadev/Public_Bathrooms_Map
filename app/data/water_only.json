@@ -1,0 +1,4093 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28526,
+          33.94085
+        ]
+      },
+      "properties": {
+        "Facility Name": "105th Street Park",
+        "Facility Address": "609 West 105th Street Los Angeles, CA 90044",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26356,
+          33.99847
+        ]
+      },
+      "properties": {
+        "Facility Name": "49th Street Park",
+        "Facility Address": "670 East 49th Street Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2725,
+          33.98435
+        ]
+      },
+      "properties": {
+        "Facility Name": "61st Street Park",
+        "Facility Address": "139 East 61st Street Park Los Angeles, CA 90003",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2883,
+          33.97084
+        ]
+      },
+      "properties": {
+        "Facility Name": "76th Street Park",
+        "Facility Address": "833 West 76th Street Los Angeles, CA 90044",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.400878,
+          34.183068
+        ]
+      },
+      "properties": {
+        "Facility Name": "Alexandria Park",
+        "Facility Address": "Laurelgrove Avenue and Erwin Street North Hollywood, CA 91605",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.296802,
+          33.725181
+        ]
+      },
+      "properties": {
+        "Facility Name": "Alma Park",
+        "Facility Address": "West 21st Street and Meyler Street San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.282982,
+          34.044982
+        ]
+      },
+      "properties": {
+        "Facility Name": "Alvarado Terrace Park ",
+        "Facility Address": "Malvern Avenue & Alvarado Terrace Los Angeles, CA 90006",
+        "Council District": 1,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41816,
+          34.25298
+        ]
+      },
+      "properties": {
+        "Facility Name": "Amistad Park ",
+        "Facility Address": "13116 Kagel Canyon Street Pacoima, CA 91331",
+        "Council District": 7,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32274,
+          33.99486
+        ]
+      },
+      "properties": {
+        "Facility Name": "Angeles Mesa Park",
+        "Facility Address": "2700 West 52nd Street Los Angeles, CA 90043",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50096,
+          34.1844
+        ]
+      },
+      "properties": {
+        "Facility Name": "Anthony Beilenson Park/Lake Balboa ",
+        "Facility Address": "6300 Balboa Blvd. Van Nuys CA 91406",
+        "Council District": 6,
+        "Standard": 8.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23516,
+          34.04165
+        ]
+      },
+      "properties": {
+        "Facility Name": "Arts District Park ",
+        "Facility Address": "501 South Hewitt Street Los Angeles, CA 90013",
+        "Council District": 14,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26544,
+          33.98233
+        ]
+      },
+      "properties": {
+        "Facility Name": "Avalon and Gage Triangle Pocket Park",
+        "Facility Address": "6301 South Avalon Blvd. Los Angeles, CA 90003",
+        "Council District": 9,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.293552,
+          33.743902
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bandini Canyon Park/Marshall Court",
+        "Facility Address": "Corner of West Summerland and Marshall Court San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.292228,
+          33.745118
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bandini Canyon Trails Park",
+        "Facility Address": "West Sepulveda Street between Bandini and Gaffey San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.509637,
+          34.309246
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bee Canyon Park ",
+        "Facility Address": "17301 Sesnon Blvd Granada Hills, CA 91344",
+        "Council District": 12,
+        "Standard": 3.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41268,
+          34.21545
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bellaire Avenue Park ",
+        "Facility Address": "7960 Bellaire Avenue North Hollywood, CA 91605",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31554,
+          34.12148
+        ]
+      },
+      "properties": {
+        "Facility Name": "Bronson Canyon ",
+        "Facility Address": "3200 Canyon Drive Los Angeles, CA 90068",
+        "Council District": 4,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.312013,
+          33.721528
+        ]
+      },
+      "properties": {
+        "Facility Name": "Cabrillo Beach ",
+        "Facility Address": "3720 Stephen White Drive San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": 7.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.457241,
+          34.265878
+        ]
+      },
+      "properties": {
+        "Facility Name": "Carey Ranch Park ",
+        "Facility Address": "Laurel Canyon Blvd and Aztec Street Mission Hills, CA 91342",
+        "Council District": 7,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31889,
+          34.10057
+        ]
+      },
+      "properties": {
+        "Facility Name": "Carlton Way Park ",
+        "Facility Address": "5927 Carlton Way Los Angeles, CA 90028",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.65281,
+          34.20779
+        ]
+      },
+      "properties": {
+        "Facility Name": "Castle Peak Park ",
+        "Facility Address": "24220 1/2 Clarington Drive West Hills, CA 91304",
+        "Council District": 12,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25629,
+          34.00686
+        ]
+      },
+      "properties": {
+        "Facility Name": "Central Avenue Jazz Park ",
+        "Facility Address": "4222 South Central Avenue Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27281,
+          34.13327
+        ]
+      },
+      "properties": {
+        "Facility Name": "Central Service Yard ",
+        "Facility Address": "3900 Chevy Chase Drive Los Angeles, CA 90027",
+        "Council District": 13,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.300387,
+          34.118385
+        ]
+      },
+      "properties": {
+        "Facility Name": "Charlie Turner Trail ",
+        "Facility Address": "2840 W Observatory Road Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.62853,
+          34.23999
+        ]
+      },
+      "properties": {
+        "Facility Name": "Chatsworth Oaks Park",
+        "Facility Address": "9301 Valley Circle Blvd. Chatsworth, CA 91311",
+        "Council District": 12,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21285,
+          34.11315
+        ]
+      },
+      "properties": {
+        "Facility Name": "Cleland Avenue Bicentennial Park ",
+        "Facility Address": "4800 Cleland Avenue Los Angeles, CA 90042",
+        "Council District": 1,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31472,
+          34.05234
+        ]
+      },
+      "properties": {
+        "Facility Name": "Country Club Heritage Plaza Park AKA Wilton Place Park ",
+        "Facility Address": "1015 South Wilton Place Los Angeles, CA 90018",
+        "Council District": 10,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.299624,
+          34.017469
+        ]
+      },
+      "properties": {
+        "Facility Name": "Curtis Roland Park ",
+        "Facility Address": "1287 West 38th Place Los Angeles, CA 90037",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.365322,
+          34.213877
+        ]
+      },
+      "properties": {
+        "Facility Name": "De Gamo Park ",
+        "Facility Address": "101485 Arminita Street Sun Valley, CA 91352",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33513,
+          34.09561
+        ]
+      },
+      "properties": {
+        "Facility Name": "De Longpre Park ",
+        "Facility Address": "1350 North Cherokee Avenue Los Angeles, CA 90028",
+        "Council District": 13,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44353,
+          34.25779
+        ]
+      },
+      "properties": {
+        "Facility Name": "Devonshire Arleta Park ",
+        "Facility Address": "14215 West Devonshire Street Pacoima, CA 91331",
+        "Council District": 6,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45415,
+          34.25639
+        ]
+      },
+      "properties": {
+        "Facility Name": "Devonwood Park",
+        "Facility Address": "10230 Woodman Avenue Mission Hills, CA 91345",
+        "Council District": 7,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34278,
+          34.10401
+        ]
+      },
+      "properties": {
+        "Facility Name": "Dorothy J. and Benjamin B Smith Park",
+        "Facility Address": "7020 Franklin Avenue Los Angeles, CA 90028",
+        "Council District": 13,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25807,
+          33.78435
+        ]
+      },
+      "properties": {
+        "Facility Name": "Drum Barracks Civil War Museum ",
+        "Facility Address": "1052 Banning Blvd Wilmington, CA 90744",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18635,
+          34.14247
+        ]
+      },
+      "properties": {
+        "Facility Name": "Eagle Rock Dog Park ",
+        "Facility Address": "1100 Eagle Vista Drive Los Angeles, CA 90041",
+        "Council District": 14,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.207837,
+          34.076228
+        ]
+      },
+      "properties": {
+        "Facility Name": "ELA Park",
+        "Facility Address": "2500 North Eastlake Avenue Los Angeles, CA 90031",
+        "Council District": 14,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27382,
+          34.2411
+        ]
+      },
+      "properties": {
+        "Facility Name": "Fehlhaber-Houk Park",
+        "Facility Address": "9521 Tujunga Canyon Blvd. Tujunga, CA 91042",
+        "Council District": 7,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2841,
+          34.15543
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ferraro Dog Park",
+        "Facility Address": "5101 North Zoo Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 5.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.634572,
+          34.20596
+        ]
+      },
+      "properties": {
+        "Facility Name": "Four Oaks Park ",
+        "Facility Address": "7499 Melba Avenue West Hills, CA 91307",
+        "Council District": 12,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3304099,
+          34.1022297
+        ]
+      },
+      "properties": {
+        "Facility Name": "Franklin Ivar Park ",
+        "Facility Address": "1900 Ivar Avenue Los Angeles, CA 90028",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.422093,
+          34.211754
+        ]
+      },
+      "properties": {
+        "Facility Name": "Fulton Avenue Park",
+        "Facility Address": "13255 Fulton Avenue North Hollywood, CA 91605",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.293048,
+          33.761385
+        ]
+      },
+      "properties": {
+        "Facility Name": "Gaffey Steet Green Belt ",
+        "Facility Address": "1791 North Gaffey Street San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18187,
+          34.12001
+        ]
+      },
+      "properties": {
+        "Facility Name": "Garvanza Park ",
+        "Facility Address": "6240 Meridian Street Los Angeles, CA 90042",
+        "Council District": 14,
+        "Standard": 4.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.368116,
+          34.03784
+        ]
+      },
+      "properties": {
+        "Facility Name": "Genesse Avenue Park ",
+        "Facility Address": "2330 S Genesse Avenue Los Angeles CA 90019",
+        "Council District": 10,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.340833,
+          34.033443
+        ]
+      },
+      "properties": {
+        "Facility Name": "Gladys Jean Wesson Park/West BLVD Park ",
+        "Facility Address": "2508 West Boulevard Los Angeles, CA 90016",
+        "Council District": 10,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23681,
+          33.93816
+        ]
+      },
+      "properties": {
+        "Facility Name": "Grape Street Park ",
+        "Facility Address": "10726 South Grape Street Los Angeles, CA 90059",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.21255,
+          34.09069
+        ]
+      },
+      "properties": {
+        "Facility Name": "Greayers Oak Mini Park",
+        "Facility Address": "3711 N. Figueroa Street Los Angeles, CA 90065",
+        "Council District": 1,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44029,
+          34.20136
+        ]
+      },
+      "properties": {
+        "Facility Name": "Greenwood Square Park ",
+        "Facility Address": "14101 Sherman Way Blvd. Van Nuys, CA 91405",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.32513,
+          34.060127
+        ]
+      },
+      "properties": {
+        "Facility Name": "Harold A. Henry Park",
+        "Facility Address": "809 South Lucerne Boulevard Los Angeles, CA 90016",
+        "Council District": 5,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.18757,
+          34.10428
+        ]
+      },
+      "properties": {
+        "Facility Name": "Hermon Park (Arroyo Seco Dog Park)",
+        "Facility Address": "5566 Via Marisol Los Angeles, CA 90042",
+        "Council District": 14,
+        "Standard": 5.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28727,
+          33.9824
+        ]
+      },
+      "properties": {
+        "Facility Name": "Hoover-Gage Park",
+        "Facility Address": "6265 South Hoover Street Los Angeles, CA 90044",
+        "Council District": 9,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30108,
+          34.25777
+        ]
+      },
+      "properties": {
+        "Facility Name": "Howard Finn Park ",
+        "Facility Address": "7747 Foothill Blvd. Sunland, CA 91042",
+        "Council District": 7,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.260907,
+          33.959204
+        ]
+      },
+      "properties": {
+        "Facility Name": "Inell Woods Park (Ways Park) ",
+        "Facility Address": "8703 McKinley Place Los Angeles, CA 90002",
+        "Council District": 9,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.399219,
+          34.039712
+        ]
+      },
+      "properties": {
+        "Facility Name": "Irving Schachter Park ",
+        "Facility Address": "2599 Beverwill Drive Los Angeles, CA 90064",
+        "Council District": 5,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26282,
+          33.94735
+        ]
+      },
+      "properties": {
+        "Facility Name": "Jacaranda Park ",
+        "Facility Address": "700 East 98th Street Los Angeles, CA 90002",
+        "Council District": 8,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40548,
+          34.21518
+        ]
+      },
+      "properties": {
+        "Facility Name": "Jamie Beth Slavin Park ",
+        "Facility Address": "7965 Whitsett Avenue North Hollywood, CA 91605",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.293,
+          33.71121
+        ]
+      },
+      "properties": {
+        "Facility Name": "Joan Milke Flores Picnic Area ",
+        "Facility Address": "3601 South Gaffey Street San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "Facility Name": "Joe Klass Water Stop ",
+        "Facility Address": "34.125587280924805, -118.28197365582561",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.58827,
+          34.19793
+        ]
+      },
+      "properties": {
+        "Facility Name": "John Quimby Park ",
+        "Facility Address": "7008 De Soto Avenue Canoga Park, CA 91306",
+        "Council District": 3,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28694,
+          33.99943
+        ]
+      },
+      "properties": {
+        "Facility Name": "Juliam Dixon ",
+        "Facility Address": "4800 South Hoover Los Angeles, CA 90037",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.38057,
+          34.28074
+        ]
+      },
+      "properties": {
+        "Facility Name": "Kagel Canyon Park ",
+        "Facility Address": "11435 Kagel Canyon Street Lake View Terrace, CA 91342",
+        "Council District": 7,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.311904,
+          34.126395
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lake Hollywood Park ",
+        "Facility Address": "3160 Canyon Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.54501,
+          34.19278
+        ]
+      },
+      "properties": {
+        "Facility Name": "LAPD Swat Officer Randal D. Simmons Park",
+        "Facility Address": "6731 Wilbur Avenue Reseda, CA 91335",
+        "Council District": 3,
+        "Standard": 2.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25129,
+          33.99451
+        ]
+      },
+      "properties": {
+        "Facility Name": "Latham Park ",
+        "Facility Address": "5308 South Latham Street Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37872,
+          34.12214
+        ]
+      },
+      "properties": {
+        "Facility Name": "Laurel Canyon Dog Park ",
+        "Facility Address": "8260 Mullholland Drive Los Angeles, CA 90046",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40053,
+          34.18318
+        ]
+      },
+      "properties": {
+        "Facility Name": "Laurel Grove Park ",
+        "Facility Address": "12227 Erwin Street North Hollywood, CA 91605",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.64505,
+          34.21204
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lazy J. Ranch ",
+        "Facility Address": "23751 E. Ingomer Street West Hills, CA 91304",
+        "Council District": 12,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.319665,
+          34.025412
+        ]
+      },
+      "properties": {
+        "Facility Name": "Leslie N. Shaw Park",
+        "Facility Address": "2250 West Jefferson Blvd. Los Angeles, CA 90018",
+        "Council District": 10,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31012,
+          34.09289
+        ]
+      },
+      "properties": {
+        "Facility Name": "Lexington Park ",
+        "Facility Address": "5523 Lexington Avenue Los Angeles, CA 90038",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48819,
+          34.16205
+        ]
+      },
+      "properties": {
+        "Facility Name": "Libbit Park ",
+        "Facility Address": "5101 Libbit Ave. Encino, CA 91436",
+        "Council District": 4,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2914,
+          33.94164
+        ]
+      },
+      "properties": {
+        "Facility Name": "Little Green Acres Park ",
+        "Facility Address": "10420 S Vermont Ave. Los Angeles, CA 90044",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.54476,
+          34.190214
+        ]
+      },
+      "properties": {
+        "Facility Name": "Los Angeles River & Aliso Creek Confluence Park ",
+        "Facility Address": "Wilbur Avenue at Kittiridge Street Reseda, CA 91331",
+        "Council District": 3,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.457425,
+          34.159046
+        ]
+      },
+      "properties": {
+        "Facility Name": "Los Angeles Riverfront Greenway ",
+        "Facility Address": "14900 Valleyheart Drive Sherman Oaks, CA 91403",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28943,
+          34.0927
+        ]
+      },
+      "properties": {
+        "Facility Name": "Madison Avenue Park ",
+        "Facility Address": "1165 Madison Avenue Los Angeles, CA 90004",
+        "Council District": 13,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28904,
+          34.07962
+        ]
+      },
+      "properties": {
+        "Facility Name": "Madison West Park ",
+        "Facility Address": "464 North Madison Avenue Los Angeles, CA 90004",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.64505,
+          34.21204
+        ]
+      },
+      "properties": {
+        "Facility Name": "Mae Boyar Park ",
+        "Facility Address": "23751 E Ingomar Ave West Hills, CA 91304",
+        "Council District": 12,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.46569,
+          34.2158
+        ]
+      },
+      "properties": {
+        "Facility Name": "Marson Street Pocket Park ",
+        "Facility Address": "15262 Marson Street Panorama City, CA 91402",
+        "Council District": 6,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26072,
+          33.99878
+        ]
+      },
+      "properties": {
+        "Facility Name": "McKinley Avenue Park ",
+        "Facility Address": "4916 South McKinley Avenue Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.39564,
+          34.15082
+        ]
+      },
+      "properties": {
+        "Facility Name": "Moorpark Park ",
+        "Facility Address": "12061 Moorpark Street Studio City, CA 91604",
+        "Council District": 4,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35799,
+          33.99894
+        ]
+      },
+      "properties": {
+        "Facility Name": "Norman O. Houston ",
+        "Facility Address": "4800 S La Brea Ave. Los Angeles, CA 90008",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.295647,
+          34.127194
+        ]
+      },
+      "properties": {
+        "Facility Name": "NYC #2",
+        "Facility Address": "Boy's Camp Road and Old Zoo Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.54099,
+          34.25711
+        ]
+      },
+      "properties": {
+        "Facility Name": "Oakridge Estate Park ",
+        "Facility Address": "18650 Devonshire Street Los Angeles, CA 91324",
+        "Council District": 12,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.301687,
+          34.155802
+        ]
+      },
+      "properties": {
+        "Facility Name": "Old Maintenence ",
+        "Facility Address": "5201 Zoo Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28883,
+          34.00158
+        ]
+      },
+      "properties": {
+        "Facility Name": "Orchard Avenue Park ",
+        "Facility Address": "4600 South Orchard Avenue Los Angeles, CA 90037",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.315581,
+          34.264848
+        ]
+      },
+      "properties": {
+        "Facility Name": "Oro Vista Park ",
+        "Facility Address": "1101 Oro Vista Ave Sunland, CA 91040",
+        "Council District": 7,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.59917,
+          34.22805
+        ]
+      },
+      "properties": {
+        "Facility Name": "Parthenia Park ",
+        "Facility Address": "21444 Parthenia Street Canoga Park, CA 91304",
+        "Council District": 3,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.350025,
+          34.13055
+        ]
+      },
+      "properties": {
+        "Facility Name": "Paseo De Cahuenga ",
+        "Facility Address": "3300 Cahuenga Blvd. Los Angeles, CA 90068",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25888,
+          34.06597
+        ]
+      },
+      "properties": {
+        "Facility Name": "Patton Street Park ",
+        "Facility Address": "327 Patton Street Los Angeles, CA 90026",
+        "Council District": 1,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.284537,
+          34.148496
+        ]
+      },
+      "properties": {
+        "Facility Name": "Pecan Grove ",
+        "Facility Address": "Zoo Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": 3.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28436,
+          34.04104
+        ]
+      },
+      "properties": {
+        "Facility Name": "Pico Union Vest Pocket Park ",
+        "Facility Address": "1827 South Hoover Street Los Angeles, CA 90006",
+        "Council District": 1,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.54164,
+          34.29681
+        ]
+      },
+      "properties": {
+        "Facility Name": "Porter Ridge Park ",
+        "Facility Address": "18799 Sesnon Blvd. Northridge, CA 91326",
+        "Council District": 12,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.217259,
+          34.054168
+        ]
+      },
+      "properties": {
+        "Facility Name": "Prospect Park ",
+        "Facility Address": "Echandia Street & Judson Street Los Angeles, CA 90033",
+        "Council District": 14,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29576,
+          34.03014
+        ]
+      },
+      "properties": {
+        "Facility Name": "Richardson Family Park ",
+        "Facility Address": "2700 Budlong Ave Los Angeles, CA 90007",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29758,
+          34.06159
+        ]
+      },
+      "properties": {
+        "Facility Name": "Robert F. Kennedy Inspiration Park (Ambassador Park) ",
+        "Facility Address": "3400 Wilshire Blvd. Los Angeles, CA 90057",
+        "Council District": 10,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31623,
+          34.07605
+        ]
+      },
+      "properties": {
+        "Facility Name": "Robert L Burns Park ",
+        "Facility Address": "4900 Beverly Blvd Los Angeles, CA 90004",
+        "Council District": 13,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26202,
+          34.0641
+        ]
+      },
+      "properties": {
+        "Facility Name": "Rockwood Park ",
+        "Facility Address": "1571 Rockwood Street Los Angeles, CA 90026",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40469,
+          34.25796
+        ]
+      },
+      "properties": {
+        "Facility Name": "Roger Jessup Park",
+        "Facility Address": "12467 Osbourne Street Pacoima, CA 91331",
+        "Council District": 7,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.212537,
+          34.044359
+        ]
+      },
+      "properties": {
+        "Facility Name": "Ross Valencia Community Park",
+        "Facility Address": "1st & Chicago Street Los Angeles, CA 90033",
+        "Council District": 14,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.34883,
+          34.10532
+        ]
+      },
+      "properties": {
+        "Facility Name": "Runyon Canyon Park",
+        "Facility Address": "2000 North Fuller Los Angeles, CA 90046",
+        "Council District": 4,
+        "Standard": 3.0,
+        "Bottle Fillers": 6.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.280875,
+          34.030322
+        ]
+      },
+      "properties": {
+        "Facility Name": "Saint James Park ",
+        "Facility Address": "Adams Blvd and Severance Street Los Angeles, CA 90007",
+        "Council District": 1,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45487,
+          34.29517
+        ]
+      },
+      "properties": {
+        "Facility Name": "San Fer0do Road Park ",
+        "Facility Address": "12395 West Aragon Way Sylmar, CA 91342",
+        "Council District": 7,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24536,
+          34.04375
+        ]
+      },
+      "properties": {
+        "Facility Name": "San Julian Park ",
+        "Facility Address": "526 San Julian Street Los Angeles, CA 90013",
+        "Council District": 14,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.280293,
+          33.736463
+        ]
+      },
+      "properties": {
+        "Facility Name": "San Pedro Plaza Park ",
+        "Facility Address": "7000 South Beacon Street San Pedro, CA 90731",
+        "Council District": 15,
+        "Standard": 3.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.6203884,
+          34.2235634
+        ]
+      },
+      "properties": {
+        "Facility Name": "Sean Brown Park (Formerly Chase Park) ",
+        "Facility Address": "22525 Chase Street West Hills, CA 91304",
+        "Council District": 3,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31385,
+          34.09288
+        ]
+      },
+      "properties": {
+        "Facility Name": "Seily Rodriguez Park",
+        "Facility Address": "5707 Lexington Ave Los Angeles, CA 90038",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33312,
+          34.09987
+        ]
+      },
+      "properties": {
+        "Facility Name": "Selma Park ",
+        "Facility Address": "6567 Selma Avenue Los Angeles, CA 90028",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.5148,
+          34.18631
+        ]
+      },
+      "properties": {
+        "Facility Name": "Sepulveda Basin Off-Leash Dog Park",
+        "Facility Address": "17550 Victory Blvd. Encino, CA 91406",
+        "Council District": 6,
+        "Standard": "",
+        "Bottle Fillers": 5.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.405763,
+          34.231157
+        ]
+      },
+      "properties": {
+        "Facility Name": "Sheldon Skate Park ",
+        "Facility Address": "12511 Sheldon Street Sun Valley, CA 91352",
+        "Council District": 6,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40457,
+          34.22624
+        ]
+      },
+      "properties": {
+        "Facility Name": "Sheldon -Arleta Park (Ceasar Chavez Park) ",
+        "Facility Address": "12455 Wicks Street Sun Valley, CA 91352",
+        "Council District": 6,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.266781,
+          34.092514
+        ]
+      },
+      "properties": {
+        "Facility Name": "Silver Lake Meadows ",
+        "Facility Address": "1850 West Silver Lake Drive Los Angeles, CA 90026",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27895,
+          33.99515
+        ]
+      },
+      "properties": {
+        "Facility Name": "South Broadway Pocket Park",
+        "Facility Address": "317 West 52nd Place Los Angeles, CA 90037",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.265197,
+          33.993282
+        ]
+      },
+      "properties": {
+        "Facility Name": "South Los Angeles Wetlands Park",
+        "Facility Address": "54th Street and Avalon Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33253,
+          33.9795
+        ]
+      },
+      "properties": {
+        "Facility Name": "South Victoria Park ",
+        "Facility Address": "6537 S Victoria Avenue Los Angeles, CA 90043",
+        "Council District": 8,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24849,
+          34.04832
+        ]
+      },
+      "properties": {
+        "Facility Name": "Spring Street Park ",
+        "Facility Address": "428 South Spring Street  Los Angeles, CA 90013",
+        "Council District": 14,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.469527,
+          34.322834
+        ]
+      },
+      "properties": {
+        "Facility Name": "Stetson Ranch ",
+        "Facility Address": "13877 Glenoaks Blvd. Sylmar, CA",
+        "Council District": 7,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.40821,
+          34.15144
+        ]
+      },
+      "properties": {
+        "Facility Name": "Studio City Recreation Center ",
+        "Facility Address": "12621 Rye Street Studio City, CA 91604",
+        "Council District": 4,
+        "Standard": 6.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.63829,
+          34.21203
+        ]
+      },
+      "properties": {
+        "Facility Name": "Taxco Trails Park ",
+        "Facility Address": "23367 Ingomar Streets West Hills, CA 91304",
+        "Council District": 12,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28047,
+          34.13245
+        ]
+      },
+      "properties": {
+        "Facility Name": "Three Mile Tree ",
+        "Facility Address": "4730 Crystal Springs Drive Los Angeles, CA 90027",
+        "Council District": 4,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.45152,
+          34.23629
+        ]
+      },
+      "properties": {
+        "Facility Name": "Tobias Avenue Park ",
+        "Facility Address": "9122 Tobias Avenue Panorama City, CA 91402",
+        "Council District": 6,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.26454,
+          34.06385
+        ]
+      },
+      "properties": {
+        "Facility Name": "Unidad Park ",
+        "Facility Address": "1644 West Beverly Boulevard Los Angeles, CA 90027",
+        "Council District": 13,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.418151,
+          34.183045
+        ]
+      },
+      "properties": {
+        "Facility Name": "Valley Glen Community Park",
+        "Facility Address": "Erwin Street and Ethel Avenue Van Nuy, CA 91436",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.48405,
+          34.18446
+        ]
+      },
+      "properties": {
+        "Facility Name": "Valley Region Headquarters ",
+        "Facility Address": "6335 Woodley Avenue Van Nuys, CA 91406",
+        "Council District": 6,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.31908,
+          33.99083
+        ]
+      },
+      "properties": {
+        "Facility Name": "Van Ness Pool ",
+        "Facility Address": "5720 2nd Avenue Los Angeles, CA 90043",
+        "Council District": 8,
+        "Standard": "",
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29095,
+          33.98261
+        ]
+      },
+      "properties": {
+        "Facility Name": "Vermont & Gage Park",
+        "Facility Address": "960 W 962nd Place Los Angeles, CA 90044",
+        "Council District": 9,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29099,
+          33.96535
+        ]
+      },
+      "properties": {
+        "Facility Name": "Vermont Miracle Mile ",
+        "Facility Address": "956 West 81st Street Los Angeles, CA 90044",
+        "Council District": 8,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.25673,
+          34.00274
+        ]
+      },
+      "properties": {
+        "Facility Name": "Vernon Park ",
+        "Facility Address": "4501 South Central Ave Los Angeles, CA 90011",
+        "Council District": 9,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.237945,
+          34.080908
+        ]
+      },
+      "properties": {
+        "Facility Name": "Victory Memorial Grove Elysian Park ",
+        "Facility Address": "929 Academy Road Los Angeles, CA 90012",
+        "Council District": 1,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.54529,
+          34.28067
+        ]
+      },
+      "properties": {
+        "Facility Name": "Viking Park ",
+        "Facility Address": "11500 Viking Avenue Northridge, CA 91326",
+        "Council District": 12,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.339447,
+          34.2157471
+        ]
+      },
+      "properties": {
+        "Facility Name": "Villa Cabrini Park ",
+        "Facility Address": "9401 Villa Cabrini Drive West Sun Valley, CA 91504",
+        "Council District": 2,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.3313123,
+          34.1270533
+        ]
+      },
+      "properties": {
+        "Facility Name": "Vista Del Valle ",
+        "Facility Address": "Vista Del Valle Drive Los Angeles, CA 90026",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27155,
+          33.95956
+        ]
+      },
+      "properties": {
+        "Facility Name": "Wall Street Park ",
+        "Facility Address": "8620 Wall Street Los Angeles, CA 90003",
+        "Council District": 9,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24797,
+          33.79238
+        ]
+      },
+      "properties": {
+        "Facility Name": "Watson and O Street Park ",
+        "Facility Address": "1300 East O Street Wilmington, CA 90744",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35494,
+          34.10497
+        ]
+      },
+      "properties": {
+        "Facility Name": "Wattles Garden Park ",
+        "Facility Address": "1850 N Curson Avenue Los Angeles, CA 90046",
+        "Council District": 4,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24178,
+          33.93871
+        ]
+      },
+      "properties": {
+        "Facility Name": "Watts Cultural Crescent ",
+        "Facility Address": "1727 E 107th Street Los Angeles, CA 90002",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.24008,
+          33.93197
+        ]
+      },
+      "properties": {
+        "Facility Name": "Watts Serenity Park ",
+        "Facility Address": "11300 Monitor Avenue Los Angeles, CA 90059",
+        "Council District": 15,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30052,
+          34.03917
+        ]
+      },
+      "properties": {
+        "Facility Name": "West Adams Height Park ",
+        "Facility Address": "1903 West Cordova Los Angeles, CA 90018",
+        "Council District": 10,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.65678,
+          34.19763
+        ]
+      },
+      "properties": {
+        "Facility Name": "West Hills Sports Center/ Adam Bischoff Memorial Soccer Fields ",
+        "Facility Address": "6900 Valley Circle Drive West Hills, CA 91307",
+        "Council District": 12,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.4173,
+          33.95812
+        ]
+      },
+      "properties": {
+        "Facility Name": "Westchester Senior Citizen Center",
+        "Facility Address": "8740 Lincoln Blvd Los Angeles, CA 90045",
+        "Council District": 11,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.368665,
+          34.026501
+        ]
+      },
+      "properties": {
+        "Facility Name": "Westside Neighborhood Park",
+        "Facility Address": "3085 Clyde Avenue Los Angeles, CA 90016",
+        "Council District": 10,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.44151,
+          34.057362
+        ]
+      },
+      "properties": {
+        "Facility Name": "Westwood Garden Park ",
+        "Facility Address": "10861 Wellworth Avenue Los Angeles, CA 90064",
+        "Council District": 5,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36186,
+          34.17617
+        ]
+      },
+      "properties": {
+        "Facility Name": "Whitnall Highway Off-Leash Dog Park ",
+        "Facility Address": "5801 1/2 Whitnall Highway North Hollywood, CA 91601",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": 2.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.55688,
+          34.28846
+        ]
+      },
+      "properties": {
+        "Facility Name": "Wilbur-Tampa Park ",
+        "Facility Address": "12001 Wilber Avenue Northridge, CA 91326",
+        "Council District": 12,
+        "Standard": 2.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.262579,
+          33.781364
+        ]
+      },
+      "properties": {
+        "Facility Name": "Wilmington Town Square ",
+        "Facility Address": "105 West I Street Wilmington, CA 90744",
+        "Council District": 15,
+        "Standard": "",
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.399613,
+          34.030578
+        ]
+      },
+      "properties": {
+        "Facility Name": "Woodbine Park ",
+        "Facility Address": "3409 Winton Avenue Los Angeles, CA 90034",
+        "Council District": 5,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37649,
+          34.15019
+        ]
+      },
+      "properties": {
+        "Facility Name": "Woodbridge Park ",
+        "Facility Address": "11240 Moorpark Street Studio City, CA 91602",
+        "Council District": 2,
+        "Standard": 1.0,
+        "Bottle Fillers": 1.0,
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.52569,
+          34.28297
+        ]
+      },
+      "properties": {
+        "Facility Name": "Zelzah Park ",
+        "Facility Address": "11690 Zelzah Avenue Granada Hills, CA 91344",
+        "Council District": 12,
+        "Standard": 1.0,
+        "Bottle Fillers": "",
+        "Gender Neutral": "",
+        "Women": "",
+        "Men": "",
+        "No. of Baby Changing Stations": "",
+        "No. of Toilets": "",
+        "No. of Urinals": "",
+        "No. of Sinks": "",
+        "No. of Showers": "",
+        "Bathroom ONLY": 0,
+        "Water ONLY": 1,
+        "Combo": 0
+      }
+    }
+  ]
+}
