@@ -667,7 +667,7 @@ const Home = () => {
 
             {selectedfilteropened === "cd" && (
               <div className="pl-5 pr-2 py-2">
-                <button
+                {/* <button
                   className="align-middle text-white rounded-lg px-1 border border-gray-400 text-sm md:text-base"
                   onClick={() => setfilteredcouncildistrictspre(cdValues, "Council District")}
                 >
@@ -678,7 +678,7 @@ const Home = () => {
                   onClick={() => setfilteredcouncildistrictspre("sndk", "Council District")}
                 >
                   Unselect All
-                </button>
+                </button> */}
                 <br />
                 {/* <Checkbox.Group
                   value={filteredCD}
