@@ -3,7 +3,7 @@
 import { Checkbox, MantineProvider } from "@mantine/core";
 import React, { useEffect, useState, useRef } from "react";
 import Nav from "@/components/Nav";
-import CouncilDist from "../data/CouncilDistricts.json";
+import CouncilDist from "./data/CouncilDistricts.json";
 import geoData from "./data/output.json";
 import geoDataFalse from "./data/output_false.json";
 import combo_true from "./data/combo.json";
