@@ -679,7 +679,7 @@ const Home = () => {
                 >
                   Unselect All
                 </button> */}
-                <br />
+             
                 {/* <Checkbox.Group
                   value={filteredCD}
                   onChange={(event) => setfilteredcouncildistrictspre(event, "Council District")}
