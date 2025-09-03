@@ -37,7 +37,7 @@ const Home = () => {
   const applyLayerFilter = (layerId, districts) => {
     if (!mapref.current || !mapref.current.getLayer(layerId)) return;
     if (!districts || districts.length === 0) {
-      // Hide features that have a Council District prop; others unaffected by this filter
+      // Hide features that HAVE a "Council District" prop; keep those without CD visible
       mapref.current.setFilter(layerId, [
         "any",
         ["!", ["has", "Council District"]],
@@ -45,7 +45,6 @@ const Home = () => {
       ]);
     } else {
       const parsed = districts.map((v) => parseInt(v, 10));
-      // If feature has no Council District, allow it to remain (county-wide)
       mapref.current.setFilter(layerId, [
         "any",
         ["!", ["has", "Council District"]],
@@ -157,6 +156,7 @@ const Home = () => {
 
     mapref.current = map;
 
+    // Controls
     map.addControl(new mapboxgl.NavigationControl(), "top-right");
     map.addControl(
       new mapboxgl.GeolocateControl({
@@ -169,6 +169,7 @@ const Home = () => {
       "top-right"
     );
 
+    // Geocoder
     const geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       mapboxgl,
@@ -201,6 +202,7 @@ const Home = () => {
     map.on("load", () => {
       boostStreetLabels();
 
+      // Load icons
       map.loadImage("/restroom.png", (error, image) => {
         if (error) throw error;
         if (!map.hasImage("restroom-icon")) map.addImage("restroom-icon", image, { pixelRatio: 2 });
@@ -221,7 +223,7 @@ const Home = () => {
                 }
               });
 
-              // Helpers
+              // ---------- Helpers ----------
               const deg2rad = (d) => (d * Math.PI) / 180;
               const haversineMeters = (a, b) => {
                 const R = 6371000;
@@ -254,6 +256,7 @@ const Home = () => {
               };
 
               (async () => {
+                // Geocode a few manual points
                 const manualAddrs = ["509 S. San Julian St.", "814 E. 6th St.", "204 E. 5th St.", "545 S. San Pedro St."];
                 const manualPoints = await geocodeAddresses(manualAddrs);
                 const manualCenters = manualPoints.map((p) => p.center);
@@ -283,7 +286,7 @@ const Home = () => {
                   map.addSource("manual-restrooms-source", { type: "geojson", data: manualRestrooms });
                 }
 
-                // NEW: County Parks
+                // NEW: County Parks source
                 map.addSource("county-parks-source", { type: "geojson", data: county_parks });
 
                 // ---------- Layers ----------
@@ -354,12 +357,11 @@ const Home = () => {
                   },
                 });
 
-                // FIXED: use the correct source id ("restroom-source")
                 if (map.hasImage("baby-icon")) {
                   map.addLayer({
                     id: "restrooms-baby",
                     type: "symbol",
-                    source: "restroom-source",
+                    source: "restroom-source", // fixed source id
                     layout: {
                       "icon-image": "baby-icon",
                       "icon-allow-overlap": true,
@@ -371,12 +373,11 @@ const Home = () => {
                   });
                 }
 
-                // FIXED: use the correct source id ("restroom-source")
                 if (map.hasImage("shower-icon")) {
                   map.addLayer({
                     id: "restrooms-shower",
                     type: "symbol",
-                    source: "restroom-source",
+                    source: "restroom-source", // fixed source id
                     layout: {
                       "icon-image": "shower-icon",
                       "icon-allow-overlap": true,
@@ -402,9 +403,7 @@ const Home = () => {
                   });
                 }
 
-                // NEW: County Parks layer — robust icon expression
-                // Accepts booleans, "true"/"1", 1
-                const isTrue = ["in", ["to-string", ["get", "tmp"]], ["literal", ["true", "1"]]];
+                // NEW: County Parks layer (icon from boolean flags)
                 map.addLayer({
                   id: "county-parks-layer",
                   type: "symbol",
@@ -412,35 +411,10 @@ const Home = () => {
                   layout: {
                     "icon-image": [
                       "case",
-                      // both
-                      [
-                        "any",
-                        ["==", ["get", "both"], true],
-                        ["==", ["get", "both"], 1],
-                        ["==", ["get", "both"], "1"],
-                        ["==", ["downcase", ["to-string", ["get", "both"]]], "true"],
-                      ],
-                      "combo-icon",
-                      // bathroom_only
-                      [
-                        "any",
-                        ["==", ["get", "bathroom_only"], true],
-                        ["==", ["get", "bathroom_only"], 1],
-                        ["==", ["get", "bathroom_only"], "1"],
-                        ["==", ["downcase", ["to-string", ["get", "bathroom_only"]]], "true"],
-                      ],
-                      "restroom-icon",
-                      // water_fountain_only
-                      [
-                        "any",
-                        ["==", ["get", "water_fountain_only"], true],
-                        ["==", ["get", "water_fountain_only"], 1],
-                        ["==", ["get", "water_fountain_only"], "1"],
-                        ["==", ["downcase", ["to-string", ["get", "water_fountain_only"]]], "true"],
-                      ],
-                      "fountain-icon",
-                      // default
-                      "fountain-icon",
+                      ["==", ["get", "both"], true], "combo-icon",
+                      ["==", ["get", "bathroom_only"], true], "restroom-icon",
+                      ["==", ["get", "water_fountain_only"], true], "fountain-icon",
+                      /* default */ "fountain-icon"
                     ],
                     "icon-allow-overlap": true,
                     "icon-anchor": "bottom",
@@ -459,6 +433,31 @@ const Home = () => {
                 const safe = (v) => (v === undefined || v === null || v === "" ? "—" : v);
 
                 const buildHTML = (p = {}, layerId = "") => {
+                  // County Parks tooltip (matches your schema exactly)
+                  if (layerId === "county-parks-layer") {
+                    const typeLabel = p.both
+                      ? "Water Fountains & Bathrooms"
+                      : p.bathroom_only
+                      ? "Bathrooms Only"
+                      : p.water_fountain_only
+                      ? "Water Fountains Only"
+                      : "Facility";
+                    const icon = p.both
+                      ? "/combo.png"
+                      : p.bathroom_only
+                      ? "/restroom.png"
+                      : "/drop.png";
+                    return `
+                      <div style="font-size:12px;line-height:1.35;">
+                        <img src="${icon}" alt="icon" style="width:30px;height:30px;object-fit:contain;" />
+                        <div><strong>Name:</strong> ${safe(p.name)}</div>
+                        <div><strong>Address:</strong> ${safe(p.address)}</div>
+                        <div><strong>Type:</strong> ${typeLabel}</div>
+                      </div>
+                    `;
+                  }
+
+                  // Default tooltip for City layers
                   const Name = p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
                   const CouncilDistrict =
                     p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
@@ -485,14 +484,9 @@ const Home = () => {
                   let icon;
                   if (isCombo) icon = "/combo.png";
                   else if (
-                    /^restrooms|^manual-restrooms|county-parks-layer/.test(layerId) &&
-                    (p["bathroom_only"] === true ||
-                      p["bathroom_only"] === 1 ||
-                      String(p["bathroom_only"]).toLowerCase() === "1" ||
-                      String(p["bathroom_only"]).toLowerCase() === "true" ||
-                      (NoToilets && Number(NoToilets) > 0))
-                  )
-                    icon = "/restroom.png";
+                    /^restrooms|^manual-restrooms/.test(layerId) &&
+                    (NoToilets && Number(NoToilets) > 0)
+                  ) icon = "/restroom.png";
                   else icon = "/drop.png";
 
                   return `
@@ -572,6 +566,7 @@ const Home = () => {
                   .filter((id) => map.getLayer(id))
                   .forEach(attachTooltip);
 
+                // Initial filters
                 applyAllFilters(filteredCD);
               })();
             }); // shower load
@@ -638,7 +633,6 @@ const Home = () => {
           <div className="bg-zinc-900 w-content bg-opacity-90 px-2 py-1 mt-1 sm:rounded-lg">
             {selectedfilteropened === "cd" && (
               <div className="pl-5 pr-2 py-2">
-                {/* Bathroom and Water Fountain Filters */}
                 <div className="mt-4 space-y-2">
                   <p className="text-white text-sm font-semibold">Show facilities with:</p>
 
@@ -737,7 +731,7 @@ const Home = () => {
         <div ref={divRef} style={{ width: "100%", height: "100vh" }} />
       </MantineProvider>
 
-      {/* Footer logo */}
+      {/* Footer logos */}
       <div className="absolute md:mx-auto bottom-2 left-1 md:left-1/2 md:transform md:-translate-x-1/2">
         <a href="https://controller.lacity.gov/" target="_blank" rel="noopener noreferrer">
           <img
