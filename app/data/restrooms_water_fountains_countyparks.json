@@ -1,0 +1,2198 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.186982,
+          33.885258
+        ]
+      },
+      "properties": {
+        "name": "72nd Street Equestrian Park",
+        "address": "550 72nd Street, Long Beach, CA 90805",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.199116,
+          34.471916
+        ]
+      },
+      "properties": {
+        "name": "Acton Park",
+        "address": "3751 Syracuse Avenue, Acton, CA 93510",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.03684,
+          33.942537
+        ]
+      },
+      "properties": {
+        "name": "Adventure Park",
+        "address": "10130 South Gunn Avenue, Whittier, CA 90605",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.962346,
+          34.039641
+        ]
+      },
+      "properties": {
+        "name": "Allen J. Martin Park",
+        "address": "14830 East Giordano Street, La Puente, CA 91744",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.340663,
+          33.886969
+        ]
+      },
+      "properties": {
+        "name": "Alondra Community Regional Park",
+        "address": "3850 Manhattan Beach Boulevard, Lawndale, CA 90260",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.131556,
+          34.189916
+        ]
+      },
+      "properties": {
+        "name": "Altadena Triangle Park",
+        "address": "800 East Altadena Drive, Altadena, CA 91001",
+        "bathroom_only": false,
+        "water_fountain_only": true,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.050385,
+          33.928913
+        ]
+      },
+      "properties": {
+        "name": "Amelia Mayberry Park",
+        "address": "13201 East Meyer Road, Whittier, CA 90605",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.069114,
+          33.999314
+        ]
+      },
+      "properties": {
+        "name": "Amigo Park",
+        "address": "5700 South Juarez Avenue, Whittier, CA 90606",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.218691,
+          34.733212
+        ]
+      },
+      "properties": {
+        "name": "Apollo Community Regional Park",
+        "address": "4555 West Avenue G, Lancaster, CA 93534",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.051206,
+          34.143909
+        ]
+      },
+      "properties": {
+        "name": "Arboretum and Botanic Garden",
+        "address": "301 North Baldwin Avenue, Arcadia, CA 91006",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.046295,
+          34.131435
+        ]
+      },
+      "properties": {
+        "name": "Arcadia Community Regional Park",
+        "address": "405 South Santa Anita Avenue, Arcadia, CA 91006",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.278645,
+          33.91976
+        ]
+      },
+      "properties": {
+        "name": "Athens Park",
+        "address": "12603 South Broadway, Los Angeles, CA 90061",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.155583,
+          34.025177
+        ]
+      },
+      "properties": {
+        "name": "Atlantic Avenue Park",
+        "address": "570 South Atlantic Boulevard, East Los Angeles, CA 90022",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.993178,
+          34.035917
+        ]
+      },
+      "properties": {
+        "name": "Avenue Park",
+        "address": "553 South 4th Avenue, La Puente, CA 91746",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.989295,
+          34.035216
+        ]
+      },
+      "properties": {
+        "name": "Avocado Heights Park",
+        "address": "14105 Don Julian Road , La Puente, CA 91746",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.987856,
+          34.052452
+        ]
+      },
+      "properties": {
+        "name": "Bassett Park",
+        "address": "510 North Vineland Avenue , La Puente, CA 91746",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.159192,
+          34.040285
+        ]
+      },
+      "properties": {
+        "name": "Belvedere Community Regional Park",
+        "address": "4914 East Cesar Chavez Avenue, Los Angeles, CA 90022",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.878945,
+          33.972897
+        ]
+      },
+      "properties": {
+        "name": "Bill Blevins Park",
+        "address": "19500 East Windrose Drive, Rowland Heights, CA 91748",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.041132,
+          34.029863
+        ]
+      },
+      "properties": {
+        "name": "Blackwill Equestrian Park",
+        "address": "10149 Rooks Road, Whittier, CA 90660",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.334929,
+          33.896612
+        ]
+      },
+      "properties": {
+        "name": "Bodger Park",
+        "address": "14900 South Yukon Avenue, Hawthorne, CA 90250",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.068646,
+          34.029054
+        ]
+      },
+      "properties": {
+        "name": "Bosque del Rio Hondo",
+        "address": "9311 San Gabriel Boulevard, South El Monte, CA 91733",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.902566,
+          33.979871
+        ]
+      },
+      "properties": {
+        "name": "Carolyn Rosas Park",
+        "address": "18500 East Farjardo Street, Rowland Heights, CA 91748",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.625677,
+          34.500473
+        ]
+      },
+      "properties": {
+        "name": "Castaic Lake State Recreation Area",
+        "address": "32132 Castaic Lake Drive, Castaic, CA 91384",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.615998,
+          34.487947
+        ]
+      },
+      "properties": {
+        "name": "Castaic Regional Sports Complex",
+        "address": "31320 North Castaic Road, Castaic, CA 91384",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.13361,
+          34.201729
+        ]
+      },
+      "properties": {
+        "name": "Charles S. Farnsworth Park",
+        "address": "568 East Mount Curve Avenue, Altadena, CA 91001",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.15204,
+          34.187608
+        ]
+      },
+      "properties": {
+        "name": "Charles White Park",
+        "address": "77 Mountain View Street, Altadena, CA 91001",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.85745,
+          34.099681
+        ]
+      },
+      "properties": {
+        "name": "Charter Oak Park",
+        "address": "20261 East Covina Boulevard, Covina, CA 91723",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.179159,
+          34.05101
+        ]
+      },
+      "properties": {
+        "name": "City Terrace Park",
+        "address": "1126 North Hazard Avenue, East Los Angeles, CA 90063",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.244126,
+          33.956153
+        ]
+      },
+      "properties": {
+        "name": "Col. Leon H. Washington Park",
+        "address": "8908 South Maie Avenue, Los Angeles, CA 90002",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.941868,
+          33.988608
+        ]
+      },
+      "properties": {
+        "name": "Countrywood Park",
+        "address": "16817 East Copper Hill Road, Hacienda Heights, CA 91745",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.257717,
+          34.225466
+        ]
+      },
+      "properties": {
+        "name": "Crescenta Valley Community Regional Park",
+        "address": "3901 Dunsmore Avenue, La Crescenta, CA 91214",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.882252,
+          34.118309
+        ]
+      },
+      "properties": {
+        "name": "Dalton Park",
+        "address": "18867 East Armstead Street, Azusa, CA 91702",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.316621,
+          33.736086
+        ]
+      },
+      "properties": {
+        "name": "Deane Dana Friendship Natural Area and Nature Center",
+        "address": "1805 West 9th Street, San Pedro, CA 90732",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.374574,
+          33.918346
+        ]
+      },
+      "properties": {
+        "name": "Del Aire Park",
+        "address": "12601 South Isis Avenue, Hawthorne, CA 90250",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.629167,
+          34.489839
+        ]
+      },
+      "properties": {
+        "name": "Del Valle Park",
+        "address": "28201 West Sloan Canyon, Castaic, CA 91384",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.212157,
+          34.20169
+        ]
+      },
+      "properties": {
+        "name": "Descanso Gardens",
+        "address": "1418 Descanso Drive, La Canada Flintridge, CA 91011",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.859706,
+          34.415072
+        ]
+      },
+      "properties": {
+        "name": "Devil's Punchbowl Natural Area and Nature Center",
+        "address": "28000 Devil's Punchbowl Road, Pearblossom, CA 93553",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.377202,
+          34.293439
+        ]
+      },
+      "properties": {
+        "name": "Dexter Park",
+        "address": "11053 North Trail Road, Kagel Canyon, CA 91342",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.061771,
+          33.852637
+        ]
+      },
+      "properties": {
+        "name": "Don Knabe Community Regional Park",
+        "address": "19700 South Bloomfield Avenue, Cerritos, CA 90701",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.594013,
+          34.389521
+        ]
+      },
+      "properties": {
+        "name": "Dr. Richard H. Rioux Memorial Park",
+        "address": "26233 West Faulkner Drive, Stevenson Ranch, CA 91381",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.259436,
+          33.916511
+        ]
+      },
+      "properties": {
+        "name": "Earvin \"Magic\" Johnson Recreation Area",
+        "address": "905 East El Segundo Boulevard, Los Angeles, CA 90059",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.193129,
+          33.895368
+        ]
+      },
+      "properties": {
+        "name": "East Rancho Dominguez Park",
+        "address": "15116 South Atlantic Avenue, Compton, CA 90221",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.160008,
+          34.016829
+        ]
+      },
+      "properties": {
+        "name": "Eastside Eddie Heredia Boxing Club",
+        "address": "5127 East Olympic Boulevard, Los Angeles, CA 90022",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.098587,
+          34.176164
+        ]
+      },
+      "properties": {
+        "name": "Eaton Canyon Natural Area and Nature Center",
+        "address": "1750 North Altadena Drive, Pasadena, CA 91001",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.41846,
+          34.31774
+        ]
+      },
+      "properties": {
+        "name": "El Cariso Community Regional Park",
+        "address": "13100 Hubbard Street, Sylmar, CA 91342",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.243725,
+          33.982369
+        ]
+      },
+      "properties": {
+        "name": "El Parque Nuestro",
+        "address": "1675 Gage Avenue, Los Angeles, CA 90011",
+        "bathroom_only": false,
+        "water_fountain_only": true,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.256779,
+          33.913202
+        ]
+      },
+      "properties": {
+        "name": "Enterprise Park",
+        "address": "13055 Clovis Street, Los Angeles, CA 90059",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.178467,
+          34.03655
+        ]
+      },
+      "properties": {
+        "name": "Eugene A. Obregon Park",
+        "address": "4021 East First Street, Los Angeles, CA 90063",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.966416,
+          34.527931
+        ]
+      },
+      "properties": {
+        "name": "Everett Martin Park",
+        "address": "35548 North 92nd Street East, Littlerock, CA 93543",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.232093,
+          33.924769
+        ]
+      },
+      "properties": {
+        "name": "Faith and Hope Park",
+        "address": "2247 East 119th Street, Los Angeles, CA 90059",
+        "bathroom_only": false,
+        "water_fountain_only": true,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.80673,
+          34.10668
+        ]
+      },
+      "properties": {
+        "name": "Frank G. Bonelli Equestrian Center",
+        "address": "Via Verde and Camper View Road, San Dimas, CA 91773",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.800662,
+          34.090076
+        ]
+      },
+      "properties": {
+        "name": "Frank G. Bonelli Regional Park",
+        "address": "120 Via Verde Park Road, San Dimas, CA 91773",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.242873,
+          33.968505
+        ]
+      },
+      "properties": {
+        "name": "Franklin D. Roosevelt Park",
+        "address": "7600 Graham Avenue, Los Angeles, CA 90001",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.149931,
+          34.660431
+        ]
+      },
+      "properties": {
+        "name": "George Lane Park",
+        "address": "5520 West Avenue L-8, Quartz Hill, CA 93534",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.250603,
+          33.926145
+        ]
+      },
+      "properties": {
+        "name": "George Washington Carver Park",
+        "address": "1400 East 118th Street, Los Angeles, CA 90059",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.912754,
+          33.97831
+        ]
+      },
+      "properties": {
+        "name": "Gloria Heer Park",
+        "address": "18109 East Gallineta Street, Rowland Heights, CA 91748",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.078895,
+          33.973051
+        ]
+      },
+      "properties": {
+        "name": "Greater Whittier Regional Aquatic Center",
+        "address": "8028 Pioneer Blvd.\n \n Whittier, CA 90606",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.979083,
+          34.013098
+        ]
+      },
+      "properties": {
+        "name": "Hacienda Heights Community and Recreation Center",
+        "address": "1234 Valencia Avenue, Hacienda Heights, CA 91745",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.636017,
+          34.452251
+        ]
+      },
+      "properties": {
+        "name": "Hasley Canyon Equestrian Park",
+        "address": "29201 Avenue Penn, Valencia, CA 91355",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.619809,
+          34.452617
+        ]
+      },
+      "properties": {
+        "name": "Hasley Canyon Park",
+        "address": "28700 West Quincy Street, Castaic, CA 91384",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.293342,
+          33.918497
+        ]
+      },
+      "properties": {
+        "name": "Helen Keller Park",
+        "address": "12521 South Vermont Avenue, Los Angeles, CA 90044",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33719,
+          34.10846
+        ]
+      },
+      "properties": {
+        "name": "Highland Camrose Park",
+        "address": "2101 North Highland Avenue, Los Angeles, CA 90068",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.964802,
+          34.038075
+        ]
+      },
+      "properties": {
+        "name": "Hilda S. Solis Aquatic Center",
+        "address": "14804 Temple Ave, La Puente, CA 91744",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33644,
+          34.11126
+        ]
+      },
+      "properties": {
+        "name": "Hollywood Bowl",
+        "address": "2301 North Highland Avenue, Los Angeles, CA 90068",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.97326,
+          34.572801
+        ]
+      },
+      "properties": {
+        "name": "Jackie Robinson Park",
+        "address": "8773 East Avenue R, Littlerock, CA 93543",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.580702,
+          34.381662
+        ]
+      },
+      "properties": {
+        "name": "Jake Kuredjian Park",
+        "address": "25265 Pico Canyon Road, Stevenson Ranch, CA 91381",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30931,
+          33.94679
+        ]
+      },
+      "properties": {
+        "name": "Jesse Owens Community Regional Park",
+        "address": "9651 South Western Avenue, Los Angeles, CA 90047",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.336488,
+          34.117232
+        ]
+      },
+      "properties": {
+        "name": "John Anson Ford Amphitheatre",
+        "address": "2580 Cahuenga Boulevard East, Los Angeles, CA 90068",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.373146,
+          34.009712
+        ]
+      },
+      "properties": {
+        "name": "Kenneth Hahn State Recreation Area",
+        "address": "4100 South La Cienega Boulevard, Los Angeles, CA 90056",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.50154,
+          34.28912
+        ]
+      },
+      "properties": {
+        "name": "Knollwood Pool",
+        "address": "12040 Balboa Boulevard, Granada Hills, CA 91343",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.005589,
+          33.904567
+        ]
+      },
+      "properties": {
+        "name": "La Mirada Community Regional Park",
+        "address": "13701 South Adelfa Avenue, La Mirada, CA 90638",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.358578,
+          33.985222
+        ]
+      },
+      "properties": {
+        "name": "Ladera Park",
+        "address": "6027 Ladera Park Avenue, Los Angeles, CA 90056",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.892407,
+          34.133593
+        ]
+      },
+      "properties": {
+        "name": "Lario Staging Area",
+        "address": "15701 Foothill Boulevard, Azusa, CA 91702",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.35896,
+          33.937364
+        ]
+      },
+      "properties": {
+        "name": "Lennox Park",
+        "address": "10828 South Condon Avenue, Lennox, CA 90304",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.158928,
+          34.202795
+        ]
+      },
+      "properties": {
+        "name": "Loma Alta Park",
+        "address": "3330 North Lincoln Avenue, Altadena, CA 91001",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.976957,
+          34.00681
+        ]
+      },
+      "properties": {
+        "name": "Los Robles Park",
+        "address": "14906 East Los Robles Avenue, Hacienda Heights, CA 91745",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.973038,
+          34.002662
+        ]
+      },
+      "properties": {
+        "name": "Manzanita Park",
+        "address": "1747 South Kwis Avenue, Hacienda Heights, CA 91745",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.751754,
+          34.141299
+        ]
+      },
+      "properties": {
+        "name": "Marshall Canyon Equestrian Center",
+        "address": "7000 Esperanza Road, La Verne, CA 91750",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.73269,
+          34.155479
+        ]
+      },
+      "properties": {
+        "name": "Marshall Canyon Regional Park & Nursery",
+        "address": "6550 North Stephens Ranch Road, La Verne, CA 91750",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.252435,
+          33.984184
+        ]
+      },
+      "properties": {
+        "name": "Mary M. Bethune Park",
+        "address": "1244 East 61st Street, Los Angeles, CA 90001",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.054265,
+          33.982553
+        ]
+      },
+      "properties": {
+        "name": "McNees Park",
+        "address": "11590 Hadley Boulevard, Whittier, CA 90606",
+        "bathroom_only": false,
+        "water_fountain_only": true,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.070944,
+          34.131056
+        ]
+      },
+      "properties": {
+        "name": "Michillinda Park",
+        "address": "3800 Michillinda Drive, East Pasadena, CA 91107",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.231536,
+          33.922286
+        ]
+      },
+      "properties": {
+        "name": "Mona Park",
+        "address": "2291 East 121st Street, Compton, CA 90222",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.224984,
+          33.969303
+        ]
+      },
+      "properties": {
+        "name": "Nogales Park",
+        "address": "2603 Grand Ave, Huntington Park, CA 90255",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.995698,
+          34.010637
+        ]
+      },
+      "properties": {
+        "name": "Orange Grove Park",
+        "address": "14505 Orange Grove Avenue, Hacienda Heights, CA 91745",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.994215,
+          34.12312
+        ]
+      },
+      "properties": {
+        "name": "Pamela County Park",
+        "address": "2236 Goodall Avenue, Duarte, CA 91010",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.181587,
+          34.015719
+        ]
+      },
+      "properties": {
+        "name": "Parque de los Suenos",
+        "address": "1333 South Bonnie Beach Place, Los Angeles, CA 90032",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.913209,
+          33.966927
+        ]
+      },
+      "properties": {
+        "name": "Pathfinder Community Regional Park",
+        "address": "18150 Pathfinder Road, Rowland Heights, CA 91748",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.913334,
+          34.501673
+        ]
+      },
+      "properties": {
+        "name": "Pearblossom County Park",
+        "address": "33922 North 121st Street East, Pearblossom, CA 93553",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.010959,
+          34.099822
+        ]
+      },
+      "properties": {
+        "name": "Peck Road Water Conservation Park",
+        "address": "5401 North Peck Road, Arcadia, CA 91006",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.942203,
+          33.992802
+        ]
+      },
+      "properties": {
+        "name": "Pepperbrook Park",
+        "address": "1701 South Countrywood Avenue, Hacienda Heights, CA 91745",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.931128,
+          33.986557
+        ]
+      },
+      "properties": {
+        "name": "Peter F. Schabarum Regional Park",
+        "address": "17250 East Colima Road, Rowland Heights, CA 91748",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.61456,
+          34.383807
+        ]
+      },
+      "properties": {
+        "name": "Pico Canyon Park",
+        "address": "25600 Pico Canyon Road, Stevenson Ranch, CA 91381",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.470396,
+          34.377004
+        ]
+      },
+      "properties": {
+        "name": "Placerita Canyon Natural Area and Nature Center",
+        "address": "19152 Placerita Canyon Road , Newhall, CA 91321",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.920313,
+          34.030906
+        ]
+      },
+      "properties": {
+        "name": "Rimgrove Park",
+        "address": "747 North Rimgrove Drive, La Puente, CA 91744",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.880512,
+          33.989461
+        ]
+      },
+      "properties": {
+        "name": "Rowland Heights Park",
+        "address": "1500 South Banida Avenue, Rowland Heights, CA 91748",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.260469,
+          33.897827
+        ]
+      },
+      "properties": {
+        "name": "Roy Campanella Park",
+        "address": "14812 Stanford Avenue, Compton, CA 90220",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.189867,
+          34.023755
+        ]
+      },
+      "properties": {
+        "name": "Ruben F Salazar Park",
+        "address": "3864 Whittier Boulevard, Los Angeles, CA 90023",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.002481,
+          34.050217
+        ]
+      },
+      "properties": {
+        "name": "San Angelo Park",
+        "address": "245 South San Angelo Avenue, La Puente, CA 91746",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.794317,
+          34.127972
+        ]
+      },
+      "properties": {
+        "name": "San Dimas Canyon Community Regional Park",
+        "address": "512 Sycamore Canyon Road, San Dimas, CA 91773",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.798027,
+          34.133947
+        ]
+      },
+      "properties": {
+        "name": "San Dimas Canyon Natural Area and Nature Center",
+        "address": "1628 Sycamore Canyon Road, San Dimas, CA 91773",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.004915,
+          34.050336
+        ]
+      },
+      "properties": {
+        "name": "San Gabriel River Park",
+        "address": "255 San Fidel Ave, La Puente CA 91746",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.951659,
+          34.114374
+        ]
+      },
+      "properties": {
+        "name": "Santa Fe Dam Recreational Area",
+        "address": "15501 East Arrow Highway, Irwindale, CA 91706",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.137232,
+          34.014166
+        ]
+      },
+      "properties": {
+        "name": "Saybrook Park",
+        "address": "6250 East Northside Drive, Los Angeles, CA 90022",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.060848,
+          33.97825
+        ]
+      },
+      "properties": {
+        "name": "Sorensen Park",
+        "address": "11419 Rosehedge Drive, Whittier, CA 90606",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.348618,
+          33.784224
+        ]
+      },
+      "properties": {
+        "name": "South Coast Botanic Garden",
+        "address": "26300 Crenshaw Boulevard, Palos Verdes Estates, CA 90274",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.279763,
+          33.916279
+        ]
+      },
+      "properties": {
+        "name": "South County Community Services Agency",
+        "address": "360 West El Segundo Boulevard, Los Angeles, CA 90061",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.914031,
+          34.602738
+        ]
+      },
+      "properties": {
+        "name": "Stephen Sorensen Park",
+        "address": "16801 East Avenue P, Lake Los Angeles, CA 93591",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.376894,
+          34.01466
+        ]
+      },
+      "properties": {
+        "name": "Stoneview Nature Center",
+        "address": "5950 Stoneview Drive, Culver City, CA 90232",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.900569,
+          34.010034
+        ]
+      },
+      "properties": {
+        "name": "Sunshine Park",
+        "address": "515 South Deepmead Avenue, La Puente, CA 91744",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.250544,
+          33.943432
+        ]
+      },
+      "properties": {
+        "name": "Ted Watkins Memorial Park",
+        "address": "1335 East 103rd Street, Los Angeles, CA 90002",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.555853,
+          34.473161
+        ]
+      },
+      "properties": {
+        "name": "Tesoro Adobe Historic Park",
+        "address": "29350 Avenida Ranchero Tesoro, Valencia, CA 91354",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.951164,
+          33.991555
+        ]
+      },
+      "properties": {
+        "name": "Thomas S. Burton Park",
+        "address": "16490 East Santa Bianca Drive, Hacienda Heights, CA 91745",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.235288,
+          34.233009
+        ]
+      },
+      "properties": {
+        "name": "Two Strike County Park",
+        "address": "5107 Rosemont Avenue, La Crescenta, CA 91214",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.664383,
+          34.446899
+        ]
+      },
+      "properties": {
+        "name": "Val Verde Community Regional Park",
+        "address": "30300 West Arlington Road, Val Verde, CA 91384",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.916577,
+          34.112065
+        ]
+      },
+      "properties": {
+        "name": "Valleydale Park",
+        "address": "5525 North Lark Ellen Avenue, Azusa, CA 91702",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.416462,
+          34.327199
+        ]
+      },
+      "properties": {
+        "name": "Veterans Memorial Community Regional Park",
+        "address": "13000 Sayre Street, Sylmar, CA 91342",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.269833,
+          33.857379
+        ]
+      },
+      "properties": {
+        "name": "Victoria Community Regional Park",
+        "address": "419 Martin Luther King Jr. Street, Carson, CA 90746",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.417533,
+          34.086631
+        ]
+      },
+      "properties": {
+        "name": "Virginia Robinson Gardens",
+        "address": "1008 Eldan Way, Beverly Hills, CA 90210",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.224014,
+          33.967973
+        ]
+      },
+      "properties": {
+        "name": "Walnut Nature Park",
+        "address": "2642 Olive Street, Walnut Park, CA 90255",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.194015,
+          33.89109
+        ]
+      },
+      "properties": {
+        "name": "Washington Ave Park",
+        "address": "15614 South Washington Avenue, Compton, CA 90221",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.800662,
+          34.090076
+        ]
+      },
+      "properties": {
+        "name": "West Picnic Valley Staging Area",
+        "address": "120 Via Verde Park Road, San Dimas, CA 91773",
+        "bathroom_only": false,
+        "water_fountain_only": true,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.040869,
+          34.028845
+        ]
+      },
+      "properties": {
+        "name": "Whittier Narrows Equestrian Center",
+        "address": "12191 Rooks Road, Whittier, CA 90601",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.045178,
+          34.034774
+        ]
+      },
+      "properties": {
+        "name": "Whittier Narrows Natural Area and Nature Center",
+        "address": "1000 Durfee Road, South El Monte, CA 91733",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.054126,
+          34.035195
+        ]
+      },
+      "properties": {
+        "name": "Whittier Narrows Recreation Area",
+        "address": "750 South Santa Anita Avenue, South El Monte, CA 91733",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.960325,
+          34.002179
+        ]
+      },
+      "properties": {
+        "name": "William Steinmetz Park",
+        "address": "1545 South Stimson Avenue, Hacienda Heights, CA 91745",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.63695,
+          34.460442
+        ]
+      },
+      "properties": {
+        "name": "Williams Ranch Park",
+        "address": "28809 Old Spgs Rd, Castaic, CA 91384",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.63695,
+          34.460442
+        ]
+      },
+      "properties": {
+        "name": "Wishing Tree Park",
+        "address": "28809 Old Spgs Rd, Castaic, CA 91384",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.299592,
+          33.939862
+        ]
+      },
+      "properties": {
+        "name": "Woodcrest Play Park",
+        "address": "1340 West 106th Street, Los Angeles, CA 90044",
+        "bathroom_only": false,
+        "water_fountain_only": true,
+        "both": false
+      }
+    }
+  ]
+}
