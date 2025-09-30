@@ -32,7 +32,7 @@ const Home = () => {
   const [showWaterFountains, setShowWaterFountains] = useState(true);
   const [showCombo, setShowCombo] = useState(true);
   const [showCountyParks, setShowCountyParks] = useState(true);
-  const [showMetro, setShowMetro] = useState(true); // NEW: Metro toggle
+  const [showMetro, setShowMetro] = useState(true); // Metro toggle
   const mapref = useRef(null);
   const divRef = useRef(null);
 
@@ -456,6 +456,7 @@ const Home = () => {
                 const safe = (v) => (v === undefined || v === null || v === "" ? "—" : v);
 
                 const buildHTML = (p = {}, layerId = "") => {
+                  // Simple schema (County Parks & Metro)
                   const simpleBlock = () => {
                     const typeLabel = p.both
                       ? "Water Fountains & Bathrooms"
@@ -479,6 +480,7 @@ const Home = () => {
                     return simpleBlock();
                   }
 
+                  // City layers (detailed schema)
                   const Name = p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
                   const CouncilDistrict =
                     p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
@@ -508,8 +510,9 @@ const Home = () => {
                     icon = "/restroom.png";
                   else icon = "/drop.png";
 
+                  // FIXED: line-height now unitless (was 1.35%)
                   return `
-                    <div style="font-size:12px;line-height:1.35%;">
+                    <div style="font-size:12px;line-height:1.35;">
                       <img src="${icon}" alt="icon" style="width:30px;height:30px;object-fit:contain;" />
                       <div><strong>Name:</strong> ${safe(Name)}</div>
                       <div><strong>Council District:</strong> ${safe(CouncilDistrict)}</div>
@@ -589,7 +592,7 @@ const Home = () => {
       }); // restroom load
     });
 
-    return () => map.remove();
+  return () => map.remove();
   }, []); // mount once
 
   useEffect(() => {
@@ -700,28 +703,27 @@ const Home = () => {
                     </label>
                   </div>
 
-                  {/* Metro toggle */}
+                  {/* Metro toggle with external link */}
                   <div className="flex items-center space-x-2">
-  <input
-    type="checkbox"
-    id="metro-filter"
-    checked={showMetro}
-    onChange={(e) => setShowMetro(e.target.checked)}
-  />
-  <label htmlFor="metro-filter" className="text-white text-sm">
-    <a
-      href="https://metro.net/restrooms"
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={(e) => e.stopPropagation()} // prevent label click from toggling the checkbox
-      className="underline text-[#41ffca]"
-      title="Open Metro restrooms info"
-    >
-      Metro
-    </a>
-  </label>
-</div>
-
+                    <input
+                      type="checkbox"
+                      id="metro-filter"
+                      checked={showMetro}
+                      onChange={(e) => setShowMetro(e.target.checked)}
+                    />
+                    <label htmlFor="metro-filter" className="text-white text-sm">
+                      <a
+                        href="https://metro.net/restrooms"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="underline text-[#41ffca]"
+                        title="Open Metro restrooms info"
+                      >
+                        Metro
+                      </a>
+                    </label>
+                  </div>
                 </div>
 
                 {/* Sources */}
@@ -799,6 +801,11 @@ const Home = () => {
         }
         #cd-filter-panel {
           top: 120px;
+        }
+        /* Popup text safety */
+        .mapboxgl-popup-content {
+          font-size: 12px;
+          line-height: 1.35;
         }
       `}</style>
     </div>
