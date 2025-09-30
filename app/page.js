@@ -702,16 +702,26 @@ const Home = () => {
 
                   {/* Metro toggle */}
                   <div className="flex items-center space-x-2">
-                    <input
-                      type="checkbox"
-                      id="metro-filter"
-                      checked={showMetro}
-                      onChange={(e) => setShowMetro(e.target.checked)}
-                    />
-                    <label htmlFor="metro-filter" className="text-white text-sm">
-                      Metro
-                    </label>
-                  </div>
+  <input
+    type="checkbox"
+    id="metro-filter"
+    checked={showMetro}
+    onChange={(e) => setShowMetro(e.target.checked)}
+  />
+  <label htmlFor="metro-filter" className="text-white text-sm">
+    <a
+      href="https://metro.net/restrooms"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={(e) => e.stopPropagation()} // prevent label click from toggling the checkbox
+      className="underline text-[#41ffca]"
+      title="Open Metro restrooms info"
+    >
+      Metro
+    </a>
+  </label>
+</div>
+
                 </div>
 
                 {/* Sources */}
