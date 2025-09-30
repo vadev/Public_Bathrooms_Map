@@ -1,0 +1,498 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.59878,
+          34.25287
+        ]
+      },
+      "properties": {
+        "name": "Chatsworth Metro Station",
+        "address": "10040 Old Depot Plaza Rd, Chatsworth, CA 91311",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.53621,
+          34.18098
+        ]
+      },
+      "properties": {
+        "name": "Reseda Metro Station",
+        "address": "6065 North Reseda Boulevard, Los Angeles, CA 91335",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.36223,
+          34.13931
+        ]
+      },
+      "properties": {
+        "name": "Universal City / Studio City Metro Station",
+        "address": "3901 Lankershim Blvd Universal City, CA 91608",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.29154,
+          34.09829
+        ]
+      },
+      "properties": {
+        "name": "Vermont / Sunset Metro Station",
+        "address": "1500 N Vermont Ave Los Angeles, CA 90027",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.27594,
+          34.05751
+        ]
+      },
+      "properties": {
+        "name": "Westlake / MacArthur Park Metro Station",
+        "address": "660 S Alvarado St Los Angeles, CA 90057",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.889957,
+          34.127652
+        ]
+      },
+      "properties": {
+        "name": "APU / Citrus College Metro Station",
+        "address": "6898 North Citrus Avenue, Azusa, CA 91702",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.002811,
+          34.133527
+        ]
+      },
+      "properties": {
+        "name": "Monrovia Metro Station",
+        "address": "1675 S Primrose Ave Monrovia, CA 91016",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.07978,
+          34.149239
+        ]
+      },
+      "properties": {
+        "name": "Sierra Madre Villa Metro Station",
+        "address": "149 N Halstead St Pasadena, CA 91107",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.148368,
+          34.149003
+        ]
+      },
+      "properties": {
+        "name": "Memorial Park Metro Station",
+        "address": "125 E Holly St, Pasadena, CA 91103",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.193013,
+          34.110118
+        ]
+      },
+      "properties": {
+        "name": "Highland Park Metro Station",
+        "address": "151 N Ave 57 Los Angeles, CA 90042",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23621,
+          34.063844
+        ]
+      },
+      "properties": {
+        "name": "Chinatown Metro Station",
+        "address": "901 N Spring St Los Angeles, CA 90012",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23752,
+          34.05494
+        ]
+      },
+      "properties": {
+        "name": "Union Station Metro Station",
+        "address": "800 N Alameda St Los Angeles, CA 90012",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.042209,
+          34.072115
+        ]
+      },
+      "properties": {
+        "name": "El Monte Metro Station",
+        "address": "3501 Santa Anita Ave El Monte, CA 91731",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.154028,
+          34.03321
+        ]
+      },
+      "properties": {
+        "name": "Atlantic Metro Station",
+        "address": "5150 East Pomona Boulevard East Los Angeles, California",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.210709,
+          34.043935
+        ]
+      },
+      "properties": {
+        "name": "Soto Metro Station",
+        "address": "2330 E 1st St, Los Angeles, CA 90033",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.23888,
+          34.04896
+        ]
+      },
+      "properties": {
+        "name": "Little Tokyo / Arts District Metro Station",
+        "address": "402 East 1st Street, Los Angeles, CA 90012",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.49182,
+          34.013645
+        ]
+      },
+      "properties": {
+        "name": "Downtown Santa Monica Metro Station ",
+        "address": "402 Colorado Ave, Santa Monica, CA 90401",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.388364,
+          34.027486
+        ]
+      },
+      "properties": {
+        "name": "Culver City Metro Station",
+        "address": "8817 Washington Blvd Culver City, CA 90232",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33353,
+          34.02216
+        ]
+      },
+      "properties": {
+        "name": "Expo / Crenshaw Metro Station",
+        "address": "3428 Exposition Blvd. Los Angeles, CA 90018",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.37721,
+          33.95196
+        ]
+      },
+      "properties": {
+        "name": "LAX / Metro Transit Center Metro Station",
+        "address": "9225 Aviation Blvd Los Angeles, CA 90045",
+        "bathroom_only": false,
+        "water_fountain_only": false,
+        "both": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.366147,
+          33.894788
+        ]
+      },
+      "properties": {
+        "name": "Redondo Beach Metro Station",
+        "address": "5251 Marine Ave, Redondo Beach, CA 90278",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.33353,
+          34.02216
+        ]
+      },
+      "properties": {
+        "name": "Crenshaw Metro Station",
+        "address": "3428 W Exposition Blvd. Los Angeles, CA 90016",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2824,
+          33.93025
+        ]
+      },
+      "properties": {
+        "name": "Harbor Freeway Metro Station",
+        "address": "11500 S Figueroa St. Los Angeles, CA 90061",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.30703,
+          33.98901
+        ]
+      },
+      "properties": {
+        "name": "Slauson Metro Station",
+        "address": "1700 Slauson Avenue, Los Angeles, California 90047",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.28659,
+          33.86964
+        ]
+      },
+      "properties": {
+        "name": "Harbor Gateway Transit Center",
+        "address": "731 West 182nd Street Gardena, CA 90248",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "Firestone Metro Station",
+        "address": "8615 Graham Avenue, Firestone Park, California",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.236941,
+          33.927653
+        ]
+      },
+      "properties": {
+        "name": "Willowbrook / Rosa Parks Metro Station",
+        "address": "11611 Willowbrook Avenue, Los Angeles, CA 90059",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.103826,
+          33.913703
+        ]
+      },
+      "properties": {
+        "name": "Norwalk Metro Station",
+        "address": "12901 Hoxie Avenue, Norwalk, California 90650",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.190197,
+          33.807302
+        ]
+      },
+      "properties": {
+        "name": "Willow St Metro Station",
+        "address": "2750 W American Ave. Long Beach, CA 90806",
+        "bathroom_only": true,
+        "water_fountain_only": false,
+        "both": false
+      }
+    }
+  ]
+}

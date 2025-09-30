@@ -10,6 +10,7 @@ import combo_true from "./data/combo.json";
 import bathroom_only from "./data/bathroom_only.json";
 import water_only from "./data/water_only.json";
 import county_parks from "./data/restrooms_water_fountains_countyparks.json";
+import metro_facilities from "./data/metro_facilities.json"; // Metro import
 import mapboxgl from "mapbox-gl";
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
@@ -31,20 +32,20 @@ const Home = () => {
   const [showWaterFountains, setShowWaterFountains] = useState(true);
   const [showCombo, setShowCombo] = useState(true);
   const [showCountyParks, setShowCountyParks] = useState(true);
+  const [showMetro, setShowMetro] = useState(true); // NEW: Metro toggle
   const mapref = useRef(null);
   const divRef = useRef(null);
 
   const applyLayerFilter = (layerId, districts) => {
     if (!mapref.current || !mapref.current.getLayer(layerId)) return;
-    if (!districts || districts.length === 0) {
-      // Hide features that HAVE a "Council District" prop; keep those without CD visible
+    if (!districts || (Array.isArray(districts) && districts.length === 0)) {
       mapref.current.setFilter(layerId, [
         "any",
         ["!", ["has", "Council District"]],
         ["in", ["get", "Council District"], ["literal", []]],
       ]);
     } else {
-      const parsed = districts.map((v) => parseInt(v, 10));
+      const parsed = districts.map((v) => parseInt(String(v), 10));
       mapref.current.setFilter(layerId, [
         "any",
         ["!", ["has", "Council District"]],
@@ -100,11 +101,19 @@ const Home = () => {
     }
   };
 
+  const applyMetroFilter = () => {
+    const id = "metro-facilities-layer";
+    if (mapref.current && mapref.current.getLayer(id)) {
+      mapref.current.setLayoutProperty(id, "visibility", showMetro ? "visible" : "none");
+    }
+  };
+
   const applyAllFilters = (districts) => {
     applyBathroomFilter();
     applyWaterFountainFilter();
     applyComboFilter();
     applyCountyParksFilter();
+    applyMetroFilter();
 
     [
       "hydration",
@@ -114,6 +123,7 @@ const Home = () => {
       "combo-layer-for-hydration",
       "combo-layer",
       "county-parks-layer",
+      "metro-facilities-layer",
     ].forEach((id) => applyLayerFilter(id, districts));
   };
 
@@ -236,8 +246,6 @@ const Home = () => {
                 const h = sin1 * sin1 + Math.cos(lat1) * Math.cos(lat2) * sin2 * sin2;
                 return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
               };
-              const isWithinAny = (coord, centers, radiusM) =>
-                centers.some((c) => haversineMeters(coord, c) <= radiusM);
 
               const geocodeAddresses = async (addresses) => {
                 const out = [];
@@ -259,16 +267,10 @@ const Home = () => {
                 // Geocode a few manual points
                 const manualAddrs = ["509 S. San Julian St.", "814 E. 6th St.", "204 E. 5th St.", "545 S. San Pedro St."];
                 const manualPoints = await geocodeAddresses(manualAddrs);
-                const manualCenters = manualPoints.map((p) => p.center);
-
-                const locationsWithoutBathrooms = ["5401 La Mirada Avenue"];
-                const manualRestroomsFiltered = manualPoints.filter(
-                  (p) => !locationsWithoutBathrooms.some((addr) => p.addr.includes(addr.split(" ")[0]))
-                );
 
                 const manualRestrooms = {
                   type: "FeatureCollection",
-                  features: manualRestroomsFiltered.map((p) => ({
+                  features: manualPoints.map((p) => ({
                     type: "Feature",
                     geometry: { type: "Point", coordinates: p.center },
                     properties: { "Facility Name": "Restroom", Address: p.addr },
@@ -286,8 +288,9 @@ const Home = () => {
                   map.addSource("manual-restrooms-source", { type: "geojson", data: manualRestrooms });
                 }
 
-                // NEW: County Parks source
+                // County Parks & Metro sources
                 map.addSource("county-parks-source", { type: "geojson", data: county_parks });
+                map.addSource("metro-facilities-source", { type: "geojson", data: metro_facilities });
 
                 // ---------- Layers ----------
                 map.addLayer({
@@ -361,7 +364,7 @@ const Home = () => {
                   map.addLayer({
                     id: "restrooms-baby",
                     type: "symbol",
-                    source: "restroom-source", // fixed source id
+                    source: "restroom-source",
                     layout: {
                       "icon-image": "baby-icon",
                       "icon-allow-overlap": true,
@@ -377,7 +380,7 @@ const Home = () => {
                   map.addLayer({
                     id: "restrooms-shower",
                     type: "symbol",
-                    source: "restroom-source", // fixed source id
+                    source: "restroom-source",
                     layout: {
                       "icon-image": "shower-icon",
                       "icon-allow-overlap": true,
@@ -403,7 +406,7 @@ const Home = () => {
                   });
                 }
 
-                // NEW: County Parks layer (icon from boolean flags)
+                // County Parks layer
                 map.addLayer({
                   id: "county-parks-layer",
                   type: "symbol",
@@ -414,12 +417,32 @@ const Home = () => {
                       ["==", ["get", "both"], true], "combo-icon",
                       ["==", ["get", "bathroom_only"], true], "restroom-icon",
                       ["==", ["get", "water_fountain_only"], true], "fountain-icon",
-                      /* default */ "fountain-icon"
+                      "fountain-icon"
                     ],
                     "icon-allow-overlap": true,
                     "icon-anchor": "bottom",
                     "icon-size": ["interpolate", ["linear"], ["zoom"], 10, 0.12, 14, 0.18, 16, 0.24],
                     "visibility": showCountyParks ? "visible" : "none",
+                  },
+                });
+
+                // Metro Facilities layer
+                map.addLayer({
+                  id: "metro-facilities-layer",
+                  type: "symbol",
+                  source: "metro-facilities-source",
+                  layout: {
+                    "icon-image": [
+                      "case",
+                      ["==", ["get", "both"], true], "combo-icon",
+                      ["==", ["get", "bathroom_only"], true], "restroom-icon",
+                      ["==", ["get", "water_fountain_only"], true], "fountain-icon",
+                      "fountain-icon"
+                    ],
+                    "icon-allow-overlap": true,
+                    "icon-anchor": "bottom",
+                    "icon-size": ["interpolate", ["linear"], ["zoom"], 10, 0.12, 14, 0.18, 16, 0.24],
+                    "visibility": showMetro ? "visible" : "none",
                   },
                 });
 
@@ -433,8 +456,7 @@ const Home = () => {
                 const safe = (v) => (v === undefined || v === null || v === "" ? "—" : v);
 
                 const buildHTML = (p = {}, layerId = "") => {
-                  // County Parks tooltip (matches your schema exactly)
-                  if (layerId === "county-parks-layer") {
+                  const simpleBlock = () => {
                     const typeLabel = p.both
                       ? "Water Fountains & Bathrooms"
                       : p.bathroom_only
@@ -442,22 +464,21 @@ const Home = () => {
                       : p.water_fountain_only
                       ? "Water Fountains Only"
                       : "Facility";
-                    const icon = p.both
-                      ? "/combo.png"
-                      : p.bathroom_only
-                      ? "/restroom.png"
-                      : "/drop.png";
+                    const icon = p.both ? "/combo.png" : p.bathroom_only ? "/restroom.png" : "/drop.png";
                     return `
                       <div style="font-size:12px;line-height:1.35;">
                         <img src="${icon}" alt="icon" style="width:30px;height:30px;object-fit:contain;" />
-                        <div><strong>Name:</strong> ${safe(p.name)}</div>
-                        <div><strong>Address:</strong> ${safe(p.address)}</div>
+                        <div><strong>Name:</strong> ${safe(p.name || p["Facility Name"])}</div>
+                        <div><strong>Address:</strong> ${safe(p.address || p["Facility Address"])}</div>
                         <div><strong>Type:</strong> ${typeLabel}</div>
                       </div>
                     `;
+                  };
+
+                  if (layerId === "county-parks-layer" || layerId === "metro-facilities-layer") {
+                    return simpleBlock();
                   }
 
-                  // Default tooltip for City layers
                   const Name = p["Name"] || p["Facility Name"] || p.name || p.Facility || "";
                   const CouncilDistrict =
                     p["Council District"] ?? p.CouncilDistrict ?? p.district ?? "";
@@ -483,14 +504,12 @@ const Home = () => {
 
                   let icon;
                   if (isCombo) icon = "/combo.png";
-                  else if (
-                    /^restrooms|^manual-restrooms/.test(layerId) &&
-                    (NoToilets && Number(NoToilets) > 0)
-                  ) icon = "/restroom.png";
+                  else if (/^restrooms|^manual-restrooms/.test(layerId) && (NoToilets && Number(NoToilets) > 0))
+                    icon = "/restroom.png";
                   else icon = "/drop.png";
 
                   return `
-                    <div style="font-size:12px;line-height:1.35;">
+                    <div style="font-size:12px;line-height:1.35%;">
                       <img src="${icon}" alt="icon" style="width:30px;height:30px;object-fit:contain;" />
                       <div><strong>Name:</strong> ${safe(Name)}</div>
                       <div><strong>Council District:</strong> ${safe(CouncilDistrict)}</div>
@@ -517,9 +536,7 @@ const Home = () => {
                     const f = e.features?.[0];
                     if (!f) return;
                     const coords =
-                      f.geometry.type === "Point"
-                        ? f.geometry.coordinates
-                        : [e.lngLat.lng, e.lngLat.lat];
+                      f.geometry.type === "Point" ? f.geometry.coordinates : [e.lngLat.lng, e.lngLat.lat];
                     hoverPopup.setLngLat(coords).setHTML(buildHTML(f.properties, layerId)).addTo(map);
                   });
 
@@ -527,9 +544,7 @@ const Home = () => {
                     const f = e.features?.[0];
                     if (!f) return;
                     const coords =
-                      f.geometry.type === "Point"
-                        ? f.geometry.coordinates
-                        : [e.lngLat.lng, e.lngLat.lat];
+                      f.geometry.type === "Point" ? f.geometry.coordinates : [e.lngLat.lng, e.lngLat.lat];
                     hoverPopup.setLngLat(coords);
                   });
 
@@ -542,9 +557,7 @@ const Home = () => {
                     const f = e.features?.[0];
                     if (!f) return;
                     const coords =
-                      f.geometry.type === "Point"
-                        ? f.geometry.coordinates
-                        : [e.lngLat.lng, e.lngLat.lat];
+                      f.geometry.type === "Point" ? f.geometry.coordinates : [e.lngLat.lng, e.lngLat.lat];
                     new mapboxgl.Popup({ offset: 12 })
                       .setLngLat(coords)
                       .setHTML(buildHTML(f.properties, layerId))
@@ -562,6 +575,7 @@ const Home = () => {
                   "combo-layer-for-hydration",
                   "water_only_layer",
                   "county-parks-layer",
+                  "metro-facilities-layer",
                 ]
                   .filter((id) => map.getLayer(id))
                   .forEach(attachTooltip);
@@ -587,7 +601,8 @@ const Home = () => {
     applyWaterFountainFilter();
     applyComboFilter();
     applyCountyParksFilter();
-  }, [showBathrooms, showWaterFountains, showCombo, showCountyParks]);
+    applyMetroFilter();
+  }, [showBathrooms, showWaterFountains, showCombo, showCountyParks, showMetro]);
 
   const setfilteredcouncildistrictspre = (event) => {
     if (event === "") {
@@ -642,7 +657,6 @@ const Home = () => {
                       id="bathrooms-filter"
                       checked={showBathrooms}
                       onChange={(e) => setShowBathrooms(e.target.checked)}
-                      className="text-blue-600"
                     />
                     <label htmlFor="bathrooms-filter" className="text-white text-sm">
                       Bathrooms Only
@@ -655,7 +669,6 @@ const Home = () => {
                       id="fountains-filter"
                       checked={showWaterFountains}
                       onChange={(e) => setShowWaterFountains(e.target.checked)}
-                      className="text-blue-600"
                     />
                     <label htmlFor="fountains-filter" className="text-white text-sm">
                       Water Fountains Only
@@ -668,7 +681,6 @@ const Home = () => {
                       id="combo-filter"
                       checked={showCombo}
                       onChange={(e) => setShowCombo(e.target.checked)}
-                      className="text-blue-600"
                     />
                     <label htmlFor="combo-filter" className="text-white text-sm">
                       Water Fountains and Bathrooms
@@ -682,10 +694,22 @@ const Home = () => {
                       id="county-parks-filter"
                       checked={showCountyParks}
                       onChange={(e) => setShowCountyParks(e.target.checked)}
-                      className="text-blue-600"
                     />
                     <label htmlFor="county-parks-filter" className="text-white text-sm">
                       County Parks (LA County)
+                    </label>
+                  </div>
+
+                  {/* Metro toggle */}
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="checkbox"
+                      id="metro-filter"
+                      checked={showMetro}
+                      onChange={(e) => setShowMetro(e.target.checked)}
+                    />
+                    <label htmlFor="metro-filter" className="text-white text-sm">
+                      Metro
                     </label>
                   </div>
                 </div>
@@ -721,17 +745,16 @@ const Home = () => {
                     >
                       Bureau of Streets Services
                     </a>
-                    <div> 
-                    <a
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#41ffca] text-xs underline hover:text-white"
-                    >
-                     County of Los Angeles Department of Parks and Recreation
-                    </a>
-                      </div>
-                    
+                    <div>
+                      <a
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#41ffca] text-xs underline hover:text-white"
+                      >
+                        County of Los Angeles Department of Parks and Recreation
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
